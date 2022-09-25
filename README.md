@@ -9,6 +9,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/isocountry)](https://CRAN.R-project.org/package=isocountry)
+[![Codecov test
+coverage](https://codecov.io/gh/maximilian-muecke/isocountry/branch/main/graph/badge.svg)](https://app.codecov.io/gh/maximilian-muecke/isocountry?branch=main)
 <!-- badges: end -->
 
 The goal of isocountry is to …
