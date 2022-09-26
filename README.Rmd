@@ -21,14 +21,13 @@ knitr::opts_chunk$set(
 [![Codecov test coverage](https://codecov.io/gh/maximilian-muecke/isocountry/branch/main/graph/badge.svg)](https://app.codecov.io/gh/maximilian-muecke/isocountry?branch=main)
 <!-- badges: end -->
 
-This package contains the ISO-3166 country data set and is inspired by the (ISO-3166-Countries-with-Regional-Codes
-)[https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes] project.
+This package contains the ISO-3166 country data set and is inspired by the (ISO-3166-Countries-with-Regional-Codes)[https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes]
 
 ## Installation
 
 You can install the development version of isocountry from [GitHub](https://github.com/) with:
 
-``` r
+```{r}
 # install.packages("devtools")
 devtools::install_github("maximilian-muecke/isocountry")
 ```
