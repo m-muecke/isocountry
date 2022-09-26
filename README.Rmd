@@ -27,7 +27,7 @@ This package contains the ISO-3166 country data set and is inspired by the [ISO-
 
 You can install the development version of isocountry from [GitHub](https://github.com/) with:
 
-```{r}
+``` r
 # install.packages("devtools")
 devtools::install_github("maximilian-muecke/isocountry")
 ```
