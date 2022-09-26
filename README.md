@@ -14,9 +14,13 @@ coverage](https://codecov.io/gh/maximilian-muecke/isocountry/branch/main/graph/b
 [![R-CMD-check](https://github.com/maximilian-muecke/isocountry/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/maximilian-muecke/isocountry/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-This package contains the ISO-3166 country data set and is inspired by
-the
+This package contains the `isocountry` dataset resulting from merging
+the [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1) and the [UN
+Region Codes](https://unstats.un.org/unsd/methodology/m49/overview).
+
+Package is insipred by the
 [ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)
+project.
 
 ## Installation
 

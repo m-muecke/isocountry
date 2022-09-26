@@ -5,7 +5,7 @@
 \alias{isocountry}
 \title{Country names with ISO country codes}
 \format{
-A data frame with 249 rows and 6 variables:
+A data frame with 249 rows and 13 variables:
 \describe{
 \item{name}{country name}
 \item{alpha_2}{ISO alpha-2 code}
@@ -23,7 +23,10 @@ A data frame with 249 rows and 6 variables:
 }
 }
 \source{
-\url{https://en.wikipedia.org/wiki/ISO_3166-1} \url{https://unstats.un.org/unsd/methodology/m49/overview}
+\itemize{
+\item \url{https://en.wikipedia.org/wiki/ISO_3166-1}
+\item \url{https://unstats.un.org/unsd/methodology/m49/overview}
+}
 }
 \usage{
 isocountry

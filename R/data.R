@@ -5,7 +5,7 @@ NULL
 #'
 #' ISO 3166-1 country codes with full country names.
 #'
-#' @format A data frame with 249 rows and 6 variables:
+#' @format A data frame with 249 rows and 13 variables:
 #' \describe{
 #'   \item{name}{country name}
 #'   \item{alpha_2}{ISO alpha-2 code}
@@ -21,5 +21,7 @@ NULL
 #'   \item{intermediate_region_name}{UN intermediate region name}
 #'   \item{m49_code}{UN M49 code}
 #' }
-#' @source \url{https://en.wikipedia.org/wiki/ISO_3166-1} \url{https://unstats.un.org/unsd/methodology/m49/overview}
+#' @source
+#' * <https://en.wikipedia.org/wiki/ISO_3166-1>
+#' * <https://unstats.un.org/unsd/methodology/m49/overview>
 "isocountry"
