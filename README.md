@@ -11,6 +11,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/isocountry)](https://CRAN.R-project.org/package=isocountry)
 [![Codecov test
 coverage](https://codecov.io/gh/maximilian-muecke/isocountry/branch/main/graph/badge.svg)](https://app.codecov.io/gh/maximilian-muecke/isocountry?branch=main)
+[![R-CMD-check](https://github.com/maximilian-muecke/isocountry/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/maximilian-muecke/isocountry/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This package contains the ISO-3166 country data set and is inspired by
