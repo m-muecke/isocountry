@@ -25,3 +25,18 @@ NULL
 #' * <https://en.wikipedia.org/wiki/ISO_3166-1>
 #' * <https://unstats.un.org/unsd/methodology/m49/overview>
 "isocountry"
+
+#' ISO currency codes
+#'
+#' ISO 4217 currency codes with full country names.
+#'
+#' @format A data frame with 269 rows and 4 variables:
+#' \describe{
+#'   \item{country}{country name}
+#'   \item{currency}{currency name}
+#'   \item{code}{ISO currency code}
+#'   \item{number}{ISO currency number}
+#' }
+#' @source
+#' * <https://www.iban.com/currency-codes>
+"isocurrency"
