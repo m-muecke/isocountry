@@ -1,15 +1,22 @@
 Package: isocountry
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: ISO 3166-1 country codes
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: MIT + file LICENSE
+    person(given = "Maximilian",
+           family = "Muecke",
+           email = "muecke.maximilian@gmail.com",
+           role = c("aut", "cre"))
+Description: ISO 3166-1 country codes provided by the International Organization for Standardization.
+License: CC0
+URL: https://github.com/maximilian-muecke/isocountry
+BugReports: https://github.com/maximilian-muecke/isocountry/issues
+Depends: 
+    R (>= 2.10)
+Imports: 
+    tibble
 Suggests: 
-    covr,
-    testthat (>= 3.0.0)
-Config/testthat/edition: 3
+    covr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
+LazyData: true

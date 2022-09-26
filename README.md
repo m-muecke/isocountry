@@ -13,7 +13,10 @@ status](https://www.r-pkg.org/badges/version/isocountry)](https://CRAN.R-project
 coverage](https://codecov.io/gh/maximilian-muecke/isocountry/branch/main/graph/badge.svg)](https://app.codecov.io/gh/maximilian-muecke/isocountry?branch=main)
 <!-- badges: end -->
 
-The goal of isocountry is to …
+This package contains the ISO-3166 country data set and is inspired by
+the (ISO-3166-Countries-with-Regional-Codes
+)\[<https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes>\]
+project.
 
 ## Installation
 
@@ -24,39 +27,3 @@ You can install the development version of isocountry from
 # install.packages("devtools")
 devtools::install_github("maximilian-muecke/isocountry")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-``` r
-library(isocountry)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
