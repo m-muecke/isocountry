@@ -8,11 +8,18 @@ NULL
 #' @format A data frame with 249 rows and 6 variables:
 #' \describe{
 #'   \item{name}{country name}
-#'   \item{alpha_2}{alpha-2 code}
-#'   \item{alpha_3}{alpha-3 code}
+#'   \item{alpha_2}{ISO alpha-2 code}
+#'   \item{alpha_3}{ISO alpha-3 code}
 #'   \item{country_code}{numeric code}
 #'   \item{iso_3166_2}{ISO 3166-2 subdivision code}
 #'   \item{is_independent}{is the country independent}
+#'   \item{region_code}{UN region code}
+#'   \item{region_name}{UN region name}
+#'   \item{subregion_code}{UN subregion code}
+#'   \item{subregion_name}{UN subregion name}
+#'   \item{intermediate_region_code}{UN intermediate region code}
+#'   \item{intermediate_region_name}{UN intermediate region name}
+#'   \item{m49_code}{UN M49 code}
 #' }
-#' @source \url{https://en.wikipedia.org/wiki/ISO_3166-1}
+#' @source \url{https://en.wikipedia.org/wiki/ISO_3166-1} \url{https://unstats.un.org/unsd/methodology/m49/overview}
 "isocountry"
