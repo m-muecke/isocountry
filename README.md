@@ -15,7 +15,7 @@ coverage](https://codecov.io/gh/maximilian-muecke/isocountry/branch/main/graph/b
 
 This package contains the ISO-3166 country data set and is inspired by
 the
-(ISO-3166-Countries-with-Regional-Codes)\[<https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes>\]
+[ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)
 
 ## Installation
 
@@ -27,12 +27,12 @@ You can install the development version of isocountry from
 devtools::install_github("maximilian-muecke/isocountry")
 #> Downloading GitHub repo maximilian-muecke/isocountry@HEAD
 #> 
-#> * checking for file ‘/private/var/folders/nj/c2q_3q850vdg606k51nzlwn40000gn/T/RtmpzlQT0w/remotes145c62a3a476c/maximilian-muecke-isocountry-041ac64/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/nj/c2q_3q850vdg606k51nzlwn40000gn/T/RtmpmrG9tE/remotes150393f70d4f0/maximilian-muecke-isocountry-18e2358/DESCRIPTION’ ... OK
 #> * preparing ‘isocountry’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
 #> * building ‘isocountry_0.0.1.tar.gz’
-#> Installing package into '/private/var/folders/nj/c2q_3q850vdg606k51nzlwn40000gn/T/RtmpQkEimd/temp_libpath1458c1b51adbf'
+#> Installing package into '/private/var/folders/nj/c2q_3q850vdg606k51nzlwn40000gn/T/RtmpqotaTI/temp_libpath14f1b20fab454'
 #> (as 'lib' is unspecified)
 ```
