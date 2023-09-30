@@ -32,6 +32,6 @@ You can install the development version of isocountry from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("maximilian-muecke/isocountry")
+# install.packages("pak")
+pak::pak("m-muecke/isocountry")
 ```
