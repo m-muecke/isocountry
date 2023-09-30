@@ -37,7 +37,7 @@ pak::pak("m-muecke/isocountry")
 
 ## Usage
 
-```{r}
+```{r, message = FALSE}
 library(dplyr)
 library(isocountry)
 
