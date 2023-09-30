@@ -1,8 +1,8 @@
-^isocountry\.Rproj$
-^\.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
-^cran-comments\.md$
-^codecov\.yml$
+^\.Rproj\.user$
 ^\.github$
+^codecov\.yml$
+^cran-comments\.md$
 ^data-raw$
+^isocountry\.Rproj$

@@ -91,7 +91,7 @@ Grenada,GD,GRD,308,ISO 3166-2:GD,TRUE,19,Americas,419,Latin America and the Cari
 Guadeloupe,GP,GLP,312,ISO 3166-2:GP,FALSE,19,Americas,419,Latin America and the Caribbean,29,Caribbean,312
 Guam,GU,GUM,316,ISO 3166-2:GU,FALSE,9,Oceania,57,Micronesia,NA,NA,316
 Guatemala,GT,GTM,320,ISO 3166-2:GT,TRUE,19,Americas,419,Latin America and the Caribbean,13,Central America,320
-Guernsey,GG,GGY,831,ISO 3166-2:GG,FALSE,150,Europe,154,Northern Europe,830,Channel Islands,831
+Guernsey,GG,GGY,831,ISO 3166-2:GG,FALSE,150,Europe,154,Northern Europe,NA,NA,831
 Guinea,GN,GIN,324,ISO 3166-2:GN,TRUE,2,Africa,202,Sub-Saharan Africa,11,Western Africa,324
 Guinea-Bissau,GW,GNB,624,ISO 3166-2:GW,TRUE,2,Africa,202,Sub-Saharan Africa,11,Western Africa,624
 Guyana,GY,GUY,328,ISO 3166-2:GY,TRUE,19,Americas,419,Latin America and the Caribbean,5,South America,328
@@ -112,7 +112,7 @@ Israel,IL,ISR,376,ISO 3166-2:IL,TRUE,142,Asia,145,Western Asia,NA,NA,376
 Italy,IT,ITA,380,ISO 3166-2:IT,TRUE,150,Europe,39,Southern Europe,NA,NA,380
 Jamaica,JM,JAM,388,ISO 3166-2:JM,TRUE,19,Americas,419,Latin America and the Caribbean,29,Caribbean,388
 Japan,JP,JPN,392,ISO 3166-2:JP,TRUE,142,Asia,30,Eastern Asia,NA,NA,392
-Jersey,JE,JEY,832,ISO 3166-2:JE,FALSE,150,Europe,154,Northern Europe,830,Channel Islands,832
+Jersey,JE,JEY,832,ISO 3166-2:JE,FALSE,150,Europe,154,Northern Europe,NA,NA,832
 Jordan,JO,JOR,400,ISO 3166-2:JO,TRUE,142,Asia,145,Western Asia,NA,NA,400
 Kazakhstan,KZ,KAZ,398,ISO 3166-2:KZ,TRUE,142,Asia,143,Central Asia,NA,NA,398
 Kenya,KE,KEN,404,ISO 3166-2:KE,TRUE,2,Africa,202,Sub-Saharan Africa,14,Eastern Africa,404
@@ -152,10 +152,10 @@ Montserrat,MS,MSR,500,ISO 3166-2:MS,FALSE,19,Americas,419,Latin America and the 
 Morocco,MA,MAR,504,ISO 3166-2:MA,TRUE,2,Africa,15,Northern Africa,NA,NA,504
 Mozambique,MZ,MOZ,508,ISO 3166-2:MZ,TRUE,2,Africa,202,Sub-Saharan Africa,14,Eastern Africa,508
 Myanmar,MM,MMR,104,ISO 3166-2:MM,TRUE,142,Asia,35,South-eastern Asia,NA,NA,104
-Namibia,"NA","NAM",516,ISO 3166-2:NA,TRUE,2,Africa,202,Sub-Saharan Africa,18,Southern Africa,516
+Namibia,NA,NAM,516,ISO 3166-2:NA,TRUE,2,Africa,202,Sub-Saharan Africa,18,Southern Africa,516
 Nauru,NR,NRU,520,ISO 3166-2:NR,TRUE,9,Oceania,57,Micronesia,NA,NA,520
 Nepal,NP,NPL,524,ISO 3166-2:NP,TRUE,142,Asia,34,Southern Asia,NA,NA,524
-Netherlands,NL,NLD,528,ISO 3166-2:NL,TRUE,150,Europe,155,Western Europe,NA,NA,528
+"Netherlands, Kingdom of the",NL,NLD,528,ISO 3166-2:NL,TRUE,150,Europe,155,Western Europe,NA,NA,528
 New Caledonia,NC,NCL,540,ISO 3166-2:NC,FALSE,9,Oceania,54,Melanesia,NA,NA,540
 New Zealand,NZ,NZL,554,ISO 3166-2:NZ,TRUE,9,Oceania,53,Australia and New Zealand,NA,NA,554
 Nicaragua,NI,NIC,558,ISO 3166-2:NI,TRUE,19,Americas,419,Latin America and the Caribbean,13,Central America,558

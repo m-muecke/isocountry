@@ -7,10 +7,12 @@
 \format{
 A data frame with 269 rows and 4 variables:
 \describe{
-\item{country}{country name}
-\item{currency}{currency name}
-\item{code}{ISO currency code}
-\item{number}{ISO currency number}
+\item{currency_name}{ISO currency name}
+\item{currency_code}{ISO currency code}
+\item{currency_number}{ISO currency number}
+\item{country_name}{ISO country name}
+\item{country_code}{ISO alpha-2 country code}
+\item{country_number}{ISO country number}
 }
 }
 \source{
