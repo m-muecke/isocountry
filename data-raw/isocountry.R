@@ -1,22 +1,22 @@
 library(dplyr)
 library(rvest)
 
-isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") %>%
-  html_elements(".wikitable") %>%
-  .[[2]] %>%
-  html_table(convert = FALSE) %>%
+isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
+  html_elements(".wikitable") |>
+  _[[2]] |>
+  html_table(convert = FALSE) |>
   setNames(c(
     "name", "alpha_2", "alpha_3", "country_code", "iso_3166_2", "is_independent"
-  )) %>%
+  )) |>
   mutate(
     name = gsub("\\[[a-z]\\]$", "", name),
     is_independent = ifelse(is_independent == "Yes", TRUE, FALSE)
   )
 
-region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") %>%
-  html_element("table") %>%
-  html_table(header = TRUE, na.strings = "") %>%
-  rename_with(~ tolower(gsub(" |-", "_", .x))) %>%
+region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>
+  html_element("table") |>
+  html_table(header = TRUE, na.strings = "") |>
+  rename_with(~ tolower(gsub(" |-", "_", .x))) |>
   select(
     alpha_2 = iso_alpha2_code,
     region_code,
@@ -28,7 +28,7 @@ region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") %>%
     m49_code
   )
 
-isocountry <- isocountry %>%
+isocountry <- isocountry |>
   left_join(region, by = "alpha_2")
 
 readr::write_csv(isocountry, "data-raw/isocountry.csv")

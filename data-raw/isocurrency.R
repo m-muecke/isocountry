@@ -1,28 +1,28 @@
 library(dplyr)
 library(rvest)
 
-currency_codes <- read_html("https://www.iban.com/currency-codes") %>%
-  html_element("table") %>%
-  html_table(convert = FALSE) %>%
-  rename_with(tolower) %>%
+currency_codes <- read_html("https://www.iban.com/currency-codes") |>
+  html_element("table") |>
+  html_table(convert = FALSE) |>
+  rename_with(tolower) |>
   mutate(
     code = na_if(code, ""),
     number = na_if(number, ""),
     country = tolower(country)
-  ) %>%
+  ) |>
   filter(!is.na(code))
 
-country_codes <- read_html("https://www.iban.com/country-codes") %>%
-  html_element("table") %>%
-  html_table(convert = FALSE) %>%
-  rename_with(~ tolower(gsub(" |-", "_", .x))) %>%
+country_codes <- read_html("https://www.iban.com/country-codes") |>
+  html_element("table") |>
+  html_table(convert = FALSE) |>
+  rename_with(~ tolower(gsub(" |-", "_", .x))) |>
   mutate(
     country_name = country,
     country = tolower(country)
   )
 
-isocurrency <- currency_codes %>%
-  inner_join(country_codes, by = "country") %>%
+isocurrency <- currency_codes |>
+  inner_join(country_codes, by = "country") |>
   select(
     currency_name = currency,
     currency_code = code,
