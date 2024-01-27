@@ -3,6 +3,7 @@
 ^.dockerignore$
 ^.pre-commit-config.yaml$
 ^CITATION.cff$
+^CRAN-RELEASE$
 ^CRAN-SUBMISSION$
 ^Dockerfile$
 ^LICENSE\.md$
