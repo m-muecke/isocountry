@@ -1,3 +1,3 @@
-# isocountry 0.0.1
+# isocountry 0.1.0
 
 * Initial CRAN submission.
