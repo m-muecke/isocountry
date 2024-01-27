@@ -11,7 +11,7 @@ URL: https://m-muecke.github.io/isocountry,
     https://github.com/m-muecke/isocountry
 BugReports: https://github.com/m-muecke/isocountry/issues
 Depends:
-    R (>= 2.10)
+    R (>= 3.4.0)
 Imports:
     tibble
 Suggests:
@@ -19,4 +19,4 @@ Suggests:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.0
+RoxygenNote: 7.3.1
