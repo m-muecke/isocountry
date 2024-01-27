@@ -1,5 +1,5 @@
 Package: isocountry
-Title: ISO 3166-1 country codes
+Title: ISO 3166-1 Country Codes
 Version: 0.1.0
 Authors@R:
     person("Maximilian", "Muecke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
@@ -7,7 +7,7 @@ Authors@R:
 Description: ISO 3166-1 country codes provided by the International
     Organization for Standardization.
 License: MIT + file LICENSE
-URL: https://m-muecke.github.io/isocountry,
+URL: https://m-muecke.github.io/isocountry/,
     https://github.com/m-muecke/isocountry
 BugReports: https://github.com/m-muecke/isocountry/issues
 Depends:
