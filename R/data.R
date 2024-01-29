@@ -5,6 +5,9 @@ NULL
 #'
 #' ISO 3166-1 country codes with full country names.
 #'
+#' @source
+#' * <https://en.wikipedia.org/wiki/ISO_3166-1>
+#' * <https://unstats.un.org/unsd/methodology/m49/overview>
 #' @format A data frame with 249 rows and 13 variables:
 #' \describe{
 #'   \item{name}{country name}
@@ -21,15 +24,15 @@ NULL
 #'   \item{intermediate_region_name}{UN intermediate region name}
 #'   \item{m49_code}{UN M49 code}
 #' }
-#' @source
-#' * <https://en.wikipedia.org/wiki/ISO_3166-1>
-#' * <https://unstats.un.org/unsd/methodology/m49/overview>
+#' @examples
+#' isocountry
 "isocountry"
 
 #' ISO currency codes
 #'
 #' ISO 4217 currency codes with full country names.
 #'
+#' @source <https://www.iban.com/currency-codes>
 #' @format A data frame with 269 rows and 4 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
@@ -39,6 +42,6 @@ NULL
 #'   \item{country_code}{ISO alpha-2 country code}
 #'   \item{country_number}{ISO country number}
 #' }
-#' @source
-#' * <https://www.iban.com/currency-codes>
+#' @examples
+#' isocurrency
 "isocurrency"

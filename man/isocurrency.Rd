@@ -16,14 +16,15 @@ A data frame with 269 rows and 4 variables:
 }
 }
 \source{
-\itemize{
-\item \url{https://www.iban.com/currency-codes}
-}
+\url{https://www.iban.com/currency-codes}
 }
 \usage{
 isocurrency
 }
 \description{
 ISO 4217 currency codes with full country names.
+}
+\examples{
+isocurrency
 }
 \keyword{datasets}

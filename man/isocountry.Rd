@@ -34,4 +34,7 @@ isocountry
 \description{
 ISO 3166-1 country codes with full country names.
 }
+\examples{
+isocountry
+}
 \keyword{datasets}
