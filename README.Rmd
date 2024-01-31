@@ -28,7 +28,13 @@ Package is insipred by the [ISO-3166-Countries-with-Regional-Codes](https://gith
 
 ## Installation
 
-You can install the development version of isocountry from [GitHub](https://github.com/) with:
+You can install the released version of **isocountry** from [CRAN](https://CRAN.R-project.org) with:
+
+```{r, eval = FALSE}
+install.packages("isocountry")
+```
+
+And the development version from [GitHub](https://github.com/) with:
 
 ```{r, eval = FALSE}
 # install.packages("pak")
