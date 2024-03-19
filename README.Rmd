@@ -49,5 +49,5 @@ library(dplyr)
 library(isocountry)
 
 isocountry |>
-  left_join(isocurrency, by = c("alpha_2" = "country_code"))
+  left_join(isocurrency, by = join_by(alpha_2 == country_code))
 ```

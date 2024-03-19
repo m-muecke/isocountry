@@ -25,7 +25,7 @@ Belize,BZ,BLZ,084,ISO 3166-2:BZ,TRUE,19,Americas,419,Latin America and the Carib
 Benin,BJ,BEN,204,ISO 3166-2:BJ,TRUE,2,Africa,202,Sub-Saharan Africa,11,Western Africa,204
 Bermuda,BM,BMU,060,ISO 3166-2:BM,FALSE,19,Americas,21,Northern America,NA,NA,60
 Bhutan,BT,BTN,064,ISO 3166-2:BT,TRUE,142,Asia,34,Southern Asia,NA,NA,64
-Bolivia (Plurinational State of),BO,BOL,068,ISO 3166-2:BO,TRUE,19,Americas,419,Latin America and the Caribbean,5,South America,68
+"Bolivia, Plurinational State of",BO,BOL,068,ISO 3166-2:BO,TRUE,19,Americas,419,Latin America and the Caribbean,5,South America,68
 "Bonaire, Sint Eustatius and Saba",BQ,BES,535,ISO 3166-2:BQ,FALSE,19,Americas,419,Latin America and the Caribbean,29,Caribbean,535
 Bosnia and Herzegovina,BA,BIH,070,ISO 3166-2:BA,TRUE,150,Europe,39,Southern Europe,NA,NA,70
 Botswana,BW,BWA,072,ISO 3166-2:BW,TRUE,2,Africa,202,Sub-Saharan Africa,18,Southern Africa,72
@@ -104,7 +104,7 @@ Hungary,HU,HUN,348,ISO 3166-2:HU,TRUE,150,Europe,151,Eastern Europe,NA,NA,348
 Iceland,IS,ISL,352,ISO 3166-2:IS,TRUE,150,Europe,154,Northern Europe,NA,NA,352
 India,IN,IND,356,ISO 3166-2:IN,TRUE,142,Asia,34,Southern Asia,NA,NA,356
 Indonesia,ID,IDN,360,ISO 3166-2:ID,TRUE,142,Asia,35,South-eastern Asia,NA,NA,360
-Iran (Islamic Republic of),IR,IRN,364,ISO 3166-2:IR,TRUE,142,Asia,34,Southern Asia,NA,NA,364
+"Iran, Islamic Republic of",IR,IRN,364,ISO 3166-2:IR,TRUE,142,Asia,34,Southern Asia,NA,NA,364
 Iraq,IQ,IRQ,368,ISO 3166-2:IQ,TRUE,142,Asia,145,Western Asia,NA,NA,368
 Ireland,IE,IRL,372,ISO 3166-2:IE,TRUE,150,Europe,154,Northern Europe,NA,NA,372
 Isle of Man,IM,IMN,833,ISO 3166-2:IM,FALSE,150,Europe,154,Northern Europe,NA,NA,833
@@ -117,7 +117,7 @@ Jordan,JO,JOR,400,ISO 3166-2:JO,TRUE,142,Asia,145,Western Asia,NA,NA,400
 Kazakhstan,KZ,KAZ,398,ISO 3166-2:KZ,TRUE,142,Asia,143,Central Asia,NA,NA,398
 Kenya,KE,KEN,404,ISO 3166-2:KE,TRUE,2,Africa,202,Sub-Saharan Africa,14,Eastern Africa,404
 Kiribati,KI,KIR,296,ISO 3166-2:KI,TRUE,9,Oceania,57,Micronesia,NA,NA,296
-Korea (Democratic People's Republic of),KP,PRK,408,ISO 3166-2:KP,TRUE,142,Asia,30,Eastern Asia,NA,NA,408
+"Korea, Democratic People's Republic of",KP,PRK,408,ISO 3166-2:KP,TRUE,142,Asia,30,Eastern Asia,NA,NA,408
 "Korea, Republic of",KR,KOR,410,ISO 3166-2:KR,TRUE,142,Asia,30,Eastern Asia,NA,NA,410
 Kuwait,KW,KWT,414,ISO 3166-2:KW,TRUE,142,Asia,145,Western Asia,NA,NA,414
 Kyrgyzstan,KG,KGZ,417,ISO 3166-2:KG,TRUE,142,Asia,143,Central Asia,NA,NA,417
@@ -143,7 +143,7 @@ Mauritania,MR,MRT,478,ISO 3166-2:MR,TRUE,2,Africa,202,Sub-Saharan Africa,11,West
 Mauritius,MU,MUS,480,ISO 3166-2:MU,TRUE,2,Africa,202,Sub-Saharan Africa,14,Eastern Africa,480
 Mayotte,YT,MYT,175,ISO 3166-2:YT,FALSE,2,Africa,202,Sub-Saharan Africa,14,Eastern Africa,175
 Mexico,MX,MEX,484,ISO 3166-2:MX,TRUE,19,Americas,419,Latin America and the Caribbean,13,Central America,484
-Micronesia (Federated States of),FM,FSM,583,ISO 3166-2:FM,TRUE,9,Oceania,57,Micronesia,NA,NA,583
+"Micronesia, Federated States of",FM,FSM,583,ISO 3166-2:FM,TRUE,9,Oceania,57,Micronesia,NA,NA,583
 "Moldova, Republic of",MD,MDA,498,ISO 3166-2:MD,TRUE,150,Europe,151,Eastern Europe,NA,NA,498
 Monaco,MC,MCO,492,ISO 3166-2:MC,TRUE,150,Europe,155,Western Europe,NA,NA,492
 Mongolia,MN,MNG,496,ISO 3166-2:MN,TRUE,142,Asia,30,Eastern Asia,NA,NA,496
@@ -239,7 +239,7 @@ United States Minor Outlying Islands,UM,UMI,581,ISO 3166-2:UM,FALSE,9,Oceania,57
 Uruguay,UY,URY,858,ISO 3166-2:UY,TRUE,19,Americas,419,Latin America and the Caribbean,5,South America,858
 Uzbekistan,UZ,UZB,860,ISO 3166-2:UZ,TRUE,142,Asia,143,Central Asia,NA,NA,860
 Vanuatu,VU,VUT,548,ISO 3166-2:VU,TRUE,9,Oceania,54,Melanesia,NA,NA,548
-Venezuela (Bolivarian Republic of),VE,VEN,862,ISO 3166-2:VE,TRUE,19,Americas,419,Latin America and the Caribbean,5,South America,862
+"Venezuela, Bolivarian Republic of",VE,VEN,862,ISO 3166-2:VE,TRUE,19,Americas,419,Latin America and the Caribbean,5,South America,862
 Viet Nam,VN,VNM,704,ISO 3166-2:VN,TRUE,142,Asia,35,South-eastern Asia,NA,NA,704
 Virgin Islands (British),VG,VGB,092,ISO 3166-2:VG,FALSE,19,Americas,419,Latin America and the Caribbean,29,Caribbean,92
 Virgin Islands (U.S.),VI,VIR,850,ISO 3166-2:VI,FALSE,19,Americas,419,Latin America and the Caribbean,29,Caribbean,850

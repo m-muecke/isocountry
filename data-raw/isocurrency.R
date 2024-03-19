@@ -10,7 +10,7 @@ currency_codes <- read_html("https://www.iban.com/currency-codes") |>
     number = na_if(number, ""),
     country = tolower(country)
   ) |>
-  filter(!is.na(code))
+  tidyr::drop_na(code)
 
 country_codes <- read_html("https://www.iban.com/country-codes") |>
   html_element("table") |>
@@ -22,7 +22,7 @@ country_codes <- read_html("https://www.iban.com/country-codes") |>
   )
 
 isocurrency <- currency_codes |>
-  inner_join(country_codes, by = "country") |>
+  inner_join(country_codes, by = join_by(country)) |>
   select(
     currency_name = currency,
     currency_code = code,

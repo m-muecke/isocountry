@@ -47,7 +47,7 @@ library(dplyr)
 library(isocountry)
 
 isocountry |>
-  left_join(isocurrency, by = c("alpha_2" = "country_code"))
+  left_join(isocurrency, by = join_by(alpha_2 == country_code))
 #> # A tibble: 263 × 18
 #>    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code
 #>    <chr>      <chr>   <chr>   <chr>        <chr>      <lgl>                <int>
