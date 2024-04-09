@@ -33,7 +33,5 @@ jobs:
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git add .
-          git commit -m 'chore: refresh data'
-      - uses: r-lib/actions/pr-push@v2
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          git commit -m 'chore: refresh data' || exit 0
+          git push origin
