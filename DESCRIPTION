@@ -4,8 +4,8 @@ Version: 0.2.0
 Authors@R:
     person("Maximilian", "Muecke", , "muecke.maximilian@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0000-9432-9795"))
-Description: ISO 3166-1 country codes provided by the International
-    Organization for Standardization.
+Description: ISO 3166-1 country codes and ISO 4217 currency codes provided
+    by the International Organization for Standardization.
 License: MIT + file LICENSE
 URL: https://m-muecke.github.io/isocountry/,
     https://github.com/m-muecke/isocountry
