@@ -27,4 +27,4 @@ jobs:
       - name: Fetch latest isocountry data
         run: Rscript data-raw/isocountry.R
       - name: Fetch latest isocurrency data
-        run: Rscript data-raw/isocurreny.R
+        run: Rscript data-raw/isocurrency.R
