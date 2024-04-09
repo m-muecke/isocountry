@@ -23,7 +23,7 @@ jobs:
       - name: Set up R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::rvest any::usethis
+          extra-packages: any::rvest any::usethis any::tidyr
       - name: Fetch latest isocountry data
         run: Rscript data-raw/isocountry.R
       - name: Fetch latest isocurrency data
