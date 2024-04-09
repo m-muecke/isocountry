@@ -32,5 +32,5 @@ isocurrency <- currency_codes |>
     country_number = numeric
   )
 
-readr::write_csv(isocurrency, "data-raw/isocurrency.csv")
+write.csv(isocurrency, "data-raw/isocurrency.csv", row.names = FALSE)
 usethis::use_data(isocurrency, overwrite = TRUE)

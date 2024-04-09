@@ -31,5 +31,5 @@ region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>
 isocountry <- isocountry |>
   left_join(region, by = join_by(alpha_2))
 
-readr::write_csv(isocountry, "data-raw/isocountry.csv")
+write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE)
 usethis::use_data(isocountry, overwrite = TRUE)
