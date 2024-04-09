@@ -28,3 +28,12 @@ jobs:
         run: Rscript data-raw/isocountry.R
       - name: Fetch latest isocurrency data
         run: Rscript data-raw/isocurrency.R
+      - name: commit
+        run: |
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git add .
+          git commit -m 'chore: refresh data'
+      - uses: r-lib/actions/pr-push@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
