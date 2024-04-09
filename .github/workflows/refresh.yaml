@@ -21,7 +21,7 @@ jobs:
       - name: Set up R dependencies
         run: pak::pkg_install(c("rvest", "dplyr", "usethis"))
         shell: Rscript {0}
-      - name: Refresh isocountry
-        uses: Rscript data-raw/isocountry.R
-      - name: Refresh isocurreny
-        uses: Rscript data-raw/isocurreny.R
+      - name: Fetch latest isocountry data
+        run: Rscript data-raw/isocountry.R
+      - name: Fetch latest isocurreny data
+        run: Rscript data-raw/isocurreny.R
