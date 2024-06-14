@@ -15,7 +15,7 @@ currency_codes <- read_html("https://www.iban.com/currency-codes") |>
 country_codes <- read_html("https://www.iban.com/country-codes") |>
   html_element("table") |>
   html_table(convert = FALSE) |>
-  rename_with(~ tolower(gsub(" |-", "_", .x))) |>
+  rename_with(\(x) tolower(gsub(" |-", "_", x))) |>
   mutate(
     country_name = country,
     country = tolower(country)

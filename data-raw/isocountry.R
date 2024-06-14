@@ -3,7 +3,7 @@ library(rvest)
 
 isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
   html_elements(".wikitable") |>
-  _[[2]] |>
+  _[[2L]] |>
   html_table(convert = FALSE) |>
   setNames(c(
     "name", "alpha_2", "alpha_3", "country_code", "iso_3166_2", "is_independent"
@@ -16,7 +16,7 @@ isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
 region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>
   html_element("table") |>
   html_table(header = TRUE, na.strings = "") |>
-  rename_with(~ tolower(gsub(" |-", "_", .x))) |>
+  rename_with(\(x) tolower(gsub(" |-", "_", x))) |>
   select(
     alpha_2 = iso_alpha2_code,
     region_code,
