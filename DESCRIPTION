@@ -11,7 +11,7 @@ URL: https://m-muecke.github.io/isocountry/,
     https://github.com/m-muecke/isocountry
 BugReports: https://github.com/m-muecke/isocountry/issues
 Depends:
-    R (>= 3.4.0)
+    R (>= 3.5)
 Imports:
     tibble
 Suggests:
