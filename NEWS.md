@@ -1,4 +1,4 @@
-# isocountry (development version)
+# isocountry 0.3.0
 
 * Updated the `isocountry` data to the latest version (2024-11).
 
