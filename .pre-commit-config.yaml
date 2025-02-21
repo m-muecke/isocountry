@@ -21,6 +21,5 @@ repos:
         exclude: data-raw
       - id: no-browser-statement
       - id: parsable-R
-      - id: style-files
       - id: readme-rmd-rendered
       - id: use-tidy-description
