@@ -3,7 +3,7 @@ library(rvest)
 
 isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
   html_elements(".wikitable") |>
-  _[[2L]] |>
+  _[[3L]] |>
   html_table(convert = FALSE) |>
   setNames(c(
     "name",
