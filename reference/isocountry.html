@@ -101,16 +101,20 @@
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">isocountry</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 7 × 13</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   name        alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> AFGHANISTAN <span style="color: #949494;">"</span>Afgha… Yes[6]  <span style="color: #949494;">"</span>.mw-parser… Under the… FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> CHINA       <span style="color: #949494;">"</span>China… Yes[7]  <span style="color: #949494;">"</span>Zhongguo (… Disputed … FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> CYPRUS      <span style="color: #949494;">"</span>Cypru… Yes[8]  <span style="color: #949494;">"</span>Kýpros (el… Disputed … FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> FALKLAND I… <span style="color: #949494;">"</span>Falkl… No[9]   <span style="color: #949494;">"</span>Falkland I… Disputed … FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> PALESTINE,… <span style="color: #949494;">"</span>Pales… No[10]  <span style="color: #949494;">"</span>Dawlat Fil… Disputed … FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> TAIWAN,  P… <span style="color: #949494;">"</span>Taiwa… No[11]  <span style="color: #949494;">"</span>Taiwan (zh… Disputed … FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> WESTERN SA… <span style="color: #949494;">"</span>Weste… No[12]  <span style="color: #949494;">"</span>Aş Şaḩrā' … Disputed … FALSE                   <span style="color: #BB0000;">NA</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 249 × 13</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Åland Isl… AX      ALA     248          ISO 3166-… FALSE                  150</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Albania    AL      ALB     008          ISO 3166-… TRUE                   150</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Algeria    DZ      DZA     012          ISO 3166-… TRUE                     2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> American … AS      ASM     016          ISO 3166-… FALSE                    9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Andorra    AD      AND     020          ISO 3166-… TRUE                   150</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Angola     AO      AGO     024          ISO 3166-… TRUE                     2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Anguilla   AI      AIA     660          ISO 3166-… FALSE                   19</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Antarctica AQ      ATA     010          ISO 3166-… FALSE                   <span style="color: #BB0000;">NA</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 239 more rows</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 6 more variables: region_name &lt;chr&gt;, subregion_code &lt;int&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   subregion_name &lt;chr&gt;, intermediate_region_code &lt;int&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   intermediate_region_name &lt;chr&gt;, m49_code &lt;int&gt;</span></span>
@@ -125,7 +129,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.2.</p>
 </div>
 
     </footer></div>
