@@ -87,7 +87,7 @@
 <span></span>
 <span><span class="va">isocountry</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">isocurrency</span>, by <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/join_by.html" class="external-link">join_by</a></span><span class="op">(</span><span class="va">alpha_2</span> <span class="op">==</span> <span class="va">country_code</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 263 × 18</span></span>
+<span><span class="co">#&gt; # A tibble: 265 × 18</span></span>
 <span><span class="co">#&gt;    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;      &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;      &lt;lgl&gt;                &lt;int&gt;</span></span>
 <span><span class="co">#&gt;  1 Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142</span></span>
@@ -100,7 +100,7 @@
 <span><span class="co">#&gt;  8 Anguilla   AI      AIA     660          ISO 3166-… FALSE                   19</span></span>
 <span><span class="co">#&gt;  9 Antarctica AQ      ATA     010          ISO 3166-… FALSE                   NA</span></span>
 <span><span class="co">#&gt; 10 Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19</span></span>
-<span><span class="co">#&gt; # ℹ 253 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 255 more rows</span></span>
 <span><span class="co">#&gt; # ℹ 11 more variables: region_name &lt;chr&gt;, subregion_code &lt;int&gt;,</span></span>
 <span><span class="co">#&gt; #   subregion_name &lt;chr&gt;, intermediate_region_code &lt;int&gt;,</span></span>
 <span><span class="co">#&gt; #   intermediate_region_name &lt;chr&gt;, m49_code &lt;int&gt;, currency_name &lt;chr&gt;,</span></span>
