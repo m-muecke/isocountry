@@ -1,6 +1,13 @@
 library(dplyr)
 library(rvest)
 
+str_squish <- function(x) {
+  x |>
+    tolower() |>
+    trimws() |>
+    gsub("\\s+", " ", x = _)
+}
+
 currency_codes <- read_html("https://www.iban.com/currency-codes") |>
   html_element("table") |>
   html_table(convert = FALSE) |>
@@ -8,7 +15,7 @@ currency_codes <- read_html("https://www.iban.com/currency-codes") |>
   mutate(
     code = na_if(code, ""),
     number = na_if(number, ""),
-    country = tolower(country)
+    country = str_squish(country)
   ) |>
   tidyr::drop_na(code)
 
@@ -18,7 +25,7 @@ country_codes <- read_html("https://www.iban.com/country-codes") |>
   rename_with(\(x) tolower(gsub(" |-", "_", x))) |>
   mutate(
     country_name = country,
-    country = tolower(country)
+    country = str_squish(country)
   )
 
 isocurrency <- currency_codes |>
