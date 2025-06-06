@@ -15,7 +15,7 @@ isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
   )) |>
   mutate(
     name = gsub("\\[[a-z]\\]$", "", name),
-    is_independent = ifelse(is_independent == "Yes", TRUE, FALSE)
+    is_independent = is_independent == "Yes"
   )
 
 region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>

@@ -4,7 +4,8 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r}
+#| include: false
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -31,20 +32,23 @@ Package is insipred by the [ISO-3166-Countries-with-Regional-Codes](https://gith
 
 You can install the released version of **isocountry** from [CRAN](https://CRAN.R-project.org) with:
 
-```{r, eval = FALSE}
+```{r}
+#| eval: false
 install.packages("isocountry")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
 
-```{r, eval = FALSE}
+```{r}
+#| eval: false
 # install.packages("pak")
 pak::pak("m-muecke/isocountry")
 ```
 
 ## Usage
 
-```{r, message = FALSE}
+```{r}
+#| message: FALSE
 library(dplyr)
 library(isocountry)
 
