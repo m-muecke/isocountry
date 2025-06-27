@@ -87,7 +87,7 @@
 <span></span>
 <span><span class="va">isocountry</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">isocurrency</span>, by <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/join_by.html" class="external-link">join_by</a></span><span class="op">(</span><span class="va">alpha_2</span> <span class="op">==</span> <span class="va">country_code</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 265 × 21</span></span>
+<span><span class="co">#&gt; # A tibble: 265 × 22</span></span>
 <span><span class="co">#&gt;    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code</span></span>
 <span><span class="co">#&gt;    &lt;chr&gt;      &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;      &lt;lgl&gt;                &lt;int&gt;</span></span>
 <span><span class="co">#&gt;  1 Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142</span></span>
@@ -101,10 +101,10 @@
 <span><span class="co">#&gt;  9 Antarctica AQ      ATA     010          ISO 3166-… FALSE                   NA</span></span>
 <span><span class="co">#&gt; 10 Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19</span></span>
 <span><span class="co">#&gt; # ℹ 255 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 14 more variables: region_name &lt;chr&gt;, subregion_code &lt;int&gt;,</span></span>
+<span><span class="co">#&gt; # ℹ 15 more variables: region_name &lt;chr&gt;, subregion_code &lt;int&gt;,</span></span>
 <span><span class="co">#&gt; #   subregion_name &lt;chr&gt;, intermediate_region_code &lt;int&gt;,</span></span>
 <span><span class="co">#&gt; #   intermediate_region_name &lt;chr&gt;, m49_code &lt;int&gt;, oecd_member &lt;lgl&gt;,</span></span>
-<span><span class="co">#&gt; #   eu_member &lt;lgl&gt;, emu_member &lt;lgl&gt;, currency_name &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   eu_member &lt;lgl&gt;, emu_member &lt;lgl&gt;, eea_member &lt;lgl&gt;, currency_name &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   currency_code &lt;chr&gt;, currency_number &lt;chr&gt;, country_name &lt;chr&gt;,</span></span>
 <span><span class="co">#&gt; #   country_number &lt;chr&gt;</span></span></code></pre></div>
 </div>
