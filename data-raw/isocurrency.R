@@ -15,7 +15,7 @@ currency_codes <- read_html("https://www.iban.com/currency-codes") |>
   mutate(
     code = na_if(code, ""),
     number = na_if(number, ""),
-    country = str_squish(country)
+    country = country |> gsub("\u2019", "'", x = _) |> str_squish()
   ) |>
   tidyr::drop_na(code)
 
@@ -24,11 +24,14 @@ country_codes <- read_html("https://www.iban.com/country-codes") |>
   html_table(convert = FALSE) |>
   rename_with(\(x) tolower(gsub(" |-", "_", x))) |>
   mutate(
+    country = gsub("\u2019", "'", country),
     country_name = country,
     country = str_squish(country)
   )
 
 isocurrency <- currency_codes |>
+  # TODO: remove country name fix once the source is updated
+  mutate(country = replace(country, grepl("czech republic", country), "czechia")) |>
   inner_join(country_codes, by = join_by(country)) |>
   select(
     currency_name = currency,

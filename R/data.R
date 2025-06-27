@@ -43,7 +43,7 @@ NULL
 #' ISO 4217 currency codes with full country names.
 #'
 #' @source <https://www.iban.com/currency-codes>
-#' @format A data frame with 269 rows and 4 variables:
+#' @format A data frame with 261 rows and 6 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
 #'   \item{currency_code}{ISO currency code}

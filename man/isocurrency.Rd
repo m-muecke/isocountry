@@ -5,7 +5,7 @@
 \alias{isocurrency}
 \title{ISO currency codes}
 \format{
-A data frame with 269 rows and 4 variables:
+A data frame with 261 rows and 6 variables:
 \describe{
 \item{currency_name}{ISO currency name}
 \item{currency_code}{ISO currency code}
