@@ -26,7 +26,7 @@ region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>
     m49_code
   )
 
-oecd <- read_html("https://en.wikipedia.org/wiki/OECD") |>
+oecd_member <- read_html("https://en.wikipedia.org/wiki/OECD") |>
   html_elements(".wikitable") |>
   _[[3L]] |>
   html_table(convert = FALSE) |>
@@ -47,13 +47,28 @@ oecd <- read_html("https://en.wikipedia.org/wiki/OECD") |>
   ) |>
   select(country, oecd_member)
 
+eu_member <- read_html("https://en.wikipedia.org/wiki/Member_state_of_the_European_Union") |>
+  html_elements(".wikitable") |>
+  _[[1L]] |>
+  html_table(convert = FALSE) |>
+  rename_with(tolower) |>
+  mutate(eu_member = TRUE) |>
+  select(iso, eu_member)
+
 isocountry <- isocountry |>
   left_join(region, by = join_by(alpha_2)) |>
-  left_join(oecd, by = join_by(name == country)) |>
-  mutate(oecd_member = replace(oecd_member, is.na(oecd_member), FALSE))
+  left_join(oecd_member, by = join_by(name == country)) |>
+  left_join(eu_member, by = join_by(alpha_2 == iso)) |>
+  mutate(
+    oecd_member = replace(oecd_member, is.na(oecd_member), FALSE),
+    eu_member = replace(eu_member, is.na(eu_member), FALSE)
+  )
 
-if (sum(isocountry$oecd_member) != nrow(oecd)) {
+if (sum(isocountry$oecd_member) != nrow(oecd_member)) {
   stop("Not all OECD members are present in the isocountry dataset.")
+}
+if (sum(isocountry$eu_member) != nrow(eu_member)) {
+  stop("Not all EU members are present in the isocountry dataset.")
 }
 
 write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE)
