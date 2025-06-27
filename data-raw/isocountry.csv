@@ -1,250 +1,250 @@
-"name","alpha_2","alpha_3","country_code","iso_3166_2","is_independent","region_code","region_name","subregion_code","subregion_name","intermediate_region_code","intermediate_region_name","m49_code","oecd_member","eu_member","emu_member"
-"Afghanistan","AF","AFG","004","ISO 3166-2:AF",TRUE,142,"Asia",34,"Southern Asia",NA,NA,4,FALSE,FALSE,FALSE
-"Åland Islands","AX","ALA","248","ISO 3166-2:AX",FALSE,150,"Europe",154,"Northern Europe",NA,NA,248,FALSE,FALSE,FALSE
-"Albania","AL","ALB","008","ISO 3166-2:AL",TRUE,150,"Europe",39,"Southern Europe",NA,NA,8,FALSE,FALSE,FALSE
-"Algeria","DZ","DZA","012","ISO 3166-2:DZ",TRUE,2,"Africa",15,"Northern Africa",NA,NA,12,FALSE,FALSE,FALSE
-"American Samoa","AS","ASM","016","ISO 3166-2:AS",FALSE,9,"Oceania",61,"Polynesia",NA,NA,16,FALSE,FALSE,FALSE
-"Andorra","AD","AND","020","ISO 3166-2:AD",TRUE,150,"Europe",39,"Southern Europe",NA,NA,20,FALSE,FALSE,FALSE
-"Angola","AO","AGO","024","ISO 3166-2:AO",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",24,FALSE,FALSE,FALSE
-"Anguilla","AI","AIA","660","ISO 3166-2:AI",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",660,FALSE,FALSE,FALSE
-"Antarctica","AQ","ATA","010","ISO 3166-2:AQ",FALSE,NA,NA,NA,NA,NA,NA,10,FALSE,FALSE,FALSE
-"Antigua and Barbuda","AG","ATG","028","ISO 3166-2:AG",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",28,FALSE,FALSE,FALSE
-"Argentina","AR","ARG","032","ISO 3166-2:AR",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",32,FALSE,FALSE,FALSE
-"Armenia","AM","ARM","051","ISO 3166-2:AM",TRUE,142,"Asia",145,"Western Asia",NA,NA,51,FALSE,FALSE,FALSE
-"Aruba","AW","ABW","533","ISO 3166-2:AW",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",533,FALSE,FALSE,FALSE
-"Australia","AU","AUS","036","ISO 3166-2:AU",TRUE,9,"Oceania",53,"Australia and New Zealand",NA,NA,36,TRUE,FALSE,FALSE
-"Austria","AT","AUT","040","ISO 3166-2:AT",TRUE,150,"Europe",155,"Western Europe",NA,NA,40,TRUE,TRUE,TRUE
-"Azerbaijan","AZ","AZE","031","ISO 3166-2:AZ",TRUE,142,"Asia",145,"Western Asia",NA,NA,31,FALSE,FALSE,FALSE
-"Bahamas","BS","BHS","044","ISO 3166-2:BS",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",44,FALSE,FALSE,FALSE
-"Bahrain","BH","BHR","048","ISO 3166-2:BH",TRUE,142,"Asia",145,"Western Asia",NA,NA,48,FALSE,FALSE,FALSE
-"Bangladesh","BD","BGD","050","ISO 3166-2:BD",TRUE,142,"Asia",34,"Southern Asia",NA,NA,50,FALSE,FALSE,FALSE
-"Barbados","BB","BRB","052","ISO 3166-2:BB",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",52,FALSE,FALSE,FALSE
-"Belarus","BY","BLR","112","ISO 3166-2:BY",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,112,FALSE,FALSE,FALSE
-"Belgium","BE","BEL","056","ISO 3166-2:BE",TRUE,150,"Europe",155,"Western Europe",NA,NA,56,TRUE,TRUE,TRUE
-"Belize","BZ","BLZ","084","ISO 3166-2:BZ",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",84,FALSE,FALSE,FALSE
-"Benin","BJ","BEN","204","ISO 3166-2:BJ",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",204,FALSE,FALSE,FALSE
-"Bermuda","BM","BMU","060","ISO 3166-2:BM",FALSE,19,"Americas",21,"Northern America",NA,NA,60,FALSE,FALSE,FALSE
-"Bhutan","BT","BTN","064","ISO 3166-2:BT",TRUE,142,"Asia",34,"Southern Asia",NA,NA,64,FALSE,FALSE,FALSE
-"Bolivia, Plurinational State of","BO","BOL","068","ISO 3166-2:BO",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",68,FALSE,FALSE,FALSE
-"Bonaire, Sint Eustatius and Saba","BQ","BES","535","ISO 3166-2:BQ",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",535,FALSE,FALSE,FALSE
-"Bosnia and Herzegovina","BA","BIH","070","ISO 3166-2:BA",TRUE,150,"Europe",39,"Southern Europe",NA,NA,70,FALSE,FALSE,FALSE
-"Botswana","BW","BWA","072","ISO 3166-2:BW",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",72,FALSE,FALSE,FALSE
-"Bouvet Island","BV","BVT","074","ISO 3166-2:BV",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",74,FALSE,FALSE,FALSE
-"Brazil","BR","BRA","076","ISO 3166-2:BR",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",76,FALSE,FALSE,FALSE
-"British Indian Ocean Territory","IO","IOT","086","ISO 3166-2:IO",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",86,FALSE,FALSE,FALSE
-"Brunei Darussalam","BN","BRN","096","ISO 3166-2:BN",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,96,FALSE,FALSE,FALSE
-"Bulgaria","BG","BGR","100","ISO 3166-2:BG",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,100,FALSE,TRUE,FALSE
-"Burkina Faso","BF","BFA","854","ISO 3166-2:BF",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",854,FALSE,FALSE,FALSE
-"Burundi","BI","BDI","108","ISO 3166-2:BI",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",108,FALSE,FALSE,FALSE
-"Cabo Verde","CV","CPV","132","ISO 3166-2:CV",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",132,FALSE,FALSE,FALSE
-"Cambodia","KH","KHM","116","ISO 3166-2:KH",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,116,FALSE,FALSE,FALSE
-"Cameroon","CM","CMR","120","ISO 3166-2:CM",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",120,FALSE,FALSE,FALSE
-"Canada","CA","CAN","124","ISO 3166-2:CA",TRUE,19,"Americas",21,"Northern America",NA,NA,124,TRUE,FALSE,FALSE
-"Cayman Islands","KY","CYM","136","ISO 3166-2:KY",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",136,FALSE,FALSE,FALSE
-"Central African Republic","CF","CAF","140","ISO 3166-2:CF",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",140,FALSE,FALSE,FALSE
-"Chad","TD","TCD","148","ISO 3166-2:TD",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",148,FALSE,FALSE,FALSE
-"Chile","CL","CHL","152","ISO 3166-2:CL",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",152,TRUE,FALSE,FALSE
-"China","CN","CHN","156","ISO 3166-2:CN",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,156,FALSE,FALSE,FALSE
-"Christmas Island","CX","CXR","162","ISO 3166-2:CX",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,162,FALSE,FALSE,FALSE
-"Cocos (Keeling) Islands","CC","CCK","166","ISO 3166-2:CC",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,166,FALSE,FALSE,FALSE
-"Colombia","CO","COL","170","ISO 3166-2:CO",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",170,TRUE,FALSE,FALSE
-"Comoros","KM","COM","174","ISO 3166-2:KM",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",174,FALSE,FALSE,FALSE
-"Congo","CG","COG","178","ISO 3166-2:CG",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",178,FALSE,FALSE,FALSE
-"Congo, Democratic Republic of the","CD","COD","180","ISO 3166-2:CD",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",180,FALSE,FALSE,FALSE
-"Cook Islands","CK","COK","184","ISO 3166-2:CK",FALSE,9,"Oceania",61,"Polynesia",NA,NA,184,FALSE,FALSE,FALSE
-"Costa Rica","CR","CRI","188","ISO 3166-2:CR",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",188,TRUE,FALSE,FALSE
-"Côte d'Ivoire","CI","CIV","384","ISO 3166-2:CI",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",384,FALSE,FALSE,FALSE
-"Croatia","HR","HRV","191","ISO 3166-2:HR",TRUE,150,"Europe",39,"Southern Europe",NA,NA,191,FALSE,TRUE,TRUE
-"Cuba","CU","CUB","192","ISO 3166-2:CU",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",192,FALSE,FALSE,FALSE
-"Curaçao","CW","CUW","531","ISO 3166-2:CW",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",531,FALSE,FALSE,FALSE
-"Cyprus","CY","CYP","196","ISO 3166-2:CY",TRUE,142,"Asia",145,"Western Asia",NA,NA,196,FALSE,TRUE,TRUE
-"Czechia","CZ","CZE","203","ISO 3166-2:CZ",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,203,TRUE,TRUE,FALSE
-"Denmark","DK","DNK","208","ISO 3166-2:DK",TRUE,150,"Europe",154,"Northern Europe",NA,NA,208,TRUE,TRUE,FALSE
-"Djibouti","DJ","DJI","262","ISO 3166-2:DJ",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",262,FALSE,FALSE,FALSE
-"Dominica","DM","DMA","212","ISO 3166-2:DM",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",212,FALSE,FALSE,FALSE
-"Dominican Republic","DO","DOM","214","ISO 3166-2:DO",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",214,FALSE,FALSE,FALSE
-"Ecuador","EC","ECU","218","ISO 3166-2:EC",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",218,FALSE,FALSE,FALSE
-"Egypt","EG","EGY","818","ISO 3166-2:EG",TRUE,2,"Africa",15,"Northern Africa",NA,NA,818,FALSE,FALSE,FALSE
-"El Salvador","SV","SLV","222","ISO 3166-2:SV",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",222,FALSE,FALSE,FALSE
-"Equatorial Guinea","GQ","GNQ","226","ISO 3166-2:GQ",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",226,FALSE,FALSE,FALSE
-"Eritrea","ER","ERI","232","ISO 3166-2:ER",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",232,FALSE,FALSE,FALSE
-"Estonia","EE","EST","233","ISO 3166-2:EE",TRUE,150,"Europe",154,"Northern Europe",NA,NA,233,TRUE,TRUE,TRUE
-"Eswatini","SZ","SWZ","748","ISO 3166-2:SZ",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",748,FALSE,FALSE,FALSE
-"Ethiopia","ET","ETH","231","ISO 3166-2:ET",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",231,FALSE,FALSE,FALSE
-"Falkland Islands (Malvinas)","FK","FLK","238","ISO 3166-2:FK",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",238,FALSE,FALSE,FALSE
-"Faroe Islands","FO","FRO","234","ISO 3166-2:FO",FALSE,150,"Europe",154,"Northern Europe",NA,NA,234,FALSE,FALSE,FALSE
-"Fiji","FJ","FJI","242","ISO 3166-2:FJ",TRUE,9,"Oceania",54,"Melanesia",NA,NA,242,FALSE,FALSE,FALSE
-"Finland","FI","FIN","246","ISO 3166-2:FI",TRUE,150,"Europe",154,"Northern Europe",NA,NA,246,TRUE,TRUE,TRUE
-"France","FR","FRA","250","ISO 3166-2:FR",TRUE,150,"Europe",155,"Western Europe",NA,NA,250,TRUE,TRUE,TRUE
-"French Guiana","GF","GUF","254","ISO 3166-2:GF",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",254,FALSE,FALSE,FALSE
-"French Polynesia","PF","PYF","258","ISO 3166-2:PF",FALSE,9,"Oceania",61,"Polynesia",NA,NA,258,FALSE,FALSE,FALSE
-"French Southern Territories","TF","ATF","260","ISO 3166-2:TF",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",260,FALSE,FALSE,FALSE
-"Gabon","GA","GAB","266","ISO 3166-2:GA",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",266,FALSE,FALSE,FALSE
-"Gambia","GM","GMB","270","ISO 3166-2:GM",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",270,FALSE,FALSE,FALSE
-"Georgia","GE","GEO","268","ISO 3166-2:GE",TRUE,142,"Asia",145,"Western Asia",NA,NA,268,FALSE,FALSE,FALSE
-"Germany","DE","DEU","276","ISO 3166-2:DE",TRUE,150,"Europe",155,"Western Europe",NA,NA,276,TRUE,TRUE,TRUE
-"Ghana","GH","GHA","288","ISO 3166-2:GH",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",288,FALSE,FALSE,FALSE
-"Gibraltar","GI","GIB","292","ISO 3166-2:GI",FALSE,150,"Europe",39,"Southern Europe",NA,NA,292,FALSE,FALSE,FALSE
-"Greece","GR","GRC","300","ISO 3166-2:GR",TRUE,150,"Europe",39,"Southern Europe",NA,NA,300,TRUE,TRUE,TRUE
-"Greenland","GL","GRL","304","ISO 3166-2:GL",FALSE,19,"Americas",21,"Northern America",NA,NA,304,FALSE,FALSE,FALSE
-"Grenada","GD","GRD","308","ISO 3166-2:GD",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",308,FALSE,FALSE,FALSE
-"Guadeloupe","GP","GLP","312","ISO 3166-2:GP",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",312,FALSE,FALSE,FALSE
-"Guam","GU","GUM","316","ISO 3166-2:GU",FALSE,9,"Oceania",57,"Micronesia",NA,NA,316,FALSE,FALSE,FALSE
-"Guatemala","GT","GTM","320","ISO 3166-2:GT",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",320,FALSE,FALSE,FALSE
-"Guernsey","GG","GGY","831","ISO 3166-2:GG",FALSE,150,"Europe",154,"Northern Europe",NA,NA,831,FALSE,FALSE,FALSE
-"Guinea","GN","GIN","324","ISO 3166-2:GN",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",324,FALSE,FALSE,FALSE
-"Guinea-Bissau","GW","GNB","624","ISO 3166-2:GW",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",624,FALSE,FALSE,FALSE
-"Guyana","GY","GUY","328","ISO 3166-2:GY",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",328,FALSE,FALSE,FALSE
-"Haiti","HT","HTI","332","ISO 3166-2:HT",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",332,FALSE,FALSE,FALSE
-"Heard Island and McDonald Islands","HM","HMD","334","ISO 3166-2:HM",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,334,FALSE,FALSE,FALSE
-"Holy See","VA","VAT","336","ISO 3166-2:VA",TRUE,150,"Europe",39,"Southern Europe",NA,NA,336,FALSE,FALSE,FALSE
-"Honduras","HN","HND","340","ISO 3166-2:HN",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",340,FALSE,FALSE,FALSE
-"Hong Kong","HK","HKG","344","ISO 3166-2:HK",FALSE,142,"Asia",30,"Eastern Asia",NA,NA,344,FALSE,FALSE,FALSE
-"Hungary","HU","HUN","348","ISO 3166-2:HU",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,348,TRUE,TRUE,FALSE
-"Iceland","IS","ISL","352","ISO 3166-2:IS",TRUE,150,"Europe",154,"Northern Europe",NA,NA,352,TRUE,FALSE,FALSE
-"India","IN","IND","356","ISO 3166-2:IN",TRUE,142,"Asia",34,"Southern Asia",NA,NA,356,FALSE,FALSE,FALSE
-"Indonesia","ID","IDN","360","ISO 3166-2:ID",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,360,FALSE,FALSE,FALSE
-"Iran, Islamic Republic of","IR","IRN","364","ISO 3166-2:IR",TRUE,142,"Asia",34,"Southern Asia",NA,NA,364,FALSE,FALSE,FALSE
-"Iraq","IQ","IRQ","368","ISO 3166-2:IQ",TRUE,142,"Asia",145,"Western Asia",NA,NA,368,FALSE,FALSE,FALSE
-"Ireland","IE","IRL","372","ISO 3166-2:IE",TRUE,150,"Europe",154,"Northern Europe",NA,NA,372,TRUE,TRUE,TRUE
-"Isle of Man","IM","IMN","833","ISO 3166-2:IM",FALSE,150,"Europe",154,"Northern Europe",NA,NA,833,FALSE,FALSE,FALSE
-"Israel","IL","ISR","376","ISO 3166-2:IL",TRUE,142,"Asia",145,"Western Asia",NA,NA,376,TRUE,FALSE,FALSE
-"Italy","IT","ITA","380","ISO 3166-2:IT",TRUE,150,"Europe",39,"Southern Europe",NA,NA,380,TRUE,TRUE,TRUE
-"Jamaica","JM","JAM","388","ISO 3166-2:JM",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",388,FALSE,FALSE,FALSE
-"Japan","JP","JPN","392","ISO 3166-2:JP",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,392,TRUE,FALSE,FALSE
-"Jersey","JE","JEY","832","ISO 3166-2:JE",FALSE,150,"Europe",154,"Northern Europe",NA,NA,832,FALSE,FALSE,FALSE
-"Jordan","JO","JOR","400","ISO 3166-2:JO",TRUE,142,"Asia",145,"Western Asia",NA,NA,400,FALSE,FALSE,FALSE
-"Kazakhstan","KZ","KAZ","398","ISO 3166-2:KZ",TRUE,142,"Asia",143,"Central Asia",NA,NA,398,FALSE,FALSE,FALSE
-"Kenya","KE","KEN","404","ISO 3166-2:KE",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",404,FALSE,FALSE,FALSE
-"Kiribati","KI","KIR","296","ISO 3166-2:KI",TRUE,9,"Oceania",57,"Micronesia",NA,NA,296,FALSE,FALSE,FALSE
-"Korea, Democratic People's Republic of","KP","PRK","408","ISO 3166-2:KP",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,408,FALSE,FALSE,FALSE
-"Korea, Republic of","KR","KOR","410","ISO 3166-2:KR",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,410,TRUE,FALSE,FALSE
-"Kuwait","KW","KWT","414","ISO 3166-2:KW",TRUE,142,"Asia",145,"Western Asia",NA,NA,414,FALSE,FALSE,FALSE
-"Kyrgyzstan","KG","KGZ","417","ISO 3166-2:KG",TRUE,142,"Asia",143,"Central Asia",NA,NA,417,FALSE,FALSE,FALSE
-"Lao People's Democratic Republic","LA","LAO","418","ISO 3166-2:LA",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,418,FALSE,FALSE,FALSE
-"Latvia","LV","LVA","428","ISO 3166-2:LV",TRUE,150,"Europe",154,"Northern Europe",NA,NA,428,TRUE,TRUE,TRUE
-"Lebanon","LB","LBN","422","ISO 3166-2:LB",TRUE,142,"Asia",145,"Western Asia",NA,NA,422,FALSE,FALSE,FALSE
-"Lesotho","LS","LSO","426","ISO 3166-2:LS",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",426,FALSE,FALSE,FALSE
-"Liberia","LR","LBR","430","ISO 3166-2:LR",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",430,FALSE,FALSE,FALSE
-"Libya","LY","LBY","434","ISO 3166-2:LY",TRUE,2,"Africa",15,"Northern Africa",NA,NA,434,FALSE,FALSE,FALSE
-"Liechtenstein","LI","LIE","438","ISO 3166-2:LI",TRUE,150,"Europe",155,"Western Europe",NA,NA,438,FALSE,FALSE,FALSE
-"Lithuania","LT","LTU","440","ISO 3166-2:LT",TRUE,150,"Europe",154,"Northern Europe",NA,NA,440,TRUE,TRUE,TRUE
-"Luxembourg","LU","LUX","442","ISO 3166-2:LU",TRUE,150,"Europe",155,"Western Europe",NA,NA,442,TRUE,TRUE,TRUE
-"Macao","MO","MAC","446","ISO 3166-2:MO",FALSE,142,"Asia",30,"Eastern Asia",NA,NA,446,FALSE,FALSE,FALSE
-"Madagascar","MG","MDG","450","ISO 3166-2:MG",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",450,FALSE,FALSE,FALSE
-"Malawi","MW","MWI","454","ISO 3166-2:MW",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",454,FALSE,FALSE,FALSE
-"Malaysia","MY","MYS","458","ISO 3166-2:MY",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,458,FALSE,FALSE,FALSE
-"Maldives","MV","MDV","462","ISO 3166-2:MV",TRUE,142,"Asia",34,"Southern Asia",NA,NA,462,FALSE,FALSE,FALSE
-"Mali","ML","MLI","466","ISO 3166-2:ML",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",466,FALSE,FALSE,FALSE
-"Malta","MT","MLT","470","ISO 3166-2:MT",TRUE,150,"Europe",39,"Southern Europe",NA,NA,470,FALSE,TRUE,TRUE
-"Marshall Islands","MH","MHL","584","ISO 3166-2:MH",TRUE,9,"Oceania",57,"Micronesia",NA,NA,584,FALSE,FALSE,FALSE
-"Martinique","MQ","MTQ","474","ISO 3166-2:MQ",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",474,FALSE,FALSE,FALSE
-"Mauritania","MR","MRT","478","ISO 3166-2:MR",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",478,FALSE,FALSE,FALSE
-"Mauritius","MU","MUS","480","ISO 3166-2:MU",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",480,FALSE,FALSE,FALSE
-"Mayotte","YT","MYT","175","ISO 3166-2:YT",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",175,FALSE,FALSE,FALSE
-"Mexico","MX","MEX","484","ISO 3166-2:MX",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",484,TRUE,FALSE,FALSE
-"Micronesia, Federated States of","FM","FSM","583","ISO 3166-2:FM",TRUE,9,"Oceania",57,"Micronesia",NA,NA,583,FALSE,FALSE,FALSE
-"Moldova, Republic of","MD","MDA","498","ISO 3166-2:MD",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,498,FALSE,FALSE,FALSE
-"Monaco","MC","MCO","492","ISO 3166-2:MC",TRUE,150,"Europe",155,"Western Europe",NA,NA,492,FALSE,FALSE,FALSE
-"Mongolia","MN","MNG","496","ISO 3166-2:MN",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,496,FALSE,FALSE,FALSE
-"Montenegro","ME","MNE","499","ISO 3166-2:ME",TRUE,150,"Europe",39,"Southern Europe",NA,NA,499,FALSE,FALSE,FALSE
-"Montserrat","MS","MSR","500","ISO 3166-2:MS",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",500,FALSE,FALSE,FALSE
-"Morocco","MA","MAR","504","ISO 3166-2:MA",TRUE,2,"Africa",15,"Northern Africa",NA,NA,504,FALSE,FALSE,FALSE
-"Mozambique","MZ","MOZ","508","ISO 3166-2:MZ",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",508,FALSE,FALSE,FALSE
-"Myanmar","MM","MMR","104","ISO 3166-2:MM",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,104,FALSE,FALSE,FALSE
-"Namibia","NA","NAM","516","ISO 3166-2:NA",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",516,FALSE,FALSE,FALSE
-"Nauru","NR","NRU","520","ISO 3166-2:NR",TRUE,9,"Oceania",57,"Micronesia",NA,NA,520,FALSE,FALSE,FALSE
-"Nepal","NP","NPL","524","ISO 3166-2:NP",TRUE,142,"Asia",34,"Southern Asia",NA,NA,524,FALSE,FALSE,FALSE
-"Netherlands, Kingdom of the","NL","NLD","528","ISO 3166-2:NL",TRUE,150,"Europe",155,"Western Europe",NA,NA,528,TRUE,TRUE,TRUE
-"New Caledonia","NC","NCL","540","ISO 3166-2:NC",FALSE,9,"Oceania",54,"Melanesia",NA,NA,540,FALSE,FALSE,FALSE
-"New Zealand","NZ","NZL","554","ISO 3166-2:NZ",TRUE,9,"Oceania",53,"Australia and New Zealand",NA,NA,554,TRUE,FALSE,FALSE
-"Nicaragua","NI","NIC","558","ISO 3166-2:NI",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",558,FALSE,FALSE,FALSE
-"Niger","NE","NER","562","ISO 3166-2:NE",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",562,FALSE,FALSE,FALSE
-"Nigeria","NG","NGA","566","ISO 3166-2:NG",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",566,FALSE,FALSE,FALSE
-"Niue","NU","NIU","570","ISO 3166-2:NU",FALSE,9,"Oceania",61,"Polynesia",NA,NA,570,FALSE,FALSE,FALSE
-"Norfolk Island","NF","NFK","574","ISO 3166-2:NF",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,574,FALSE,FALSE,FALSE
-"North Macedonia","MK","MKD","807","ISO 3166-2:MK",TRUE,150,"Europe",39,"Southern Europe",NA,NA,807,FALSE,FALSE,FALSE
-"Northern Mariana Islands","MP","MNP","580","ISO 3166-2:MP",FALSE,9,"Oceania",57,"Micronesia",NA,NA,580,FALSE,FALSE,FALSE
-"Norway","NO","NOR","578","ISO 3166-2:NO",TRUE,150,"Europe",154,"Northern Europe",NA,NA,578,TRUE,FALSE,FALSE
-"Oman","OM","OMN","512","ISO 3166-2:OM",TRUE,142,"Asia",145,"Western Asia",NA,NA,512,FALSE,FALSE,FALSE
-"Pakistan","PK","PAK","586","ISO 3166-2:PK",TRUE,142,"Asia",34,"Southern Asia",NA,NA,586,FALSE,FALSE,FALSE
-"Palau","PW","PLW","585","ISO 3166-2:PW",TRUE,9,"Oceania",57,"Micronesia",NA,NA,585,FALSE,FALSE,FALSE
-"Palestine, State of","PS","PSE","275","ISO 3166-2:PS",FALSE,142,"Asia",145,"Western Asia",NA,NA,275,FALSE,FALSE,FALSE
-"Panama","PA","PAN","591","ISO 3166-2:PA",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",591,FALSE,FALSE,FALSE
-"Papua New Guinea","PG","PNG","598","ISO 3166-2:PG",TRUE,9,"Oceania",54,"Melanesia",NA,NA,598,FALSE,FALSE,FALSE
-"Paraguay","PY","PRY","600","ISO 3166-2:PY",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",600,FALSE,FALSE,FALSE
-"Peru","PE","PER","604","ISO 3166-2:PE",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",604,FALSE,FALSE,FALSE
-"Philippines","PH","PHL","608","ISO 3166-2:PH",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,608,FALSE,FALSE,FALSE
-"Pitcairn","PN","PCN","612","ISO 3166-2:PN",FALSE,9,"Oceania",61,"Polynesia",NA,NA,612,FALSE,FALSE,FALSE
-"Poland","PL","POL","616","ISO 3166-2:PL",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,616,TRUE,TRUE,FALSE
-"Portugal","PT","PRT","620","ISO 3166-2:PT",TRUE,150,"Europe",39,"Southern Europe",NA,NA,620,TRUE,TRUE,TRUE
-"Puerto Rico","PR","PRI","630","ISO 3166-2:PR",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",630,FALSE,FALSE,FALSE
-"Qatar","QA","QAT","634","ISO 3166-2:QA",TRUE,142,"Asia",145,"Western Asia",NA,NA,634,FALSE,FALSE,FALSE
-"Réunion","RE","REU","638","ISO 3166-2:RE",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",638,FALSE,FALSE,FALSE
-"Romania","RO","ROU","642","ISO 3166-2:RO",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,642,FALSE,TRUE,FALSE
-"Russian Federation","RU","RUS","643","ISO 3166-2:RU",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,643,FALSE,FALSE,FALSE
-"Rwanda","RW","RWA","646","ISO 3166-2:RW",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",646,FALSE,FALSE,FALSE
-"Saint Barthélemy","BL","BLM","652","ISO 3166-2:BL",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",652,FALSE,FALSE,FALSE
-"Saint Helena, Ascension and Tristan da Cunha","SH","SHN","654","ISO 3166-2:SH",FALSE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",654,FALSE,FALSE,FALSE
-"Saint Kitts and Nevis","KN","KNA","659","ISO 3166-2:KN",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",659,FALSE,FALSE,FALSE
-"Saint Lucia","LC","LCA","662","ISO 3166-2:LC",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",662,FALSE,FALSE,FALSE
-"Saint Martin (French part)","MF","MAF","663","ISO 3166-2:MF",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",663,FALSE,FALSE,FALSE
-"Saint Pierre and Miquelon","PM","SPM","666","ISO 3166-2:PM",FALSE,19,"Americas",21,"Northern America",NA,NA,666,FALSE,FALSE,FALSE
-"Saint Vincent and the Grenadines","VC","VCT","670","ISO 3166-2:VC",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",670,FALSE,FALSE,FALSE
-"Samoa","WS","WSM","882","ISO 3166-2:WS",TRUE,9,"Oceania",61,"Polynesia",NA,NA,882,FALSE,FALSE,FALSE
-"San Marino","SM","SMR","674","ISO 3166-2:SM",TRUE,150,"Europe",39,"Southern Europe",NA,NA,674,FALSE,FALSE,FALSE
-"Sao Tome and Principe","ST","STP","678","ISO 3166-2:ST",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",678,FALSE,FALSE,FALSE
-"Saudi Arabia","SA","SAU","682","ISO 3166-2:SA",TRUE,142,"Asia",145,"Western Asia",NA,NA,682,FALSE,FALSE,FALSE
-"Senegal","SN","SEN","686","ISO 3166-2:SN",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",686,FALSE,FALSE,FALSE
-"Serbia","RS","SRB","688","ISO 3166-2:RS",TRUE,150,"Europe",39,"Southern Europe",NA,NA,688,FALSE,FALSE,FALSE
-"Seychelles","SC","SYC","690","ISO 3166-2:SC",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",690,FALSE,FALSE,FALSE
-"Sierra Leone","SL","SLE","694","ISO 3166-2:SL",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",694,FALSE,FALSE,FALSE
-"Singapore","SG","SGP","702","ISO 3166-2:SG",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,702,FALSE,FALSE,FALSE
-"Sint Maarten (Dutch part)","SX","SXM","534","ISO 3166-2:SX",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",534,FALSE,FALSE,FALSE
-"Slovakia","SK","SVK","703","ISO 3166-2:SK",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,703,TRUE,TRUE,TRUE
-"Slovenia","SI","SVN","705","ISO 3166-2:SI",TRUE,150,"Europe",39,"Southern Europe",NA,NA,705,TRUE,TRUE,TRUE
-"Solomon Islands","SB","SLB","090","ISO 3166-2:SB",TRUE,9,"Oceania",54,"Melanesia",NA,NA,90,FALSE,FALSE,FALSE
-"Somalia","SO","SOM","706","ISO 3166-2:SO",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",706,FALSE,FALSE,FALSE
-"South Africa","ZA","ZAF","710","ISO 3166-2:ZA",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",710,FALSE,FALSE,FALSE
-"South Georgia and the South Sandwich Islands","GS","SGS","239","ISO 3166-2:GS",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",239,FALSE,FALSE,FALSE
-"South Sudan","SS","SSD","728","ISO 3166-2:SS",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",728,FALSE,FALSE,FALSE
-"Spain","ES","ESP","724","ISO 3166-2:ES",TRUE,150,"Europe",39,"Southern Europe",NA,NA,724,TRUE,TRUE,TRUE
-"Sri Lanka","LK","LKA","144","ISO 3166-2:LK",TRUE,142,"Asia",34,"Southern Asia",NA,NA,144,FALSE,FALSE,FALSE
-"Sudan","SD","SDN","729","ISO 3166-2:SD",TRUE,2,"Africa",15,"Northern Africa",NA,NA,729,FALSE,FALSE,FALSE
-"Suriname","SR","SUR","740","ISO 3166-2:SR",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",740,FALSE,FALSE,FALSE
-"Svalbard and Jan Mayen","SJ","SJM","744","ISO 3166-2:SJ",FALSE,150,"Europe",154,"Northern Europe",NA,NA,744,FALSE,FALSE,FALSE
-"Sweden","SE","SWE","752","ISO 3166-2:SE",TRUE,150,"Europe",154,"Northern Europe",NA,NA,752,TRUE,TRUE,FALSE
-"Switzerland","CH","CHE","756","ISO 3166-2:CH",TRUE,150,"Europe",155,"Western Europe",NA,NA,756,TRUE,FALSE,FALSE
-"Syrian Arab Republic","SY","SYR","760","ISO 3166-2:SY",TRUE,142,"Asia",145,"Western Asia",NA,NA,760,FALSE,FALSE,FALSE
-"Taiwan, Province of China","TW","TWN","158","ISO 3166-2:TW",FALSE,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE
-"Tajikistan","TJ","TJK","762","ISO 3166-2:TJ",TRUE,142,"Asia",143,"Central Asia",NA,NA,762,FALSE,FALSE,FALSE
-"Tanzania, United Republic of","TZ","TZA","834","ISO 3166-2:TZ",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",834,FALSE,FALSE,FALSE
-"Thailand","TH","THA","764","ISO 3166-2:TH",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,764,FALSE,FALSE,FALSE
-"Timor-Leste","TL","TLS","626","ISO 3166-2:TL",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,626,FALSE,FALSE,FALSE
-"Togo","TG","TGO","768","ISO 3166-2:TG",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",768,FALSE,FALSE,FALSE
-"Tokelau","TK","TKL","772","ISO 3166-2:TK",FALSE,9,"Oceania",61,"Polynesia",NA,NA,772,FALSE,FALSE,FALSE
-"Tonga","TO","TON","776","ISO 3166-2:TO",TRUE,9,"Oceania",61,"Polynesia",NA,NA,776,FALSE,FALSE,FALSE
-"Trinidad and Tobago","TT","TTO","780","ISO 3166-2:TT",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",780,FALSE,FALSE,FALSE
-"Tunisia","TN","TUN","788","ISO 3166-2:TN",TRUE,2,"Africa",15,"Northern Africa",NA,NA,788,FALSE,FALSE,FALSE
-"Türkiye","TR","TUR","792","ISO 3166-2:TR",TRUE,142,"Asia",145,"Western Asia",NA,NA,792,TRUE,FALSE,FALSE
-"Turkmenistan","TM","TKM","795","ISO 3166-2:TM",TRUE,142,"Asia",143,"Central Asia",NA,NA,795,FALSE,FALSE,FALSE
-"Turks and Caicos Islands","TC","TCA","796","ISO 3166-2:TC",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",796,FALSE,FALSE,FALSE
-"Tuvalu","TV","TUV","798","ISO 3166-2:TV",TRUE,9,"Oceania",61,"Polynesia",NA,NA,798,FALSE,FALSE,FALSE
-"Uganda","UG","UGA","800","ISO 3166-2:UG",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",800,FALSE,FALSE,FALSE
-"Ukraine","UA","UKR","804","ISO 3166-2:UA",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,804,FALSE,FALSE,FALSE
-"United Arab Emirates","AE","ARE","784","ISO 3166-2:AE",TRUE,142,"Asia",145,"Western Asia",NA,NA,784,FALSE,FALSE,FALSE
-"United Kingdom of Great Britain and Northern Ireland","GB","GBR","826","ISO 3166-2:GB",TRUE,150,"Europe",154,"Northern Europe",NA,NA,826,TRUE,FALSE,FALSE
-"United States of America","US","USA","840","ISO 3166-2:US",TRUE,19,"Americas",21,"Northern America",NA,NA,840,TRUE,FALSE,FALSE
-"United States Minor Outlying Islands","UM","UMI","581","ISO 3166-2:UM",FALSE,9,"Oceania",57,"Micronesia",NA,NA,581,FALSE,FALSE,FALSE
-"Uruguay","UY","URY","858","ISO 3166-2:UY",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",858,FALSE,FALSE,FALSE
-"Uzbekistan","UZ","UZB","860","ISO 3166-2:UZ",TRUE,142,"Asia",143,"Central Asia",NA,NA,860,FALSE,FALSE,FALSE
-"Vanuatu","VU","VUT","548","ISO 3166-2:VU",TRUE,9,"Oceania",54,"Melanesia",NA,NA,548,FALSE,FALSE,FALSE
-"Venezuela, Bolivarian Republic of","VE","VEN","862","ISO 3166-2:VE",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",862,FALSE,FALSE,FALSE
-"Viet Nam","VN","VNM","704","ISO 3166-2:VN",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,704,FALSE,FALSE,FALSE
-"Virgin Islands (British)","VG","VGB","092","ISO 3166-2:VG",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",92,FALSE,FALSE,FALSE
-"Virgin Islands (U.S.)","VI","VIR","850","ISO 3166-2:VI",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",850,FALSE,FALSE,FALSE
-"Wallis and Futuna","WF","WLF","876","ISO 3166-2:WF",FALSE,9,"Oceania",61,"Polynesia",NA,NA,876,FALSE,FALSE,FALSE
-"Western Sahara","EH","ESH","732","ISO 3166-2:EH",FALSE,2,"Africa",15,"Northern Africa",NA,NA,732,FALSE,FALSE,FALSE
-"Yemen","YE","YEM","887","ISO 3166-2:YE",TRUE,142,"Asia",145,"Western Asia",NA,NA,887,FALSE,FALSE,FALSE
-"Zambia","ZM","ZMB","894","ISO 3166-2:ZM",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",894,FALSE,FALSE,FALSE
-"Zimbabwe","ZW","ZWE","716","ISO 3166-2:ZW",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",716,FALSE,FALSE,FALSE
+"name","alpha_2","alpha_3","country_code","iso_3166_2","is_independent","region_code","region_name","subregion_code","subregion_name","intermediate_region_code","intermediate_region_name","m49_code","oecd_member","eu_member","emu_member","eea_member"
+"Afghanistan","AF","AFG","004","ISO 3166-2:AF",TRUE,142,"Asia",34,"Southern Asia",NA,NA,4,FALSE,FALSE,FALSE,FALSE
+"Åland Islands","AX","ALA","248","ISO 3166-2:AX",FALSE,150,"Europe",154,"Northern Europe",NA,NA,248,FALSE,FALSE,FALSE,FALSE
+"Albania","AL","ALB","008","ISO 3166-2:AL",TRUE,150,"Europe",39,"Southern Europe",NA,NA,8,FALSE,FALSE,FALSE,FALSE
+"Algeria","DZ","DZA","012","ISO 3166-2:DZ",TRUE,2,"Africa",15,"Northern Africa",NA,NA,12,FALSE,FALSE,FALSE,FALSE
+"American Samoa","AS","ASM","016","ISO 3166-2:AS",FALSE,9,"Oceania",61,"Polynesia",NA,NA,16,FALSE,FALSE,FALSE,FALSE
+"Andorra","AD","AND","020","ISO 3166-2:AD",TRUE,150,"Europe",39,"Southern Europe",NA,NA,20,FALSE,FALSE,FALSE,FALSE
+"Angola","AO","AGO","024","ISO 3166-2:AO",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",24,FALSE,FALSE,FALSE,FALSE
+"Anguilla","AI","AIA","660","ISO 3166-2:AI",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",660,FALSE,FALSE,FALSE,FALSE
+"Antarctica","AQ","ATA","010","ISO 3166-2:AQ",FALSE,NA,NA,NA,NA,NA,NA,10,FALSE,FALSE,FALSE,FALSE
+"Antigua and Barbuda","AG","ATG","028","ISO 3166-2:AG",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",28,FALSE,FALSE,FALSE,FALSE
+"Argentina","AR","ARG","032","ISO 3166-2:AR",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",32,FALSE,FALSE,FALSE,FALSE
+"Armenia","AM","ARM","051","ISO 3166-2:AM",TRUE,142,"Asia",145,"Western Asia",NA,NA,51,FALSE,FALSE,FALSE,FALSE
+"Aruba","AW","ABW","533","ISO 3166-2:AW",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",533,FALSE,FALSE,FALSE,FALSE
+"Australia","AU","AUS","036","ISO 3166-2:AU",TRUE,9,"Oceania",53,"Australia and New Zealand",NA,NA,36,TRUE,FALSE,FALSE,FALSE
+"Austria","AT","AUT","040","ISO 3166-2:AT",TRUE,150,"Europe",155,"Western Europe",NA,NA,40,TRUE,TRUE,TRUE,TRUE
+"Azerbaijan","AZ","AZE","031","ISO 3166-2:AZ",TRUE,142,"Asia",145,"Western Asia",NA,NA,31,FALSE,FALSE,FALSE,FALSE
+"Bahamas","BS","BHS","044","ISO 3166-2:BS",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",44,FALSE,FALSE,FALSE,FALSE
+"Bahrain","BH","BHR","048","ISO 3166-2:BH",TRUE,142,"Asia",145,"Western Asia",NA,NA,48,FALSE,FALSE,FALSE,FALSE
+"Bangladesh","BD","BGD","050","ISO 3166-2:BD",TRUE,142,"Asia",34,"Southern Asia",NA,NA,50,FALSE,FALSE,FALSE,FALSE
+"Barbados","BB","BRB","052","ISO 3166-2:BB",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",52,FALSE,FALSE,FALSE,FALSE
+"Belarus","BY","BLR","112","ISO 3166-2:BY",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,112,FALSE,FALSE,FALSE,FALSE
+"Belgium","BE","BEL","056","ISO 3166-2:BE",TRUE,150,"Europe",155,"Western Europe",NA,NA,56,TRUE,TRUE,TRUE,TRUE
+"Belize","BZ","BLZ","084","ISO 3166-2:BZ",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",84,FALSE,FALSE,FALSE,FALSE
+"Benin","BJ","BEN","204","ISO 3166-2:BJ",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",204,FALSE,FALSE,FALSE,FALSE
+"Bermuda","BM","BMU","060","ISO 3166-2:BM",FALSE,19,"Americas",21,"Northern America",NA,NA,60,FALSE,FALSE,FALSE,FALSE
+"Bhutan","BT","BTN","064","ISO 3166-2:BT",TRUE,142,"Asia",34,"Southern Asia",NA,NA,64,FALSE,FALSE,FALSE,FALSE
+"Bolivia, Plurinational State of","BO","BOL","068","ISO 3166-2:BO",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",68,FALSE,FALSE,FALSE,FALSE
+"Bonaire, Sint Eustatius and Saba","BQ","BES","535","ISO 3166-2:BQ",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",535,FALSE,FALSE,FALSE,FALSE
+"Bosnia and Herzegovina","BA","BIH","070","ISO 3166-2:BA",TRUE,150,"Europe",39,"Southern Europe",NA,NA,70,FALSE,FALSE,FALSE,FALSE
+"Botswana","BW","BWA","072","ISO 3166-2:BW",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",72,FALSE,FALSE,FALSE,FALSE
+"Bouvet Island","BV","BVT","074","ISO 3166-2:BV",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",74,FALSE,FALSE,FALSE,FALSE
+"Brazil","BR","BRA","076","ISO 3166-2:BR",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",76,FALSE,FALSE,FALSE,FALSE
+"British Indian Ocean Territory","IO","IOT","086","ISO 3166-2:IO",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",86,FALSE,FALSE,FALSE,FALSE
+"Brunei Darussalam","BN","BRN","096","ISO 3166-2:BN",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,96,FALSE,FALSE,FALSE,FALSE
+"Bulgaria","BG","BGR","100","ISO 3166-2:BG",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,100,FALSE,TRUE,FALSE,TRUE
+"Burkina Faso","BF","BFA","854","ISO 3166-2:BF",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",854,FALSE,FALSE,FALSE,FALSE
+"Burundi","BI","BDI","108","ISO 3166-2:BI",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",108,FALSE,FALSE,FALSE,FALSE
+"Cabo Verde","CV","CPV","132","ISO 3166-2:CV",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",132,FALSE,FALSE,FALSE,FALSE
+"Cambodia","KH","KHM","116","ISO 3166-2:KH",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,116,FALSE,FALSE,FALSE,FALSE
+"Cameroon","CM","CMR","120","ISO 3166-2:CM",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",120,FALSE,FALSE,FALSE,FALSE
+"Canada","CA","CAN","124","ISO 3166-2:CA",TRUE,19,"Americas",21,"Northern America",NA,NA,124,TRUE,FALSE,FALSE,FALSE
+"Cayman Islands","KY","CYM","136","ISO 3166-2:KY",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",136,FALSE,FALSE,FALSE,FALSE
+"Central African Republic","CF","CAF","140","ISO 3166-2:CF",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",140,FALSE,FALSE,FALSE,FALSE
+"Chad","TD","TCD","148","ISO 3166-2:TD",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",148,FALSE,FALSE,FALSE,FALSE
+"Chile","CL","CHL","152","ISO 3166-2:CL",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",152,TRUE,FALSE,FALSE,FALSE
+"China","CN","CHN","156","ISO 3166-2:CN",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,156,FALSE,FALSE,FALSE,FALSE
+"Christmas Island","CX","CXR","162","ISO 3166-2:CX",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,162,FALSE,FALSE,FALSE,FALSE
+"Cocos (Keeling) Islands","CC","CCK","166","ISO 3166-2:CC",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,166,FALSE,FALSE,FALSE,FALSE
+"Colombia","CO","COL","170","ISO 3166-2:CO",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",170,TRUE,FALSE,FALSE,FALSE
+"Comoros","KM","COM","174","ISO 3166-2:KM",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",174,FALSE,FALSE,FALSE,FALSE
+"Congo","CG","COG","178","ISO 3166-2:CG",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",178,FALSE,FALSE,FALSE,FALSE
+"Congo, Democratic Republic of the","CD","COD","180","ISO 3166-2:CD",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",180,FALSE,FALSE,FALSE,FALSE
+"Cook Islands","CK","COK","184","ISO 3166-2:CK",FALSE,9,"Oceania",61,"Polynesia",NA,NA,184,FALSE,FALSE,FALSE,FALSE
+"Costa Rica","CR","CRI","188","ISO 3166-2:CR",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",188,TRUE,FALSE,FALSE,FALSE
+"Côte d'Ivoire","CI","CIV","384","ISO 3166-2:CI",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",384,FALSE,FALSE,FALSE,FALSE
+"Croatia","HR","HRV","191","ISO 3166-2:HR",TRUE,150,"Europe",39,"Southern Europe",NA,NA,191,FALSE,TRUE,TRUE,TRUE
+"Cuba","CU","CUB","192","ISO 3166-2:CU",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",192,FALSE,FALSE,FALSE,FALSE
+"Curaçao","CW","CUW","531","ISO 3166-2:CW",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",531,FALSE,FALSE,FALSE,FALSE
+"Cyprus","CY","CYP","196","ISO 3166-2:CY",TRUE,142,"Asia",145,"Western Asia",NA,NA,196,FALSE,TRUE,TRUE,TRUE
+"Czechia","CZ","CZE","203","ISO 3166-2:CZ",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,203,TRUE,TRUE,FALSE,TRUE
+"Denmark","DK","DNK","208","ISO 3166-2:DK",TRUE,150,"Europe",154,"Northern Europe",NA,NA,208,TRUE,TRUE,FALSE,TRUE
+"Djibouti","DJ","DJI","262","ISO 3166-2:DJ",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",262,FALSE,FALSE,FALSE,FALSE
+"Dominica","DM","DMA","212","ISO 3166-2:DM",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",212,FALSE,FALSE,FALSE,FALSE
+"Dominican Republic","DO","DOM","214","ISO 3166-2:DO",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",214,FALSE,FALSE,FALSE,FALSE
+"Ecuador","EC","ECU","218","ISO 3166-2:EC",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",218,FALSE,FALSE,FALSE,FALSE
+"Egypt","EG","EGY","818","ISO 3166-2:EG",TRUE,2,"Africa",15,"Northern Africa",NA,NA,818,FALSE,FALSE,FALSE,FALSE
+"El Salvador","SV","SLV","222","ISO 3166-2:SV",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",222,FALSE,FALSE,FALSE,FALSE
+"Equatorial Guinea","GQ","GNQ","226","ISO 3166-2:GQ",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",226,FALSE,FALSE,FALSE,FALSE
+"Eritrea","ER","ERI","232","ISO 3166-2:ER",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",232,FALSE,FALSE,FALSE,FALSE
+"Estonia","EE","EST","233","ISO 3166-2:EE",TRUE,150,"Europe",154,"Northern Europe",NA,NA,233,TRUE,TRUE,TRUE,TRUE
+"Eswatini","SZ","SWZ","748","ISO 3166-2:SZ",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",748,FALSE,FALSE,FALSE,FALSE
+"Ethiopia","ET","ETH","231","ISO 3166-2:ET",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",231,FALSE,FALSE,FALSE,FALSE
+"Falkland Islands (Malvinas)","FK","FLK","238","ISO 3166-2:FK",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",238,FALSE,FALSE,FALSE,FALSE
+"Faroe Islands","FO","FRO","234","ISO 3166-2:FO",FALSE,150,"Europe",154,"Northern Europe",NA,NA,234,FALSE,FALSE,FALSE,FALSE
+"Fiji","FJ","FJI","242","ISO 3166-2:FJ",TRUE,9,"Oceania",54,"Melanesia",NA,NA,242,FALSE,FALSE,FALSE,FALSE
+"Finland","FI","FIN","246","ISO 3166-2:FI",TRUE,150,"Europe",154,"Northern Europe",NA,NA,246,TRUE,TRUE,TRUE,TRUE
+"France","FR","FRA","250","ISO 3166-2:FR",TRUE,150,"Europe",155,"Western Europe",NA,NA,250,TRUE,TRUE,TRUE,TRUE
+"French Guiana","GF","GUF","254","ISO 3166-2:GF",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",254,FALSE,FALSE,FALSE,FALSE
+"French Polynesia","PF","PYF","258","ISO 3166-2:PF",FALSE,9,"Oceania",61,"Polynesia",NA,NA,258,FALSE,FALSE,FALSE,FALSE
+"French Southern Territories","TF","ATF","260","ISO 3166-2:TF",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",260,FALSE,FALSE,FALSE,FALSE
+"Gabon","GA","GAB","266","ISO 3166-2:GA",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",266,FALSE,FALSE,FALSE,FALSE
+"Gambia","GM","GMB","270","ISO 3166-2:GM",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",270,FALSE,FALSE,FALSE,FALSE
+"Georgia","GE","GEO","268","ISO 3166-2:GE",TRUE,142,"Asia",145,"Western Asia",NA,NA,268,FALSE,FALSE,FALSE,FALSE
+"Germany","DE","DEU","276","ISO 3166-2:DE",TRUE,150,"Europe",155,"Western Europe",NA,NA,276,TRUE,TRUE,TRUE,TRUE
+"Ghana","GH","GHA","288","ISO 3166-2:GH",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",288,FALSE,FALSE,FALSE,FALSE
+"Gibraltar","GI","GIB","292","ISO 3166-2:GI",FALSE,150,"Europe",39,"Southern Europe",NA,NA,292,FALSE,FALSE,FALSE,FALSE
+"Greece","GR","GRC","300","ISO 3166-2:GR",TRUE,150,"Europe",39,"Southern Europe",NA,NA,300,TRUE,TRUE,TRUE,TRUE
+"Greenland","GL","GRL","304","ISO 3166-2:GL",FALSE,19,"Americas",21,"Northern America",NA,NA,304,FALSE,FALSE,FALSE,FALSE
+"Grenada","GD","GRD","308","ISO 3166-2:GD",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",308,FALSE,FALSE,FALSE,FALSE
+"Guadeloupe","GP","GLP","312","ISO 3166-2:GP",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",312,FALSE,FALSE,FALSE,FALSE
+"Guam","GU","GUM","316","ISO 3166-2:GU",FALSE,9,"Oceania",57,"Micronesia",NA,NA,316,FALSE,FALSE,FALSE,FALSE
+"Guatemala","GT","GTM","320","ISO 3166-2:GT",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",320,FALSE,FALSE,FALSE,FALSE
+"Guernsey","GG","GGY","831","ISO 3166-2:GG",FALSE,150,"Europe",154,"Northern Europe",NA,NA,831,FALSE,FALSE,FALSE,FALSE
+"Guinea","GN","GIN","324","ISO 3166-2:GN",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",324,FALSE,FALSE,FALSE,FALSE
+"Guinea-Bissau","GW","GNB","624","ISO 3166-2:GW",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",624,FALSE,FALSE,FALSE,FALSE
+"Guyana","GY","GUY","328","ISO 3166-2:GY",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",328,FALSE,FALSE,FALSE,FALSE
+"Haiti","HT","HTI","332","ISO 3166-2:HT",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",332,FALSE,FALSE,FALSE,FALSE
+"Heard Island and McDonald Islands","HM","HMD","334","ISO 3166-2:HM",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,334,FALSE,FALSE,FALSE,FALSE
+"Holy See","VA","VAT","336","ISO 3166-2:VA",TRUE,150,"Europe",39,"Southern Europe",NA,NA,336,FALSE,FALSE,FALSE,FALSE
+"Honduras","HN","HND","340","ISO 3166-2:HN",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",340,FALSE,FALSE,FALSE,FALSE
+"Hong Kong","HK","HKG","344","ISO 3166-2:HK",FALSE,142,"Asia",30,"Eastern Asia",NA,NA,344,FALSE,FALSE,FALSE,FALSE
+"Hungary","HU","HUN","348","ISO 3166-2:HU",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,348,TRUE,TRUE,FALSE,TRUE
+"Iceland","IS","ISL","352","ISO 3166-2:IS",TRUE,150,"Europe",154,"Northern Europe",NA,NA,352,TRUE,FALSE,FALSE,TRUE
+"India","IN","IND","356","ISO 3166-2:IN",TRUE,142,"Asia",34,"Southern Asia",NA,NA,356,FALSE,FALSE,FALSE,FALSE
+"Indonesia","ID","IDN","360","ISO 3166-2:ID",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,360,FALSE,FALSE,FALSE,FALSE
+"Iran, Islamic Republic of","IR","IRN","364","ISO 3166-2:IR",TRUE,142,"Asia",34,"Southern Asia",NA,NA,364,FALSE,FALSE,FALSE,FALSE
+"Iraq","IQ","IRQ","368","ISO 3166-2:IQ",TRUE,142,"Asia",145,"Western Asia",NA,NA,368,FALSE,FALSE,FALSE,FALSE
+"Ireland","IE","IRL","372","ISO 3166-2:IE",TRUE,150,"Europe",154,"Northern Europe",NA,NA,372,TRUE,TRUE,TRUE,TRUE
+"Isle of Man","IM","IMN","833","ISO 3166-2:IM",FALSE,150,"Europe",154,"Northern Europe",NA,NA,833,FALSE,FALSE,FALSE,FALSE
+"Israel","IL","ISR","376","ISO 3166-2:IL",TRUE,142,"Asia",145,"Western Asia",NA,NA,376,TRUE,FALSE,FALSE,FALSE
+"Italy","IT","ITA","380","ISO 3166-2:IT",TRUE,150,"Europe",39,"Southern Europe",NA,NA,380,TRUE,TRUE,TRUE,TRUE
+"Jamaica","JM","JAM","388","ISO 3166-2:JM",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",388,FALSE,FALSE,FALSE,FALSE
+"Japan","JP","JPN","392","ISO 3166-2:JP",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,392,TRUE,FALSE,FALSE,FALSE
+"Jersey","JE","JEY","832","ISO 3166-2:JE",FALSE,150,"Europe",154,"Northern Europe",NA,NA,832,FALSE,FALSE,FALSE,FALSE
+"Jordan","JO","JOR","400","ISO 3166-2:JO",TRUE,142,"Asia",145,"Western Asia",NA,NA,400,FALSE,FALSE,FALSE,FALSE
+"Kazakhstan","KZ","KAZ","398","ISO 3166-2:KZ",TRUE,142,"Asia",143,"Central Asia",NA,NA,398,FALSE,FALSE,FALSE,FALSE
+"Kenya","KE","KEN","404","ISO 3166-2:KE",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",404,FALSE,FALSE,FALSE,FALSE
+"Kiribati","KI","KIR","296","ISO 3166-2:KI",TRUE,9,"Oceania",57,"Micronesia",NA,NA,296,FALSE,FALSE,FALSE,FALSE
+"Korea, Democratic People's Republic of","KP","PRK","408","ISO 3166-2:KP",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,408,FALSE,FALSE,FALSE,FALSE
+"Korea, Republic of","KR","KOR","410","ISO 3166-2:KR",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,410,TRUE,FALSE,FALSE,FALSE
+"Kuwait","KW","KWT","414","ISO 3166-2:KW",TRUE,142,"Asia",145,"Western Asia",NA,NA,414,FALSE,FALSE,FALSE,FALSE
+"Kyrgyzstan","KG","KGZ","417","ISO 3166-2:KG",TRUE,142,"Asia",143,"Central Asia",NA,NA,417,FALSE,FALSE,FALSE,FALSE
+"Lao People's Democratic Republic","LA","LAO","418","ISO 3166-2:LA",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,418,FALSE,FALSE,FALSE,FALSE
+"Latvia","LV","LVA","428","ISO 3166-2:LV",TRUE,150,"Europe",154,"Northern Europe",NA,NA,428,TRUE,TRUE,TRUE,TRUE
+"Lebanon","LB","LBN","422","ISO 3166-2:LB",TRUE,142,"Asia",145,"Western Asia",NA,NA,422,FALSE,FALSE,FALSE,FALSE
+"Lesotho","LS","LSO","426","ISO 3166-2:LS",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",426,FALSE,FALSE,FALSE,FALSE
+"Liberia","LR","LBR","430","ISO 3166-2:LR",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",430,FALSE,FALSE,FALSE,FALSE
+"Libya","LY","LBY","434","ISO 3166-2:LY",TRUE,2,"Africa",15,"Northern Africa",NA,NA,434,FALSE,FALSE,FALSE,FALSE
+"Liechtenstein","LI","LIE","438","ISO 3166-2:LI",TRUE,150,"Europe",155,"Western Europe",NA,NA,438,FALSE,FALSE,FALSE,TRUE
+"Lithuania","LT","LTU","440","ISO 3166-2:LT",TRUE,150,"Europe",154,"Northern Europe",NA,NA,440,TRUE,TRUE,TRUE,TRUE
+"Luxembourg","LU","LUX","442","ISO 3166-2:LU",TRUE,150,"Europe",155,"Western Europe",NA,NA,442,TRUE,TRUE,TRUE,TRUE
+"Macao","MO","MAC","446","ISO 3166-2:MO",FALSE,142,"Asia",30,"Eastern Asia",NA,NA,446,FALSE,FALSE,FALSE,FALSE
+"Madagascar","MG","MDG","450","ISO 3166-2:MG",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",450,FALSE,FALSE,FALSE,FALSE
+"Malawi","MW","MWI","454","ISO 3166-2:MW",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",454,FALSE,FALSE,FALSE,FALSE
+"Malaysia","MY","MYS","458","ISO 3166-2:MY",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,458,FALSE,FALSE,FALSE,FALSE
+"Maldives","MV","MDV","462","ISO 3166-2:MV",TRUE,142,"Asia",34,"Southern Asia",NA,NA,462,FALSE,FALSE,FALSE,FALSE
+"Mali","ML","MLI","466","ISO 3166-2:ML",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",466,FALSE,FALSE,FALSE,FALSE
+"Malta","MT","MLT","470","ISO 3166-2:MT",TRUE,150,"Europe",39,"Southern Europe",NA,NA,470,FALSE,TRUE,TRUE,TRUE
+"Marshall Islands","MH","MHL","584","ISO 3166-2:MH",TRUE,9,"Oceania",57,"Micronesia",NA,NA,584,FALSE,FALSE,FALSE,FALSE
+"Martinique","MQ","MTQ","474","ISO 3166-2:MQ",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",474,FALSE,FALSE,FALSE,FALSE
+"Mauritania","MR","MRT","478","ISO 3166-2:MR",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",478,FALSE,FALSE,FALSE,FALSE
+"Mauritius","MU","MUS","480","ISO 3166-2:MU",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",480,FALSE,FALSE,FALSE,FALSE
+"Mayotte","YT","MYT","175","ISO 3166-2:YT",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",175,FALSE,FALSE,FALSE,FALSE
+"Mexico","MX","MEX","484","ISO 3166-2:MX",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",484,TRUE,FALSE,FALSE,FALSE
+"Micronesia, Federated States of","FM","FSM","583","ISO 3166-2:FM",TRUE,9,"Oceania",57,"Micronesia",NA,NA,583,FALSE,FALSE,FALSE,FALSE
+"Moldova, Republic of","MD","MDA","498","ISO 3166-2:MD",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,498,FALSE,FALSE,FALSE,FALSE
+"Monaco","MC","MCO","492","ISO 3166-2:MC",TRUE,150,"Europe",155,"Western Europe",NA,NA,492,FALSE,FALSE,FALSE,FALSE
+"Mongolia","MN","MNG","496","ISO 3166-2:MN",TRUE,142,"Asia",30,"Eastern Asia",NA,NA,496,FALSE,FALSE,FALSE,FALSE
+"Montenegro","ME","MNE","499","ISO 3166-2:ME",TRUE,150,"Europe",39,"Southern Europe",NA,NA,499,FALSE,FALSE,FALSE,FALSE
+"Montserrat","MS","MSR","500","ISO 3166-2:MS",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",500,FALSE,FALSE,FALSE,FALSE
+"Morocco","MA","MAR","504","ISO 3166-2:MA",TRUE,2,"Africa",15,"Northern Africa",NA,NA,504,FALSE,FALSE,FALSE,FALSE
+"Mozambique","MZ","MOZ","508","ISO 3166-2:MZ",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",508,FALSE,FALSE,FALSE,FALSE
+"Myanmar","MM","MMR","104","ISO 3166-2:MM",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,104,FALSE,FALSE,FALSE,FALSE
+"Namibia","NA","NAM","516","ISO 3166-2:NA",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",516,FALSE,FALSE,FALSE,FALSE
+"Nauru","NR","NRU","520","ISO 3166-2:NR",TRUE,9,"Oceania",57,"Micronesia",NA,NA,520,FALSE,FALSE,FALSE,FALSE
+"Nepal","NP","NPL","524","ISO 3166-2:NP",TRUE,142,"Asia",34,"Southern Asia",NA,NA,524,FALSE,FALSE,FALSE,FALSE
+"Netherlands, Kingdom of the","NL","NLD","528","ISO 3166-2:NL",TRUE,150,"Europe",155,"Western Europe",NA,NA,528,TRUE,TRUE,TRUE,TRUE
+"New Caledonia","NC","NCL","540","ISO 3166-2:NC",FALSE,9,"Oceania",54,"Melanesia",NA,NA,540,FALSE,FALSE,FALSE,FALSE
+"New Zealand","NZ","NZL","554","ISO 3166-2:NZ",TRUE,9,"Oceania",53,"Australia and New Zealand",NA,NA,554,TRUE,FALSE,FALSE,FALSE
+"Nicaragua","NI","NIC","558","ISO 3166-2:NI",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",558,FALSE,FALSE,FALSE,FALSE
+"Niger","NE","NER","562","ISO 3166-2:NE",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",562,FALSE,FALSE,FALSE,FALSE
+"Nigeria","NG","NGA","566","ISO 3166-2:NG",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",566,FALSE,FALSE,FALSE,FALSE
+"Niue","NU","NIU","570","ISO 3166-2:NU",FALSE,9,"Oceania",61,"Polynesia",NA,NA,570,FALSE,FALSE,FALSE,FALSE
+"Norfolk Island","NF","NFK","574","ISO 3166-2:NF",FALSE,9,"Oceania",53,"Australia and New Zealand",NA,NA,574,FALSE,FALSE,FALSE,FALSE
+"North Macedonia","MK","MKD","807","ISO 3166-2:MK",TRUE,150,"Europe",39,"Southern Europe",NA,NA,807,FALSE,FALSE,FALSE,FALSE
+"Northern Mariana Islands","MP","MNP","580","ISO 3166-2:MP",FALSE,9,"Oceania",57,"Micronesia",NA,NA,580,FALSE,FALSE,FALSE,FALSE
+"Norway","NO","NOR","578","ISO 3166-2:NO",TRUE,150,"Europe",154,"Northern Europe",NA,NA,578,TRUE,FALSE,FALSE,TRUE
+"Oman","OM","OMN","512","ISO 3166-2:OM",TRUE,142,"Asia",145,"Western Asia",NA,NA,512,FALSE,FALSE,FALSE,FALSE
+"Pakistan","PK","PAK","586","ISO 3166-2:PK",TRUE,142,"Asia",34,"Southern Asia",NA,NA,586,FALSE,FALSE,FALSE,FALSE
+"Palau","PW","PLW","585","ISO 3166-2:PW",TRUE,9,"Oceania",57,"Micronesia",NA,NA,585,FALSE,FALSE,FALSE,FALSE
+"Palestine, State of","PS","PSE","275","ISO 3166-2:PS",FALSE,142,"Asia",145,"Western Asia",NA,NA,275,FALSE,FALSE,FALSE,FALSE
+"Panama","PA","PAN","591","ISO 3166-2:PA",TRUE,19,"Americas",419,"Latin America and the Caribbean",13,"Central America",591,FALSE,FALSE,FALSE,FALSE
+"Papua New Guinea","PG","PNG","598","ISO 3166-2:PG",TRUE,9,"Oceania",54,"Melanesia",NA,NA,598,FALSE,FALSE,FALSE,FALSE
+"Paraguay","PY","PRY","600","ISO 3166-2:PY",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",600,FALSE,FALSE,FALSE,FALSE
+"Peru","PE","PER","604","ISO 3166-2:PE",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",604,FALSE,FALSE,FALSE,FALSE
+"Philippines","PH","PHL","608","ISO 3166-2:PH",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,608,FALSE,FALSE,FALSE,FALSE
+"Pitcairn","PN","PCN","612","ISO 3166-2:PN",FALSE,9,"Oceania",61,"Polynesia",NA,NA,612,FALSE,FALSE,FALSE,FALSE
+"Poland","PL","POL","616","ISO 3166-2:PL",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,616,TRUE,TRUE,FALSE,TRUE
+"Portugal","PT","PRT","620","ISO 3166-2:PT",TRUE,150,"Europe",39,"Southern Europe",NA,NA,620,TRUE,TRUE,TRUE,TRUE
+"Puerto Rico","PR","PRI","630","ISO 3166-2:PR",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",630,FALSE,FALSE,FALSE,FALSE
+"Qatar","QA","QAT","634","ISO 3166-2:QA",TRUE,142,"Asia",145,"Western Asia",NA,NA,634,FALSE,FALSE,FALSE,FALSE
+"Réunion","RE","REU","638","ISO 3166-2:RE",FALSE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",638,FALSE,FALSE,FALSE,FALSE
+"Romania","RO","ROU","642","ISO 3166-2:RO",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,642,FALSE,TRUE,FALSE,TRUE
+"Russian Federation","RU","RUS","643","ISO 3166-2:RU",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,643,FALSE,FALSE,FALSE,FALSE
+"Rwanda","RW","RWA","646","ISO 3166-2:RW",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",646,FALSE,FALSE,FALSE,FALSE
+"Saint Barthélemy","BL","BLM","652","ISO 3166-2:BL",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",652,FALSE,FALSE,FALSE,FALSE
+"Saint Helena, Ascension and Tristan da Cunha","SH","SHN","654","ISO 3166-2:SH",FALSE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",654,FALSE,FALSE,FALSE,FALSE
+"Saint Kitts and Nevis","KN","KNA","659","ISO 3166-2:KN",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",659,FALSE,FALSE,FALSE,FALSE
+"Saint Lucia","LC","LCA","662","ISO 3166-2:LC",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",662,FALSE,FALSE,FALSE,FALSE
+"Saint Martin (French part)","MF","MAF","663","ISO 3166-2:MF",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",663,FALSE,FALSE,FALSE,FALSE
+"Saint Pierre and Miquelon","PM","SPM","666","ISO 3166-2:PM",FALSE,19,"Americas",21,"Northern America",NA,NA,666,FALSE,FALSE,FALSE,FALSE
+"Saint Vincent and the Grenadines","VC","VCT","670","ISO 3166-2:VC",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",670,FALSE,FALSE,FALSE,FALSE
+"Samoa","WS","WSM","882","ISO 3166-2:WS",TRUE,9,"Oceania",61,"Polynesia",NA,NA,882,FALSE,FALSE,FALSE,FALSE
+"San Marino","SM","SMR","674","ISO 3166-2:SM",TRUE,150,"Europe",39,"Southern Europe",NA,NA,674,FALSE,FALSE,FALSE,FALSE
+"Sao Tome and Principe","ST","STP","678","ISO 3166-2:ST",TRUE,2,"Africa",202,"Sub-Saharan Africa",17,"Middle Africa",678,FALSE,FALSE,FALSE,FALSE
+"Saudi Arabia","SA","SAU","682","ISO 3166-2:SA",TRUE,142,"Asia",145,"Western Asia",NA,NA,682,FALSE,FALSE,FALSE,FALSE
+"Senegal","SN","SEN","686","ISO 3166-2:SN",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",686,FALSE,FALSE,FALSE,FALSE
+"Serbia","RS","SRB","688","ISO 3166-2:RS",TRUE,150,"Europe",39,"Southern Europe",NA,NA,688,FALSE,FALSE,FALSE,FALSE
+"Seychelles","SC","SYC","690","ISO 3166-2:SC",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",690,FALSE,FALSE,FALSE,FALSE
+"Sierra Leone","SL","SLE","694","ISO 3166-2:SL",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",694,FALSE,FALSE,FALSE,FALSE
+"Singapore","SG","SGP","702","ISO 3166-2:SG",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,702,FALSE,FALSE,FALSE,FALSE
+"Sint Maarten (Dutch part)","SX","SXM","534","ISO 3166-2:SX",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",534,FALSE,FALSE,FALSE,FALSE
+"Slovakia","SK","SVK","703","ISO 3166-2:SK",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,703,TRUE,TRUE,TRUE,TRUE
+"Slovenia","SI","SVN","705","ISO 3166-2:SI",TRUE,150,"Europe",39,"Southern Europe",NA,NA,705,TRUE,TRUE,TRUE,TRUE
+"Solomon Islands","SB","SLB","090","ISO 3166-2:SB",TRUE,9,"Oceania",54,"Melanesia",NA,NA,90,FALSE,FALSE,FALSE,FALSE
+"Somalia","SO","SOM","706","ISO 3166-2:SO",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",706,FALSE,FALSE,FALSE,FALSE
+"South Africa","ZA","ZAF","710","ISO 3166-2:ZA",TRUE,2,"Africa",202,"Sub-Saharan Africa",18,"Southern Africa",710,FALSE,FALSE,FALSE,FALSE
+"South Georgia and the South Sandwich Islands","GS","SGS","239","ISO 3166-2:GS",FALSE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",239,FALSE,FALSE,FALSE,FALSE
+"South Sudan","SS","SSD","728","ISO 3166-2:SS",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",728,FALSE,FALSE,FALSE,FALSE
+"Spain","ES","ESP","724","ISO 3166-2:ES",TRUE,150,"Europe",39,"Southern Europe",NA,NA,724,TRUE,TRUE,TRUE,TRUE
+"Sri Lanka","LK","LKA","144","ISO 3166-2:LK",TRUE,142,"Asia",34,"Southern Asia",NA,NA,144,FALSE,FALSE,FALSE,FALSE
+"Sudan","SD","SDN","729","ISO 3166-2:SD",TRUE,2,"Africa",15,"Northern Africa",NA,NA,729,FALSE,FALSE,FALSE,FALSE
+"Suriname","SR","SUR","740","ISO 3166-2:SR",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",740,FALSE,FALSE,FALSE,FALSE
+"Svalbard and Jan Mayen","SJ","SJM","744","ISO 3166-2:SJ",FALSE,150,"Europe",154,"Northern Europe",NA,NA,744,FALSE,FALSE,FALSE,FALSE
+"Sweden","SE","SWE","752","ISO 3166-2:SE",TRUE,150,"Europe",154,"Northern Europe",NA,NA,752,TRUE,TRUE,FALSE,TRUE
+"Switzerland","CH","CHE","756","ISO 3166-2:CH",TRUE,150,"Europe",155,"Western Europe",NA,NA,756,TRUE,FALSE,FALSE,FALSE
+"Syrian Arab Republic","SY","SYR","760","ISO 3166-2:SY",TRUE,142,"Asia",145,"Western Asia",NA,NA,760,FALSE,FALSE,FALSE,FALSE
+"Taiwan, Province of China","TW","TWN","158","ISO 3166-2:TW",FALSE,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE
+"Tajikistan","TJ","TJK","762","ISO 3166-2:TJ",TRUE,142,"Asia",143,"Central Asia",NA,NA,762,FALSE,FALSE,FALSE,FALSE
+"Tanzania, United Republic of","TZ","TZA","834","ISO 3166-2:TZ",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",834,FALSE,FALSE,FALSE,FALSE
+"Thailand","TH","THA","764","ISO 3166-2:TH",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,764,FALSE,FALSE,FALSE,FALSE
+"Timor-Leste","TL","TLS","626","ISO 3166-2:TL",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,626,FALSE,FALSE,FALSE,FALSE
+"Togo","TG","TGO","768","ISO 3166-2:TG",TRUE,2,"Africa",202,"Sub-Saharan Africa",11,"Western Africa",768,FALSE,FALSE,FALSE,FALSE
+"Tokelau","TK","TKL","772","ISO 3166-2:TK",FALSE,9,"Oceania",61,"Polynesia",NA,NA,772,FALSE,FALSE,FALSE,FALSE
+"Tonga","TO","TON","776","ISO 3166-2:TO",TRUE,9,"Oceania",61,"Polynesia",NA,NA,776,FALSE,FALSE,FALSE,FALSE
+"Trinidad and Tobago","TT","TTO","780","ISO 3166-2:TT",TRUE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",780,FALSE,FALSE,FALSE,FALSE
+"Tunisia","TN","TUN","788","ISO 3166-2:TN",TRUE,2,"Africa",15,"Northern Africa",NA,NA,788,FALSE,FALSE,FALSE,FALSE
+"Türkiye","TR","TUR","792","ISO 3166-2:TR",TRUE,142,"Asia",145,"Western Asia",NA,NA,792,TRUE,FALSE,FALSE,FALSE
+"Turkmenistan","TM","TKM","795","ISO 3166-2:TM",TRUE,142,"Asia",143,"Central Asia",NA,NA,795,FALSE,FALSE,FALSE,FALSE
+"Turks and Caicos Islands","TC","TCA","796","ISO 3166-2:TC",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",796,FALSE,FALSE,FALSE,FALSE
+"Tuvalu","TV","TUV","798","ISO 3166-2:TV",TRUE,9,"Oceania",61,"Polynesia",NA,NA,798,FALSE,FALSE,FALSE,FALSE
+"Uganda","UG","UGA","800","ISO 3166-2:UG",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",800,FALSE,FALSE,FALSE,FALSE
+"Ukraine","UA","UKR","804","ISO 3166-2:UA",TRUE,150,"Europe",151,"Eastern Europe",NA,NA,804,FALSE,FALSE,FALSE,FALSE
+"United Arab Emirates","AE","ARE","784","ISO 3166-2:AE",TRUE,142,"Asia",145,"Western Asia",NA,NA,784,FALSE,FALSE,FALSE,FALSE
+"United Kingdom of Great Britain and Northern Ireland","GB","GBR","826","ISO 3166-2:GB",TRUE,150,"Europe",154,"Northern Europe",NA,NA,826,TRUE,FALSE,FALSE,FALSE
+"United States of America","US","USA","840","ISO 3166-2:US",TRUE,19,"Americas",21,"Northern America",NA,NA,840,TRUE,FALSE,FALSE,FALSE
+"United States Minor Outlying Islands","UM","UMI","581","ISO 3166-2:UM",FALSE,9,"Oceania",57,"Micronesia",NA,NA,581,FALSE,FALSE,FALSE,FALSE
+"Uruguay","UY","URY","858","ISO 3166-2:UY",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",858,FALSE,FALSE,FALSE,FALSE
+"Uzbekistan","UZ","UZB","860","ISO 3166-2:UZ",TRUE,142,"Asia",143,"Central Asia",NA,NA,860,FALSE,FALSE,FALSE,FALSE
+"Vanuatu","VU","VUT","548","ISO 3166-2:VU",TRUE,9,"Oceania",54,"Melanesia",NA,NA,548,FALSE,FALSE,FALSE,FALSE
+"Venezuela, Bolivarian Republic of","VE","VEN","862","ISO 3166-2:VE",TRUE,19,"Americas",419,"Latin America and the Caribbean",5,"South America",862,FALSE,FALSE,FALSE,FALSE
+"Viet Nam","VN","VNM","704","ISO 3166-2:VN",TRUE,142,"Asia",35,"South-eastern Asia",NA,NA,704,FALSE,FALSE,FALSE,FALSE
+"Virgin Islands (British)","VG","VGB","092","ISO 3166-2:VG",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",92,FALSE,FALSE,FALSE,FALSE
+"Virgin Islands (U.S.)","VI","VIR","850","ISO 3166-2:VI",FALSE,19,"Americas",419,"Latin America and the Caribbean",29,"Caribbean",850,FALSE,FALSE,FALSE,FALSE
+"Wallis and Futuna","WF","WLF","876","ISO 3166-2:WF",FALSE,9,"Oceania",61,"Polynesia",NA,NA,876,FALSE,FALSE,FALSE,FALSE
+"Western Sahara","EH","ESH","732","ISO 3166-2:EH",FALSE,2,"Africa",15,"Northern Africa",NA,NA,732,FALSE,FALSE,FALSE,FALSE
+"Yemen","YE","YEM","887","ISO 3166-2:YE",TRUE,142,"Asia",145,"Western Asia",NA,NA,887,FALSE,FALSE,FALSE,FALSE
+"Zambia","ZM","ZMB","894","ISO 3166-2:ZM",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",894,FALSE,FALSE,FALSE,FALSE
+"Zimbabwe","ZW","ZWE","716","ISO 3166-2:ZW",TRUE,2,"Africa",202,"Sub-Saharan Africa",14,"Eastern Africa",716,FALSE,FALSE,FALSE,FALSE

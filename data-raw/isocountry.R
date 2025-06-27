@@ -62,7 +62,8 @@ isocountry <- isocountry |>
   mutate(
     oecd_member = replace(oecd_member, is.na(oecd_member), FALSE),
     eu_member = replace(eu_member, is.na(eu_member), FALSE),
-    emu_member = replace(emu_member, is.na(emu_member), FALSE)
+    emu_member = replace(emu_member, is.na(emu_member), FALSE),
+    eea_member = eu_member | alpha_2 %in% c("IS", "LI", "NO")
   )
 
 if (sum(isocountry$oecd_member) != nrow(oecd_member)) {
