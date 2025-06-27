@@ -26,8 +26,35 @@ region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>
     m49_code
   )
 
+oecd <- read_html("https://en.wikipedia.org/wiki/OECD") |>
+  html_elements(".wikitable") |>
+  _[[3L]] |>
+  html_table(convert = FALSE) |>
+  rename_with(tolower) |>
+  mutate(
+    country = gsub("\\[[a-z]\\]$", "", country),
+    country = dplyr::case_match(
+      country,
+      "Czech Republic" ~ "Czechia",
+      "Netherlands" ~ "Netherlands, Kingdom of the",
+      "South Korea" ~ "Korea, Republic of",
+      "United States" ~ "United States of America",
+      "Turkey" ~ "Türkiye",
+      "United Kingdom" ~ "United Kingdom of Great Britain and Northern Ireland",
+      .default = country
+    ),
+    oecd_member = TRUE
+  ) |>
+  select(country, oecd_member)
+
 isocountry <- isocountry |>
-  left_join(region, by = join_by(alpha_2))
+  left_join(region, by = join_by(alpha_2)) |>
+  left_join(oecd, by = join_by(name == country)) |>
+  mutate(oecd_member = replace(oecd_member, is.na(oecd_member), FALSE))
+
+if (sum(isocountry$oecd_member) != nrow(oecd)) {
+  stop("Not all OECD members are present in the isocountry dataset.")
+}
 
 write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE)
 usethis::use_data(isocountry, overwrite = TRUE)
