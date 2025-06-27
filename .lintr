@@ -1,0 +1,16 @@
+linters: all_linters(
+    object_name_linter = object_name_linter(c("snake_case", "CamelCase")), # only allow snake case and camel case object names
+    line_length_linter = line_length_linter(100L),
+    todo_comment_linter = NULL,
+    implicit_integer_linter = NULL,
+    nonportable_path_linter = NULL,
+    paste_linter = NULL,
+    object_overwrite_linter = NULL,
+    undesirable_function_linter(fun = modify_defaults(
+      defaults = default_undesirable_functions,
+      library = NULL
+    ))
+  )
+exclusions: list(
+    "tests/testthat.R"
+  )
