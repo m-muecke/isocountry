@@ -48,7 +48,7 @@ library(isocountry)
 
 isocountry |>
   left_join(isocurrency, by = join_by(alpha_2 == country_code))
-#> # A tibble: 265 × 18
+#> # A tibble: 265 × 19
 #>    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code
 #>    <chr>      <chr>   <chr>   <chr>        <chr>      <lgl>                <int>
 #>  1 Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142
@@ -62,9 +62,9 @@ isocountry |>
 #>  9 Antarctica AQ      ATA     010          ISO 3166-… FALSE                   NA
 #> 10 Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19
 #> # ℹ 255 more rows
-#> # ℹ 11 more variables: region_name <chr>, subregion_code <int>,
+#> # ℹ 12 more variables: region_name <chr>, subregion_code <int>,
 #> #   subregion_name <chr>, intermediate_region_code <int>,
-#> #   intermediate_region_name <chr>, m49_code <int>, currency_name <chr>,
-#> #   currency_code <chr>, currency_number <chr>, country_name <chr>,
-#> #   country_number <chr>
+#> #   intermediate_region_name <chr>, m49_code <int>, oecd_member <lgl>,
+#> #   currency_name <chr>, currency_code <chr>, currency_number <chr>,
+#> #   country_name <chr>, country_number <chr>
 ```
