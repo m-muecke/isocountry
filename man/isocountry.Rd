@@ -5,7 +5,7 @@
 \alias{isocountry}
 \title{Country names with ISO country codes}
 \format{
-A data frame with 249 rows and 15 variables:
+A data frame with 249 rows and 16 variables:
 \describe{
 \item{name}{country name}
 \item{alpha_2}{ISO alpha-2 code}
@@ -22,6 +22,7 @@ A data frame with 249 rows and 15 variables:
 \item{m49_code}{UN M49 code}
 \item{oecd_member}{is the country an OECD member}
 \item{eu_member}{is the country an EU member}
+\item{emu_member}{is the country an EMU member}
 }
 }
 \source{
@@ -37,7 +38,7 @@ isocountry
 }
 \description{
 ISO 3166-1 country codes with full country names, UN regional classifications,
-OECD membership status, and EU membership status.
+OECD membership status, EU membership status, and Economic and Monetary Union (EMU) membership status.
 }
 \examples{
 isocountry

@@ -52,8 +52,8 @@ eu_member <- read_html("https://en.wikipedia.org/wiki/Member_state_of_the_Europe
   _[[1L]] |>
   html_table(convert = FALSE) |>
   rename_with(tolower) |>
-  mutate(eu_member = TRUE) |>
-  select(iso, eu_member)
+  mutate(eu_member = TRUE, emu_member = grepl("euro", currency, ignore.case = TRUE)) |>
+  select(iso, eu_member, emu_member)
 
 isocountry <- isocountry |>
   left_join(region, by = join_by(alpha_2)) |>
@@ -61,7 +61,8 @@ isocountry <- isocountry |>
   left_join(eu_member, by = join_by(alpha_2 == iso)) |>
   mutate(
     oecd_member = replace(oecd_member, is.na(oecd_member), FALSE),
-    eu_member = replace(eu_member, is.na(eu_member), FALSE)
+    eu_member = replace(eu_member, is.na(eu_member), FALSE),
+    emu_member = replace(emu_member, is.na(emu_member), FALSE)
   )
 
 if (sum(isocountry$oecd_member) != nrow(oecd_member)) {
