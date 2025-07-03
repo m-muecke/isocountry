@@ -1,5 +1,8 @@
 # isocountry (development version)
 
+* Update the `isocurrency` data to the latest version (2025-07)
+* Include EU, EMU, and OECD membership status in the `isocountry` data (#31)
+
 # isocountry 0.4.0
 
 * Updated the `isocurrency` data to the latest version (2025-06)
