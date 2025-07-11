@@ -4,6 +4,7 @@
 ^CRAN-SUBMISSION$
 ^Dockerfile$
 ^LICENSE\.md$
+^Makefile$
 ^Meta$
 ^README\.Rmd$
 ^README\.html$
