@@ -4,8 +4,8 @@ NULL
 #' Country names with ISO country codes
 #'
 #' ISO 3166-1 country codes with full country names, UN regional classifications,
-#' OECD membership status, EU membership status, Economic and Monetary Union (EMU) membership status,
-#' and European Economic Area (EEA) membership status.
+#' OECD membership status, EU membership status, Economic and Monetary Union
+#' (EMU) membership status, and European Economic Area (EEA) membership status.
 #'
 #' @source
 #' * <https://en.wikipedia.org/wiki/ISO_3166-1>

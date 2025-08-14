@@ -24,14 +24,14 @@ country_codes <- read_html("https://www.iban.com/country-codes") |>
   html_table(convert = FALSE) |>
   rename_with(\(x) tolower(gsub(" |-", "_", x))) |>
   mutate(
-    country = gsub("\u2019", "'", country),
+    country = gsub("\u2019", "'", country, fixed = TRUE),
     country_name = country,
     country = str_squish(country)
   )
 
 isocurrency <- currency_codes |>
   # TODO: remove country name fix once the source is updated
-  mutate(country = replace(country, grepl("czech republic", country), "czechia")) |>
+  mutate(country = replace(country, grepl("czech republic", country, fixed = TRUE), "czechia")) |>
   inner_join(country_codes, by = join_by(country)) |>
   select(
     currency_name = currency,
