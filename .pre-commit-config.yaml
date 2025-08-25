@@ -12,7 +12,7 @@ repos:
         files: ^\.Rbuildignore$
       - id: trailing-whitespace
   - repo: https://github.com/lorenzwalthert/precommit
-    rev: v0.4.3.9013
+    rev: v0.4.3.9014
     hooks:
       - id: roxygenize
         additional_dependencies:
