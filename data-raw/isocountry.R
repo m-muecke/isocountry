@@ -69,6 +69,7 @@ isocountry <- isocountry |>
 if (sum(isocountry$oecd_member) != nrow(oecd_member)) {
   stop("Not all OECD members are present in the isocountry dataset.", call. = FALSE)
 }
+
 if (sum(isocountry$eu_member) != nrow(eu_member)) {
   stop("Not all EU members are present in the isocountry dataset.", call. = FALSE)
 }
