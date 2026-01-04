@@ -10,13 +10,13 @@
 Source:
 [`DESCRIPTION`](https://github.com/m-muecke/isocountry/blob/main/DESCRIPTION)
 
-Mücke M (2025). *isocountry: ISO 3166-1 Country Codes*. R package
+Mücke M (2026). *isocountry: ISO 3166-1 Country Codes*. R package
 version 0.5.0.9000, <https://m-muecke.github.io/isocountry/>.
 
     @Manual{,
       title = {isocountry: ISO 3166-1 Country Codes},
       author = {Maximilian Mücke},
-      year = {2025},
+      year = {2026},
       note = {R package version 0.5.0.9000},
       url = {https://m-muecke.github.io/isocountry/},
     }
