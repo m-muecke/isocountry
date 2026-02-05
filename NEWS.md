@@ -1,4 +1,4 @@
-# isocountry (development version)
+# isocountry 0.6.0
 
 * Update the `isocurrency` data to the latest version (2026-02)
 
