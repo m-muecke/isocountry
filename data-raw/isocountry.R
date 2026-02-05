@@ -33,7 +33,7 @@ oecd_member <- read_html("https://en.wikipedia.org/wiki/OECD") |>
   rename_with(tolower) |>
   mutate(
     country = gsub("\\[[a-z]\\]$", "", country),
-    country = dplyr::case_match(
+    country = recode_values(
       country,
       "Czech Republic" ~ "Czechia",
       "Netherlands" ~ "Netherlands, Kingdom of the",
@@ -41,7 +41,7 @@ oecd_member <- read_html("https://en.wikipedia.org/wiki/OECD") |>
       "United States" ~ "United States of America",
       "Turkey" ~ "Türkiye",
       "United Kingdom" ~ "United Kingdom of Great Britain and Northern Ireland",
-      .default = country
+      default = country
     ),
     oecd_member = TRUE
   ) |>
