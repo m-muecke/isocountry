@@ -33,15 +33,14 @@ oecd_member <- read_html("https://en.wikipedia.org/wiki/OECD") |>
   rename_with(tolower) |>
   mutate(
     country = gsub("\\[[a-z]\\]$", "", country),
-    country = recode_values(
+    country = replace_values(
       country,
       "Czech Republic" ~ "Czechia",
       "Netherlands" ~ "Netherlands, Kingdom of the",
       "South Korea" ~ "Korea, Republic of",
       "United States" ~ "United States of America",
       "Turkey" ~ "Türkiye",
-      "United Kingdom" ~ "United Kingdom of Great Britain and Northern Ireland",
-      default = country
+      "United Kingdom" ~ "United Kingdom of Great Britain and Northern Ireland"
     ),
     oecd_member = TRUE
   ) |>
