@@ -28,7 +28,7 @@ region <- read_html("https://unstats.un.org/unsd/methodology/m49/overview") |>
 
 oecd_member <- read_html("https://en.wikipedia.org/wiki/OECD") |>
   html_elements(".wikitable") |>
-  _[[3L]] |>
+  _[[4L]] |>
   html_table(convert = FALSE) |>
   rename_with(tolower) |>
   mutate(
