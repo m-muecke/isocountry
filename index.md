@@ -20,12 +20,14 @@ You can install the released version of **isocountry** from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 install.packages("isocountry")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("pak")
 pak::pak("m-muecke/isocountry")
 ```
@@ -33,6 +35,7 @@ pak::pak("m-muecke/isocountry")
 ## Usage
 
 ``` r
+
 library(dplyr)
 library(isocountry)
 
