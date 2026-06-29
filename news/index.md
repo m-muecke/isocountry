@@ -1,6 +1,8 @@
 # Changelog
 
-## isocountry (development version)
+## isocountry 0.6.1
+
+CRAN release: 2026-06-29
 
 - The `isocurrency` data now includes Eswatini (currency code SZL),
   which was previously dropped due to a country name mismatch (the
