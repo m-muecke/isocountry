@@ -44,7 +44,7 @@ A data frame with 261 rows and 6 variables:
 
 ``` r
 isocurrency
-#> # A tibble: 261 × 6
+#> # A tibble: 262 × 6
 #>    currency_name         currency_code currency_number country_name country_code
 #>    <chr>                 <chr>         <chr>           <chr>        <chr>       
 #>  1 Afghani               AFN           971             Afghanistan  AF          
@@ -57,6 +57,6 @@ isocurrency
 #>  8 East Caribbean Dollar XCD           951             Anguilla     AI          
 #>  9 East Caribbean Dollar XCD           951             Antigua and… AG          
 #> 10 Argentine Peso        ARS           032             Argentina    AR          
-#> # ℹ 251 more rows
+#> # ℹ 252 more rows
 #> # ℹ 1 more variable: country_number <chr>
 ```
