@@ -30,8 +30,12 @@ country_codes <- read_html("https://www.iban.com/country-codes") |>
   )
 
 isocurrency <- currency_codes |>
-  # TODO: remove country name fix once the source is updated
-  mutate(country = replace(country, grepl("czech republic", country, fixed = TRUE), "czechia")) |>
+  # TODO: remove country name fixes once the source is updated
+  mutate(
+    country = country |>
+      replace(grepl("czech republic", country, fixed = TRUE), "czechia") |>
+      replace(country == "swaziland", "eswatini")
+  ) |>
   inner_join(country_codes, by = join_by(country)) |>
   select(
     currency_name = currency,
