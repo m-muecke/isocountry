@@ -10,7 +10,7 @@ isocurrency
 
 ## Format
 
-A data frame with 261 rows and 6 variables:
+A data frame with 262 rows and 6 variables:
 
 - currency_name:
 
