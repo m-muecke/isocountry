@@ -1,3 +1,5 @@
+# isocountry (development version)
+
 # isocountry 0.6.1
 
 * The `isocurrency` data now includes Eswatini (currency code SZL), which was previously dropped due to a country name mismatch (the source still lists it as "Swaziland").
