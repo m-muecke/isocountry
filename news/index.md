@@ -3,8 +3,6 @@
 ## isocountry (development version)
 
 - Update the `isocurrency` data to the latest version (2026-08).
-- The `isocurrency` data now includes Türkiye (currency code TRY) and no
-  longer duplicates Cuba.
 
 ## isocountry 0.6.1
 
