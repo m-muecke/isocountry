@@ -16,7 +16,10 @@ A data frame with 262 rows and 6 variables:
 }
 }
 \source{
-\url{https://www.iban.com/currency-codes}
+\itemize{
+\item \url{https://www.iban.com/currency-codes}
+\item \url{https://www.iban.com/country-codes}
+}
 }
 \usage{
 isocurrency

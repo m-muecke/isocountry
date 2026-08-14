@@ -12,8 +12,11 @@ NULL
 #' * <https://unstats.un.org/unsd/methodology/m49/overview>
 #' * <https://en.wikipedia.org/wiki/OECD>
 #' * <https://en.wikipedia.org/wiki/Member_state_of_the_European_Union>
-#' * <https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union>
-#' * <https://en.wikipedia.org/wiki/European_Economic_Area>
+#'
+#' `emu_member` is derived from the currency of each EU member state, and `eea_member` from EU
+#' membership plus Iceland, Liechtenstein, and Norway. See
+#' <https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union> and
+#' <https://en.wikipedia.org/wiki/European_Economic_Area> for the definitions.
 #' @format A data frame with 249 rows and 17 variables:
 #' \describe{
 #'   \item{name}{country name}
@@ -42,7 +45,9 @@ NULL
 #'
 #' ISO 4217 currency codes with full country names.
 #'
-#' @source <https://www.iban.com/currency-codes>
+#' @source
+#' * <https://www.iban.com/currency-codes>
+#' * <https://www.iban.com/country-codes>
 #' @format A data frame with 262 rows and 6 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}

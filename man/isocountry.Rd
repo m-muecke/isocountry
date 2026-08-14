@@ -32,9 +32,12 @@ A data frame with 249 rows and 17 variables:
 \item \url{https://unstats.un.org/unsd/methodology/m49/overview}
 \item \url{https://en.wikipedia.org/wiki/OECD}
 \item \url{https://en.wikipedia.org/wiki/Member_state_of_the_European_Union}
-\item \url{https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union}
-\item \url{https://en.wikipedia.org/wiki/European_Economic_Area}
 }
+
+\code{emu_member} is derived from the currency of each EU member state, and \code{eea_member} from EU
+membership plus Iceland, Liechtenstein, and Norway. See
+\url{https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union} and
+\url{https://en.wikipedia.org/wiki/European_Economic_Area} for the definitions.
 }
 \usage{
 isocountry
