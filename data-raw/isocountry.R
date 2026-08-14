@@ -32,7 +32,6 @@ oecd_member <- read_html("https://en.wikipedia.org/wiki/OECD") |>
   html_table(convert = FALSE) |>
   rename_with(tolower) |>
   mutate(
-    country = gsub("\\[[a-z]\\]$", "", country),
     country = replace_values(
       country,
       "Czech Republic" ~ "Czechia",

@@ -22,7 +22,6 @@ currency_codes <- read_html("https://www.iban.com/currency-codes") |>
     country = replace_when(
       country,
       grepl("czech republic", country, fixed = TRUE) ~ "czechia",
-      country == "swaziland" ~ "eswatini",
       country == "turkey" ~ "türkiye"
     )
   ) |>
