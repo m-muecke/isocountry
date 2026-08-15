@@ -30,8 +30,12 @@ jobs:
         run: Rscript data-raw/isocurrency.R
       - name: commit
         run: |
+          if git diff --quiet -- data-raw; then
+            git checkout -- data
+            exit 0
+          fi
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git add .
-          git commit -m 'chore: refresh data' || exit 0
+          git add data data-raw
+          git commit -m 'chore: refresh data'
           git push origin
