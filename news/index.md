@@ -1,5 +1,7 @@
 # Changelog
 
+## isocountry (development version)
+
 ## isocountry 0.7.0
 
 CRAN release: 2026-08-21
