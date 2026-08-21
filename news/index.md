@@ -2,6 +2,8 @@
 
 ## isocountry 0.7.0
 
+CRAN release: 2026-08-21
+
 - Update the `isocurrency` data to the latest version (2026-08).
 
 ## isocountry 0.6.1

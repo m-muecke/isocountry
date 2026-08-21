@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/m-muecke/isocountry/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/m-muecke/isocountry/blob/v0.7.0/DESCRIPTION)
 
 Mücke M (2026). *isocountry: ISO 3166-1 Country Codes*. R package
 version 0.7.0, <https://m-muecke.github.io/isocountry/>.
