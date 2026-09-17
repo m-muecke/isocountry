@@ -1,6 +1,6 @@
 # Changelog
 
-## isocountry (development version)
+## isocountry 0.8.0
 
 - `isocountry` now uses the ISO 3166-1 name “Naoero” for Nauru (NR).
 
