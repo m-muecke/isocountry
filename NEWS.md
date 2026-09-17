@@ -1,8 +1,10 @@
 # isocountry (development version)
 
+* `isocountry` now uses the ISO 3166-1 name "Naoero" for Nauru (NR).
+
 # isocountry 0.7.0
 
-* Update the `isocurrency` data to the latest version (2026-08).
+* Updated the `isocurrency` data to the latest version (2026-08).
 
 # isocountry 0.6.1
 
@@ -10,16 +12,16 @@
 
 # isocountry 0.6.0
 
-* Update the `isocurrency` data to the latest version (2026-02)
+* Updated the `isocurrency` data to the latest version (2026-02).
 
 # isocountry 0.5.0
 
-* Update the `isocurrency` data to the latest version (2025-07)
-* Include OECD, EU, EMU, and EEA membership status in the `isocountry` data (#31)
+* Updated the `isocurrency` data to the latest version (2025-07).
+* Added OECD, EU, EMU, and EEA membership status to the `isocountry` data (#31).
 
 # isocountry 0.4.0
 
-* Updated the `isocurrency` data to the latest version (2025-06)
+* Updated the `isocurrency` data to the latest version (2025-06).
 
 # isocountry 0.3.0
 
