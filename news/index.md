@@ -2,11 +2,13 @@
 
 ## isocountry (development version)
 
+- `isocountry` now uses the ISO 3166-1 name “Naoero” for Nauru (NR).
+
 ## isocountry 0.7.0
 
 CRAN release: 2026-08-21
 
-- Update the `isocurrency` data to the latest version (2026-08).
+- Updated the `isocurrency` data to the latest version (2026-08).
 
 ## isocountry 0.6.1
 
@@ -20,21 +22,21 @@ CRAN release: 2026-06-29
 
 CRAN release: 2026-02-05
 
-- Update the `isocurrency` data to the latest version (2026-02)
+- Updated the `isocurrency` data to the latest version (2026-02).
 
 ## isocountry 0.5.0
 
 CRAN release: 2025-07-11
 
-- Update the `isocurrency` data to the latest version (2025-07)
-- Include OECD, EU, EMU, and EEA membership status in the `isocountry`
-  data ([\#31](https://github.com/m-muecke/isocountry/issues/31))
+- Updated the `isocurrency` data to the latest version (2025-07).
+- Added OECD, EU, EMU, and EEA membership status to the `isocountry`
+  data ([\#31](https://github.com/m-muecke/isocountry/issues/31)).
 
 ## isocountry 0.4.0
 
 CRAN release: 2025-06-06
 
-- Updated the `isocurrency` data to the latest version (2025-06)
+- Updated the `isocurrency` data to the latest version (2025-06).
 
 ## isocountry 0.3.0
 
