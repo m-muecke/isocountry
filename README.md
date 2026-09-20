@@ -22,7 +22,7 @@ This package contains the following datasets:
   3166](https://www.iban.com/country-codes) country codes for easy
   joining.
 
-Package is insipred by the
+Package is inspired by the
 [ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)
 project.
 
