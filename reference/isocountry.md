@@ -13,7 +13,7 @@ isocountry
 
 ## Format
 
-A data frame with 249 rows and 17 variables:
+A tibble with 249 rows and 17 variables:
 
 - name:
 
