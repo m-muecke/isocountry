@@ -72,5 +72,5 @@ if (sum(isocountry$eu_member) != nrow(eu_member)) {
   stop("Not all EU members are present in the isocountry dataset.", call. = FALSE)
 }
 
-write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE)
+write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE, na = "")
 usethis::use_data(isocountry, overwrite = TRUE)
