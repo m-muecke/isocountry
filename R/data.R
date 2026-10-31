@@ -17,7 +17,7 @@ NULL
 #' membership plus Iceland, Liechtenstein, and Norway. See
 #' <https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union> and
 #' <https://en.wikipedia.org/wiki/European_Economic_Area> for the definitions.
-#' @format A data frame with 249 rows and 17 variables:
+#' @format A tibble with 249 rows and 17 variables:
 #' \describe{
 #'   \item{name}{country name}
 #'   \item{alpha_2}{ISO alpha-2 code}
@@ -48,7 +48,7 @@ NULL
 #' @source
 #' * <https://www.iban.com/currency-codes>
 #' * <https://www.iban.com/country-codes>
-#' @format A data frame with 262 rows and 6 variables:
+#' @format A tibble with 262 rows and 6 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
 #'   \item{currency_code}{ISO currency code}

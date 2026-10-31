@@ -5,7 +5,7 @@
 \alias{isocountry}
 \title{Country names with ISO country codes}
 \format{
-A data frame with 249 rows and 17 variables:
+A tibble with 249 rows and 17 variables:
 \describe{
 \item{name}{country name}
 \item{alpha_2}{ISO alpha-2 code}
