@@ -105,16 +105,12 @@ countries <- merge(
 head(countries)
 ```
 
-## Data sources
+## Related work
 
-| Dataset | Source |
-|---|---|
-| `isocountry` | ISO 3166-1 codes and OECD and EU membership from Wikipedia, regions from the [UN Statistics Division](https://unstats.un.org/unsd/methodology/m49/overview) |
-| `isocurrency`, `isocurrency_historic` | ISO 4217 lists one and three, published by [SIX](https://www.six-group.com/en/products-services/financial-information/data-standards.html) as the ISO 4217 maintenance agency |
-| `isomic` | ISO 10383 list, published by the [ISO 10383 registration authority](https://www.iso20022.org/market-identifier-codes) |
-
-The data in the development version is refreshed monthly. The package code is MIT licensed, and the
-bundled data remains subject to the terms of its sources.
+- [countrycode](https://github.com/vincentarelbundock/countrycode): R package to convert country
+  names and codes between coding schemes
+- [ISOcodes](https://CRAN.R-project.org/package=ISOcodes): R package with ISO language, country,
+  currency, script, and character codes, and UN M49 area codes
 
 isocountry is inspired by the
 [ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)
