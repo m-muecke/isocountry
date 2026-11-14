@@ -54,23 +54,23 @@ eu_member <- read_html("https://en.wikipedia.org/wiki/Member_state_of_the_Europe
   select(iso, eu_member, emu_member)
 
 isocountry <- isocountry |>
-  left_join(region, by = join_by(alpha_2)) |>
-  left_join(oecd_member, by = join_by(name == country)) |>
-  left_join(eu_member, by = join_by(alpha_2 == iso)) |>
+  left_join(region, by = join_by(alpha_2), relationship = "one-to-one") |>
+  left_join(
+    oecd_member,
+    by = join_by(name == country),
+    unmatched = "error",
+    relationship = "one-to-one"
+  ) |>
+  left_join(
+    eu_member,
+    by = join_by(alpha_2 == iso),
+    unmatched = "error",
+    relationship = "one-to-one"
+  ) |>
   mutate(
-    oecd_member = replace(oecd_member, is.na(oecd_member), FALSE),
-    eu_member = replace(eu_member, is.na(eu_member), FALSE),
-    emu_member = replace(emu_member, is.na(emu_member), FALSE),
+    across(c(oecd_member, eu_member, emu_member), \(x) replace_values(x, NA ~ FALSE)),
     eea_member = eu_member | alpha_2 %in% c("IS", "LI", "NO")
   )
-
-if (sum(isocountry$oecd_member) != nrow(oecd_member)) {
-  stop("Not all OECD members are present in the isocountry dataset.", call. = FALSE)
-}
-
-if (sum(isocountry$eu_member) != nrow(eu_member)) {
-  stop("Not all EU members are present in the isocountry dataset.", call. = FALSE)
-}
 
 write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE, na = "")
 usethis::use_data(isocountry, overwrite = TRUE)

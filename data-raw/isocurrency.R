@@ -59,44 +59,42 @@ isocountry <- read.csv(
   "data-raw/isocountry.csv",
   colClasses = "character",
   na.strings = ""
+) |>
+  select(country_code = alpha_2, country_name = name, country_number = country_code)
+
+country_lookup <- tibble(
+  from = c(
+    normalize_name(isocountry$country_name),
+    names(country_overrides),
+    normalize_name(non_countries)
+  ),
+  to = c(isocountry$country_code, unname(country_overrides), rep(NA, length(non_countries)))
 )
-country_lookup <- setNames(isocountry$alpha_2, normalize_name(isocountry$name))
 
-match_country <- function(name) {
-  key <- normalize_name(name)
-  code <- unname(country_lookup[key])
-  coalesce(code, unname(country_overrides[key]))
-}
-
-add_country <- function(data) {
+add_country <- function(data, unmatched = "default") {
   data |>
     mutate(
-      country_code = match_country(CtryNm),
-      idx = match(country_code, isocountry$alpha_2),
-      country_name = coalesce(isocountry$name[idx], CtryNm),
-      country_number = isocountry$country_code[idx]
-    )
+      country_code = recode_values(
+        normalize_name(CtryNm),
+        from = country_lookup$from,
+        to = country_lookup$to,
+        unmatched = unmatched
+      )
+    ) |>
+    left_join(isocountry, by = join_by(country_code), relationship = "many-to-one") |>
+    mutate(country_name = coalesce(country_name, CtryNm))
 }
 
-current <- read_six("list-one.xml", "//CcyNtry") |>
-  filter(!is.na(Ccy), !startsWith(CtryNm, "ZZ")) |>
-  add_country()
-
-unmatched <- current |>
-  filter(is.na(country_code), !tolower(CtryNm) %in% non_countries) |>
-  pull(CtryNm)
-
-if (length(unmatched) > 0L) {
-  stop("Unmatched country names in list one: ", toString(unmatched), call. = FALSE)
-}
-
-isocurrency <- current |>
-  filter(!is.na(country_code)) |>
-  transmute(
+isocurrency <- read_six("list-one.xml", "//CcyNtry") |>
+  filter_out(when_any(is.na(Ccy), startsWith(CtryNm, "ZZ"))) |>
+  add_country(unmatched = "error") |>
+  filter_out(is.na(country_code)) |>
+  mutate(currency_minor_unit = suppressWarnings(as.integer(CcyMnrUnts))) |>
+  select(
     currency_name = CcyNm,
     currency_code = Ccy,
     currency_number = CcyNbr,
-    currency_minor_unit = suppressWarnings(as.integer(CcyMnrUnts)),
+    currency_minor_unit,
     country_name,
     country_code,
     country_number
@@ -105,7 +103,7 @@ isocurrency <- current |>
 
 isocurrency_historic <- read_six("list-three.xml", "//HstrcCcyNtry") |>
   add_country() |>
-  transmute(
+  select(
     currency_name = CcyNm,
     currency_code = Ccy,
     currency_number = CcyNbr,
