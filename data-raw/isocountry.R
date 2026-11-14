@@ -1,4 +1,4 @@
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(rvest)
 
 isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
