@@ -17,9 +17,9 @@
 #' @format A data frame with 249 rows and 17 variables:
 #' \describe{
 #'   \item{name}{country name}
-#'   \item{alpha_2}{ISO alpha-2 code}
-#'   \item{alpha_3}{ISO alpha-3 code}
-#'   \item{country_number}{ISO numeric code}
+#'   \item{alpha_2}{ISO 3166-1 alpha-2 code, e.g. `"AF"`}
+#'   \item{alpha_3}{ISO 3166-1 alpha-3 code, e.g. `"AFG"`}
+#'   \item{country_number}{ISO 3166-1 numeric code, e.g. `"004"`}
 #'   \item{iso_3166_2}{ISO 3166-2 subdivision code}
 #'   \item{is_independent}{is the country independent}
 #'   \item{region_code}{UN region code}
@@ -49,12 +49,12 @@
 #' @format A data frame with 262 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
-#'   \item{currency_code}{ISO currency code}
-#'   \item{currency_number}{ISO currency number}
+#'   \item{currency_code}{ISO 4217 alphabetic code, e.g. `"AFN"`}
+#'   \item{currency_number}{ISO 4217 numeric code, e.g. `"971"`}
 #'   \item{currency_minor_unit}{number of digits after the decimal separator}
 #'   \item{country_name}{ISO country name}
-#'   \item{country_code}{ISO alpha-2 country code}
-#'   \item{country_number}{ISO country number}
+#'   \item{country_code}{ISO 3166-1 alpha-2 code, e.g. `"AF"`}
+#'   \item{country_number}{ISO 3166-1 numeric code, e.g. `"004"`}
 #' }
 #' @seealso [isocurrency_historic] for withdrawn currencies.
 #' @examples
@@ -73,13 +73,13 @@
 #' @format A data frame with 166 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
-#'   \item{currency_code}{ISO currency code}
-#'   \item{currency_number}{ISO currency number}
+#'   \item{currency_code}{ISO 4217 alphabetic code, e.g. `"AFN"`}
+#'   \item{currency_number}{ISO 4217 numeric code, e.g. `"971"`}
 #'   \item{withdrawal_date}{withdrawal date as published, usually `"YYYY-MM"` but sometimes a range
 #'     such as `"1989 to 1990"`}
 #'   \item{country_name}{country name}
-#'   \item{country_code}{ISO alpha-2 country code}
-#'   \item{country_number}{ISO country number}
+#'   \item{country_code}{ISO 3166-1 alpha-2 code, e.g. `"AF"`}
+#'   \item{country_number}{ISO 3166-1 numeric code, e.g. `"004"`}
 #' }
 #' @seealso [isocurrency] for current currencies.
 #' @examples
@@ -103,7 +103,8 @@
 #'   \item{lei}{legal entity identifier (ISO 17442)}
 #'   \item{market_category_code}{market category code, e.g. `"RMKT"` for regulated market}
 #'   \item{acronym}{market acronym}
-#'   \item{country_code}{ISO alpha-2 country code, `"ZZ"` for codes not tied to a country}
+#'   \item{country_code}{ISO 3166-1 alpha-2 code, e.g. `"AF"`, or `"ZZ"` for codes not tied to a
+#'     country}
 #'   \item{city}{city}
 #'   \item{website}{website}
 #'   \item{status}{`"ACTIVE"`, `"UPDATED"`, or `"EXPIRED"`}

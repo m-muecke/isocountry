@@ -8,9 +8,9 @@
 A data frame with 249 rows and 17 variables:
 \describe{
 \item{name}{country name}
-\item{alpha_2}{ISO alpha-2 code}
-\item{alpha_3}{ISO alpha-3 code}
-\item{country_number}{ISO numeric code}
+\item{alpha_2}{ISO 3166-1 alpha-2 code, e.g. \code{"AF"}}
+\item{alpha_3}{ISO 3166-1 alpha-3 code, e.g. \code{"AFG"}}
+\item{country_number}{ISO 3166-1 numeric code, e.g. \code{"004"}}
 \item{iso_3166_2}{ISO 3166-2 subdivision code}
 \item{is_independent}{is the country independent}
 \item{region_code}{UN region code}

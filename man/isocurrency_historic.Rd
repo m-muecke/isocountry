@@ -8,13 +8,13 @@
 A data frame with 166 rows and 7 variables:
 \describe{
 \item{currency_name}{ISO currency name}
-\item{currency_code}{ISO currency code}
-\item{currency_number}{ISO currency number}
+\item{currency_code}{ISO 4217 alphabetic code, e.g. \code{"AFN"}}
+\item{currency_number}{ISO 4217 numeric code, e.g. \code{"971"}}
 \item{withdrawal_date}{withdrawal date as published, usually \code{"YYYY-MM"} but sometimes a range
 such as \code{"1989 to 1990"}}
 \item{country_name}{country name}
-\item{country_code}{ISO alpha-2 country code}
-\item{country_number}{ISO country number}
+\item{country_code}{ISO 3166-1 alpha-2 code, e.g. \code{"AF"}}
+\item{country_number}{ISO 3166-1 numeric code, e.g. \code{"004"}}
 }
 }
 \source{

@@ -15,7 +15,8 @@ A data frame with 2893 rows and 17 variables:
 \item{lei}{legal entity identifier (ISO 17442)}
 \item{market_category_code}{market category code, e.g. \code{"RMKT"} for regulated market}
 \item{acronym}{market acronym}
-\item{country_code}{ISO alpha-2 country code, \code{"ZZ"} for codes not tied to a country}
+\item{country_code}{ISO 3166-1 alpha-2 code, e.g. \code{"AF"}, or \code{"ZZ"} for codes not tied to a
+country}
 \item{city}{city}
 \item{website}{website}
 \item{status}{\code{"ACTIVE"}, \code{"UPDATED"}, or \code{"EXPIRED"}}
