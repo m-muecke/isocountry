@@ -39,6 +39,7 @@ test_that("isocurrency codes are well-formed and match isocountry", {
   expect_in(isocurrency$country_code, isocountry$alpha_2)
 
   idx <- match(isocurrency$country_code, isocountry$alpha_2)
+  expect_identical(isocurrency$country_name, isocountry$name[idx])
   expect_identical(isocurrency$country_number, isocountry$country_code[idx])
 })
 
@@ -50,9 +51,19 @@ test_that("isocurrency minor units are valid", {
 
 test_that("isocurrency_historic codes are well-formed and match isocountry", {
   expect_match(isocurrency_historic$currency_code, "^[A-Z]{3}$")
+  expect_match(isocurrency_historic$currency_number, "^[0-9]{3}$")
   expect_in(na.omit(isocurrency_historic$country_code), isocountry$alpha_2)
   expect_contains(isocurrency_historic$currency_code, c("DEM", "FRF", "ITL"))
   expect_all_true(!is.na(isocurrency_historic$withdrawal_date))
+
+  matched <- isocurrency_historic[!is.na(isocurrency_historic$country_code), ]
+  idx <- match(matched$country_code, isocountry$alpha_2)
+  expect_identical(matched$country_name, isocountry$name[idx])
+  expect_identical(matched$country_number, isocountry$country_code[idx])
+})
+
+test_that("isocurrency_historic has no SIX pseudo-country entries", {
+  expect_all_false(startsWith(isocurrency_historic$country_name, "ZZ"))
 })
 
 test_that("isomic codes are well-formed and match isocountry", {
