@@ -43,14 +43,28 @@ country_overrides <- c(
   "zaire" = "CD"
 )
 
-# entries in list one that aren't countries
+# entries that aren't countries
 non_countries <- c(
   "arab monetary fund",
+  "european monetary co-operation fund (emcf)",
   "european union",
   "international monetary fund (imf)",
   "member countries of the african development bank group",
   "sistema unitario de compensacion regional de pagos \"sucre\""
 )
+
+# countries in the historic list that no longer exist
+former_countries <- c(
+  "czechoslovakia",
+  "german democratic republic",
+  "netherlands antilles",
+  "serbia and montenegro",
+  "southern rhodesia",
+  "union of soviet socialist republics",
+  "yemen, democratic",
+  "yugoslavia"
+)
+no_country <- c(non_countries, former_countries)
 
 isocountry <- fread(
   "data-raw/isocountry.csv",
@@ -64,20 +78,18 @@ country_lookup <- data.table(
   from = c(
     normalize_name(isocountry$country_name),
     names(country_overrides),
-    normalize_name(non_countries)
+    normalize_name(no_country)
   ),
-  to = c(isocountry$country_code, unname(country_overrides), rep(NA, length(non_countries)))
+  to = c(isocountry$country_code, unname(country_overrides), rep(NA, length(no_country)))
 )
 
 stopifnot("Country lookup names must be unique" = !anyDuplicated(country_lookup$from))
 
-add_country <- function(data, strict = FALSE) {
+add_country <- function(data) {
   data[, name_key := normalize_name(CtryNm)]
-  if (strict) {
-    unmatched <- data[!country_lookup, on = .(name_key = from), unique(CtryNm)]
-    if (length(unmatched) > 0L) {
-      stop("Unmatched country names: ", toString(unmatched), call. = FALSE)
-    }
+  unmatched <- data[!country_lookup, on = .(name_key = from), unique(CtryNm)]
+  if (length(unmatched) > 0L) {
+    stop("Unmatched country names: ", toString(unmatched), call. = FALSE)
   }
 
   data[country_lookup, on = .(name_key = from), country_code := i.to]
@@ -88,7 +100,7 @@ add_country <- function(data, strict = FALSE) {
 
 isocurrency <- read_six("list-one.xml", "//CcyNtry") |>
   _[!is.na(Ccy) & !startsWith(CtryNm, "ZZ")] |>
-  add_country(strict = TRUE) |>
+  add_country() |>
   _[
     !is.na(country_code),
     .(
@@ -104,6 +116,7 @@ isocurrency <- read_six("list-one.xml", "//CcyNtry") |>
   unique()
 
 isocurrency_historic <- read_six("list-three.xml", "//HstrcCcyNtry") |>
+  _[!startsWith(CtryNm, "ZZ")] |>
   add_country() |>
   _[, .(
     currency_name = CcyNm,

@@ -66,7 +66,7 @@
 #' still exists, otherwise the name is kept as published and the codes are `NA`.
 #'
 #' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
-#' @format A data frame with 169 rows and 7 variables:
+#' @format A data frame with 166 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
 #'   \item{currency_code}{ISO currency code}
