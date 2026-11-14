@@ -6,6 +6,9 @@
   package no longer depends on tibble. Use
   [`tibble::as_tibble()`](https://tibble.tidyverse.org/reference/as_tibble.html)
   if you prefer tibbles.
+- `isocountry`’s `country_code` column (the ISO numeric code) is renamed
+  to `country_number` to match `isocurrency` and `isocurrency_historic`.
+  `country_code` now always means the ISO alpha-2 code.
 - `isocurrency` is now built from the official ISO 4217 lists published
   by SIX instead of iban.com. It gains a `currency_minor_unit` column
   with the number of decimal places, and `country_name` now matches the

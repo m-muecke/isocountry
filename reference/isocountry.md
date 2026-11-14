@@ -27,9 +27,9 @@ A data frame with 249 rows and 17 variables:
 
   ISO alpha-3 code
 
-- country_code:
+- country_number:
 
-  numeric code
+  ISO numeric code
 
 - iso_3166_2:
 
@@ -104,13 +104,13 @@ definitions.
 
 ``` r
 head(isocountry)
-#>             name alpha_2 alpha_3 country_code    iso_3166_2 is_independent
-#> 1    Afghanistan      AF     AFG          004 ISO 3166-2:AF           TRUE
-#> 2  Åland Islands      AX     ALA          248 ISO 3166-2:AX          FALSE
-#> 3        Albania      AL     ALB          008 ISO 3166-2:AL           TRUE
-#> 4        Algeria      DZ     DZA          012 ISO 3166-2:DZ           TRUE
-#> 5 American Samoa      AS     ASM          016 ISO 3166-2:AS          FALSE
-#> 6        Andorra      AD     AND          020 ISO 3166-2:AD           TRUE
+#>             name alpha_2 alpha_3 country_number    iso_3166_2 is_independent
+#> 1    Afghanistan      AF     AFG            004 ISO 3166-2:AF           TRUE
+#> 2  Åland Islands      AX     ALA            248 ISO 3166-2:AX          FALSE
+#> 3        Albania      AL     ALB            008 ISO 3166-2:AL           TRUE
+#> 4        Algeria      DZ     DZA            012 ISO 3166-2:DZ           TRUE
+#> 5 American Samoa      AS     ASM            016 ISO 3166-2:AS          FALSE
+#> 6        Andorra      AD     AND            020 ISO 3166-2:AD           TRUE
 #>   region_code region_name subregion_code  subregion_name
 #> 1         142        Asia             34   Southern Asia
 #> 2         150      Europe            154 Northern Europe

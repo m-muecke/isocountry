@@ -58,25 +58,29 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>This package contains the following datasets:</p>
+<p>isocountry provides ISO country, currency, and market identifier codes as plain data frames, with no dependencies.</p>
+<div class="section level2">
+<h2 id="datasets">Datasets<a class="anchor" aria-label="anchor" href="#datasets"></a>
+</h2>
 <ul>
 <li>
-<code>isocountry</code>: dataset resulting from merging the <a href="https://en.wikipedia.org/wiki/ISO_3166-1" class="external-link">ISO-3166</a> and the <a href="https://unstats.un.org/unsd/methodology/m49/overview" class="external-link">UN Region Codes</a>.</li>
+<code>isocountry</code>: <a href="https://en.wikipedia.org/wiki/ISO_3166-1" class="external-link">ISO 3166-1</a> country codes with <a href="https://unstats.un.org/unsd/methodology/m49/overview" class="external-link">UN M49</a> regions and membership in the OECD, the European Union (EU), the euro area (EMU), and the European Economic Area (EEA).</li>
 <li>
-<code>isocurrency</code>: <a href="https://www.six-group.com/en/products-services/financial-information/data-standards.html" class="external-link">ISO 4217</a> currency codes with minor units, combined with ISO 3166 country codes for easy joining.</li>
+<code>isocurrency</code>: <a href="https://www.six-group.com/en/products-services/financial-information/data-standards.html" class="external-link">ISO 4217</a> currency codes with minor units and the countries using each currency.</li>
 <li>
 <code>isocurrency_historic</code>: withdrawn ISO 4217 currency codes, e.g. the national currencies replaced by the euro.</li>
 <li>
 <code>isomic</code>: <a href="https://www.iso20022.org/market-identifier-codes" class="external-link">ISO 10383</a> market identifier codes (MICs) for exchanges and other trading venues.</li>
 </ul>
-<p>Package is inspired by the <a href="https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes" class="external-link">ISO-3166-Countries-with-Regional-Codes</a> project.</p>
+<p>Across the datasets, <code>country_code</code> is the ISO 3166-1 alpha-2 code (<code>alpha_2</code> in <code>isocountry</code>) and <code>country_number</code> is the numeric code, so the datasets join easily. Use <code><a href="https://tibble.tidyverse.org/reference/as_tibble.html" class="external-link">tibble::as_tibble()</a></code> or <code>data.table::as.data.table()</code> if you prefer tibbles or data.tables.</p>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the released version of <strong>isocountry</strong> from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
+<p>You can install the released version of isocountry from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"isocountry"</span><span class="op">)</span></span></code></pre></div>
-<p>And the development version from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>And the development version from <a href="https://github.com/m-muecke/isocountry" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"m-muecke/isocountry"</span><span class="op">)</span></span></code></pre></div>
@@ -85,58 +89,93 @@
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://m-muecke.github.io/isocountry/">isocountry</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">countries</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://m-muecke.github.io/isocountry/">isocountry</a></span><span class="op">)</span></span></code></pre></div>
+<p>Look up a country:</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span></span>
 <span>  <span class="va">isocountry</span>,</span>
-<span>  <span class="va">isocurrency</span>,</span>
+<span>  <span class="va">alpha_2</span> <span class="op">==</span> <span class="st">"DE"</span>,</span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">name</span>, <span class="va">alpha_3</span>, <span class="va">country_number</span>, <span class="va">region_name</span>, <span class="va">eu_member</span>, <span class="va">emu_member</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span><span class="co">#&gt;       name alpha_3 country_number region_name eu_member emu_member</span></span>
+<span><span class="co">#&gt; 84 Germany     DEU            276      Europe      TRUE       TRUE</span></span></code></pre></div>
+<p>List the euro area members:</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">isocountry</span><span class="op">$</span><span class="va">name</span><span class="op">[</span><span class="va">isocountry</span><span class="op">$</span><span class="va">emu_member</span><span class="op">]</span></span>
+<span><span class="co">#&gt;  [1] "Austria"                     "Belgium"                    </span></span>
+<span><span class="co">#&gt;  [3] "Bulgaria"                    "Croatia"                    </span></span>
+<span><span class="co">#&gt;  [5] "Cyprus"                      "Estonia"                    </span></span>
+<span><span class="co">#&gt;  [7] "Finland"                     "France"                     </span></span>
+<span><span class="co">#&gt;  [9] "Germany"                     "Greece"                     </span></span>
+<span><span class="co">#&gt; [11] "Ireland"                     "Italy"                      </span></span>
+<span><span class="co">#&gt; [13] "Latvia"                      "Lithuania"                  </span></span>
+<span><span class="co">#&gt; [15] "Luxembourg"                  "Malta"                      </span></span>
+<span><span class="co">#&gt; [17] "Netherlands, Kingdom of the" "Portugal"                   </span></span>
+<span><span class="co">#&gt; [19] "Slovakia"                    "Slovenia"                   </span></span>
+<span><span class="co">#&gt; [21] "Spain"</span></span></code></pre></div>
+<p>Find the countries using a currency:</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">isocurrency</span>, <span class="va">currency_code</span> <span class="op">==</span> <span class="st">"CHF"</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">country_name</span>, <span class="va">country_code</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt;      country_name country_code</span></span>
+<span><span class="co">#&gt; 135 Liechtenstein           LI</span></span>
+<span><span class="co">#&gt; 223   Switzerland           CH</span></span></code></pre></div>
+<p>Look up exchanges by their MIC:</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">isomic</span>, <span class="va">mic</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"XNYS"</span>, <span class="st">"XLON"</span>, <span class="st">"XETR"</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">mic</span>, <span class="va">market_name</span>, <span class="va">country_code</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       mic                   market_name country_code</span></span>
+<span><span class="co">#&gt; 2433 XETR                         XETRA           DE</span></span>
+<span><span class="co">#&gt; 2577 XLON         LONDON STOCK EXCHANGE           GB</span></span>
+<span><span class="co">#&gt; 2673 XNYS NEW YORK STOCK EXCHANGE, INC.           US</span></span></code></pre></div>
+<p>Add the currencies to the countries:</p>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">countries</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/merge.html" class="external-link">merge</a></span><span class="op">(</span></span>
+<span>  <span class="va">isocountry</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"alpha_2"</span>, <span class="st">"name"</span>, <span class="st">"region_name"</span><span class="op">)</span><span class="op">]</span>,</span>
+<span>  <span class="va">isocurrency</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"country_code"</span>, <span class="st">"currency_code"</span>, <span class="st">"currency_name"</span><span class="op">)</span><span class="op">]</span>,</span>
 <span>  by.x <span class="op">=</span> <span class="st">"alpha_2"</span>,</span>
-<span>  by.y <span class="op">=</span> <span class="st">"country_code"</span>,</span>
-<span>  all.x <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span>  by.y <span class="op">=</span> <span class="st">"country_code"</span></span>
 <span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">countries</span><span class="op">)</span></span>
-<span><span class="co">#&gt;   alpha_2                 name alpha_3 country_code    iso_3166_2</span></span>
-<span><span class="co">#&gt; 1      AD              Andorra     AND          020 ISO 3166-2:AD</span></span>
-<span><span class="co">#&gt; 2      AE United Arab Emirates     ARE          784 ISO 3166-2:AE</span></span>
-<span><span class="co">#&gt; 3      AF          Afghanistan     AFG          004 ISO 3166-2:AF</span></span>
-<span><span class="co">#&gt; 4      AG  Antigua and Barbuda     ATG          028 ISO 3166-2:AG</span></span>
-<span><span class="co">#&gt; 5      AI             Anguilla     AIA          660 ISO 3166-2:AI</span></span>
-<span><span class="co">#&gt; 6      AL              Albania     ALB          008 ISO 3166-2:AL</span></span>
-<span><span class="co">#&gt;   is_independent region_code region_name subregion_code</span></span>
-<span><span class="co">#&gt; 1           TRUE         150      Europe             39</span></span>
-<span><span class="co">#&gt; 2           TRUE         142        Asia            145</span></span>
-<span><span class="co">#&gt; 3           TRUE         142        Asia             34</span></span>
-<span><span class="co">#&gt; 4           TRUE          19    Americas            419</span></span>
-<span><span class="co">#&gt; 5          FALSE          19    Americas            419</span></span>
-<span><span class="co">#&gt; 6           TRUE         150      Europe             39</span></span>
-<span><span class="co">#&gt;                    subregion_name intermediate_region_code</span></span>
-<span><span class="co">#&gt; 1                 Southern Europe                       NA</span></span>
-<span><span class="co">#&gt; 2                    Western Asia                       NA</span></span>
-<span><span class="co">#&gt; 3                   Southern Asia                       NA</span></span>
-<span><span class="co">#&gt; 4 Latin America and the Caribbean                       29</span></span>
-<span><span class="co">#&gt; 5 Latin America and the Caribbean                       29</span></span>
-<span><span class="co">#&gt; 6                 Southern Europe                       NA</span></span>
-<span><span class="co">#&gt;   intermediate_region_name m49_code oecd_member eu_member emu_member eea_member</span></span>
-<span><span class="co">#&gt; 1                     &lt;NA&gt;       20       FALSE     FALSE      FALSE      FALSE</span></span>
-<span><span class="co">#&gt; 2                     &lt;NA&gt;      784       FALSE     FALSE      FALSE      FALSE</span></span>
-<span><span class="co">#&gt; 3                     &lt;NA&gt;        4       FALSE     FALSE      FALSE      FALSE</span></span>
-<span><span class="co">#&gt; 4                Caribbean       28       FALSE     FALSE      FALSE      FALSE</span></span>
-<span><span class="co">#&gt; 5                Caribbean      660       FALSE     FALSE      FALSE      FALSE</span></span>
-<span><span class="co">#&gt; 6                     &lt;NA&gt;        8       FALSE     FALSE      FALSE      FALSE</span></span>
-<span><span class="co">#&gt;           currency_name currency_code currency_number currency_minor_unit</span></span>
-<span><span class="co">#&gt; 1                  Euro           EUR             978                   2</span></span>
-<span><span class="co">#&gt; 2            UAE Dirham           AED             784                   2</span></span>
-<span><span class="co">#&gt; 3               Afghani           AFN             971                   2</span></span>
-<span><span class="co">#&gt; 4 East Caribbean Dollar           XCD             951                   2</span></span>
-<span><span class="co">#&gt; 5 East Caribbean Dollar           XCD             951                   2</span></span>
-<span><span class="co">#&gt; 6                   Lek           ALL             008                   2</span></span>
-<span><span class="co">#&gt;           country_name country_number</span></span>
-<span><span class="co">#&gt; 1              Andorra            020</span></span>
-<span><span class="co">#&gt; 2 United Arab Emirates            784</span></span>
-<span><span class="co">#&gt; 3          Afghanistan            004</span></span>
-<span><span class="co">#&gt; 4  Antigua and Barbuda            028</span></span>
-<span><span class="co">#&gt; 5             Anguilla            660</span></span>
-<span><span class="co">#&gt; 6              Albania            008</span></span></code></pre></div>
+<span><span class="co">#&gt;   alpha_2                 name region_name currency_code         currency_name</span></span>
+<span><span class="co">#&gt; 1      AD              Andorra      Europe           EUR                  Euro</span></span>
+<span><span class="co">#&gt; 2      AE United Arab Emirates        Asia           AED            UAE Dirham</span></span>
+<span><span class="co">#&gt; 3      AF          Afghanistan        Asia           AFN               Afghani</span></span>
+<span><span class="co">#&gt; 4      AG  Antigua and Barbuda    Americas           XCD East Caribbean Dollar</span></span>
+<span><span class="co">#&gt; 5      AI             Anguilla    Americas           XCD East Caribbean Dollar</span></span>
+<span><span class="co">#&gt; 6      AL              Albania      Europe           ALL                   Lek</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="data-sources">Data sources<a class="anchor" aria-label="anchor" href="#data-sources"></a>
+</h2>
+<table class="table">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead><tr>
+<th>Dataset</th>
+<th>Source</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>isocountry</code></td>
+<td>ISO 3166-1 codes and OECD and EU membership from Wikipedia, regions from the <a href="https://unstats.un.org/unsd/methodology/m49/overview" class="external-link">UN Statistics Division</a>
+</td>
+</tr>
+<tr>
+<td>
+<code>isocurrency</code>, <code>isocurrency_historic</code>
+</td>
+<td>ISO 4217 lists one and three, published by <a href="https://www.six-group.com/en/products-services/financial-information/data-standards.html" class="external-link">SIX</a> as the ISO 4217 maintenance agency</td>
+</tr>
+<tr>
+<td><code>isomic</code></td>
+<td>ISO 10383 list, published by the <a href="https://www.iso20022.org/market-identifier-codes" class="external-link">ISO 10383 registration authority</a>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The data in the development version is refreshed monthly. The package code is MIT licensed, and the bundled data remains subject to the terms of its sources.</p>
+<p>isocountry is inspired by the <a href="https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes" class="external-link">ISO-3166-Countries-with-Regional-Codes</a> project.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">

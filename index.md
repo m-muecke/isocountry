@@ -1,27 +1,33 @@
 # isocountry
 
-This package contains the following datasets:
+isocountry provides ISO country, currency, and market identifier codes
+as plain data frames, with no dependencies.
 
-- `isocountry`: dataset resulting from merging the
-  [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1) and the [UN
-  Region Codes](https://unstats.un.org/unsd/methodology/m49/overview).
+## Datasets
+
+- `isocountry`: [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1)
+  country codes with [UN
+  M49](https://unstats.un.org/unsd/methodology/m49/overview) regions and
+  membership in the OECD, the European Union (EU), the euro area (EMU),
+  and the European Economic Area (EEA).
 - `isocurrency`: [ISO
   4217](https://www.six-group.com/en/products-services/financial-information/data-standards.html)
-  currency codes with minor units, combined with ISO 3166 country codes
-  for easy joining.
+  currency codes with minor units and the countries using each currency.
 - `isocurrency_historic`: withdrawn ISO 4217 currency codes, e.g. the
   national currencies replaced by the euro.
 - `isomic`: [ISO
   10383](https://www.iso20022.org/market-identifier-codes) market
   identifier codes (MICs) for exchanges and other trading venues.
 
-Package is inspired by the
-[ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)
-project.
+Across the datasets, `country_code` is the ISO 3166-1 alpha-2 code
+(`alpha_2` in `isocountry`) and `country_number` is the numeric code, so
+the datasets join easily. Use
+[`tibble::as_tibble()`](https://tibble.tidyverse.org/reference/as_tibble.html)
+or `data.table::as.data.table()` if you prefer tibbles or data.tables.
 
 ## Installation
 
-You can install the released version of **isocountry** from
+You can install the released version of isocountry from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
@@ -29,7 +35,8 @@ You can install the released version of **isocountry** from
 install.packages("isocountry")
 ```
 
-And the development version from [GitHub](https://github.com/) with:
+And the development version from
+[GitHub](https://github.com/m-muecke/isocountry) with:
 
 ``` r
 
@@ -42,55 +49,92 @@ pak::pak("m-muecke/isocountry")
 ``` r
 
 library(isocountry)
+```
+
+Look up a country:
+
+``` r
+
+subset(
+  isocountry,
+  alpha_2 == "DE",
+  c(name, alpha_3, country_number, region_name, eu_member, emu_member)
+)
+#>       name alpha_3 country_number region_name eu_member emu_member
+#> 84 Germany     DEU            276      Europe      TRUE       TRUE
+```
+
+List the euro area members:
+
+``` r
+
+isocountry$name[isocountry$emu_member]
+#>  [1] "Austria"                     "Belgium"                    
+#>  [3] "Bulgaria"                    "Croatia"                    
+#>  [5] "Cyprus"                      "Estonia"                    
+#>  [7] "Finland"                     "France"                     
+#>  [9] "Germany"                     "Greece"                     
+#> [11] "Ireland"                     "Italy"                      
+#> [13] "Latvia"                      "Lithuania"                  
+#> [15] "Luxembourg"                  "Malta"                      
+#> [17] "Netherlands, Kingdom of the" "Portugal"                   
+#> [19] "Slovakia"                    "Slovenia"                   
+#> [21] "Spain"
+```
+
+Find the countries using a currency:
+
+``` r
+
+subset(isocurrency, currency_code == "CHF", c(country_name, country_code))
+#>      country_name country_code
+#> 135 Liechtenstein           LI
+#> 223   Switzerland           CH
+```
+
+Look up exchanges by their MIC:
+
+``` r
+
+subset(isomic, mic %in% c("XNYS", "XLON", "XETR"), c(mic, market_name, country_code))
+#>       mic                   market_name country_code
+#> 2433 XETR                         XETRA           DE
+#> 2577 XLON         LONDON STOCK EXCHANGE           GB
+#> 2673 XNYS NEW YORK STOCK EXCHANGE, INC.           US
+```
+
+Add the currencies to the countries:
+
+``` r
 
 countries <- merge(
-  isocountry,
-  isocurrency,
+  isocountry[c("alpha_2", "name", "region_name")],
+  isocurrency[c("country_code", "currency_code", "currency_name")],
   by.x = "alpha_2",
-  by.y = "country_code",
-  all.x = TRUE
+  by.y = "country_code"
 )
 head(countries)
-#>   alpha_2                 name alpha_3 country_code    iso_3166_2
-#> 1      AD              Andorra     AND          020 ISO 3166-2:AD
-#> 2      AE United Arab Emirates     ARE          784 ISO 3166-2:AE
-#> 3      AF          Afghanistan     AFG          004 ISO 3166-2:AF
-#> 4      AG  Antigua and Barbuda     ATG          028 ISO 3166-2:AG
-#> 5      AI             Anguilla     AIA          660 ISO 3166-2:AI
-#> 6      AL              Albania     ALB          008 ISO 3166-2:AL
-#>   is_independent region_code region_name subregion_code
-#> 1           TRUE         150      Europe             39
-#> 2           TRUE         142        Asia            145
-#> 3           TRUE         142        Asia             34
-#> 4           TRUE          19    Americas            419
-#> 5          FALSE          19    Americas            419
-#> 6           TRUE         150      Europe             39
-#>                    subregion_name intermediate_region_code
-#> 1                 Southern Europe                       NA
-#> 2                    Western Asia                       NA
-#> 3                   Southern Asia                       NA
-#> 4 Latin America and the Caribbean                       29
-#> 5 Latin America and the Caribbean                       29
-#> 6                 Southern Europe                       NA
-#>   intermediate_region_name m49_code oecd_member eu_member emu_member eea_member
-#> 1                     <NA>       20       FALSE     FALSE      FALSE      FALSE
-#> 2                     <NA>      784       FALSE     FALSE      FALSE      FALSE
-#> 3                     <NA>        4       FALSE     FALSE      FALSE      FALSE
-#> 4                Caribbean       28       FALSE     FALSE      FALSE      FALSE
-#> 5                Caribbean      660       FALSE     FALSE      FALSE      FALSE
-#> 6                     <NA>        8       FALSE     FALSE      FALSE      FALSE
-#>           currency_name currency_code currency_number currency_minor_unit
-#> 1                  Euro           EUR             978                   2
-#> 2            UAE Dirham           AED             784                   2
-#> 3               Afghani           AFN             971                   2
-#> 4 East Caribbean Dollar           XCD             951                   2
-#> 5 East Caribbean Dollar           XCD             951                   2
-#> 6                   Lek           ALL             008                   2
-#>           country_name country_number
-#> 1              Andorra            020
-#> 2 United Arab Emirates            784
-#> 3          Afghanistan            004
-#> 4  Antigua and Barbuda            028
-#> 5             Anguilla            660
-#> 6              Albania            008
+#>   alpha_2                 name region_name currency_code         currency_name
+#> 1      AD              Andorra      Europe           EUR                  Euro
+#> 2      AE United Arab Emirates        Asia           AED            UAE Dirham
+#> 3      AF          Afghanistan        Asia           AFN               Afghani
+#> 4      AG  Antigua and Barbuda    Americas           XCD East Caribbean Dollar
+#> 5      AI             Anguilla    Americas           XCD East Caribbean Dollar
+#> 6      AL              Albania      Europe           ALL                   Lek
 ```
+
+## Data sources
+
+| Dataset | Source |
+|----|----|
+| `isocountry` | ISO 3166-1 codes and OECD and EU membership from Wikipedia, regions from the [UN Statistics Division](https://unstats.un.org/unsd/methodology/m49/overview) |
+| `isocurrency`, `isocurrency_historic` | ISO 4217 lists one and three, published by [SIX](https://www.six-group.com/en/products-services/financial-information/data-standards.html) as the ISO 4217 maintenance agency |
+| `isomic` | ISO 10383 list, published by the [ISO 10383 registration authority](https://www.iso20022.org/market-identifier-codes) |
+
+The data in the development version is refreshed monthly. The package
+code is MIT licensed, and the bundled data remains subject to the terms
+of its sources.
+
+isocountry is inspired by the
+[ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)
+project.
