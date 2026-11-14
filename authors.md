@@ -10,12 +10,12 @@
 Source:
 [`DESCRIPTION`](https://github.com/m-muecke/isocountry/blob/main/DESCRIPTION)
 
-Mücke M (2026). *isocountry: ISO 3166-1 Country Codes and ISO 4217
-Currency Codes*. R package version 0.8.0.9000,
+Mücke M (2026). *isocountry: ISO 3166-1 Country, ISO 4217 Currency, and
+ISO 10383 Market Identifier Codes*. R package version 0.8.0.9000,
 <https://m-muecke.github.io/isocountry/>.
 
     @Manual{,
-      title = {isocountry: ISO 3166-1 Country Codes and ISO 4217 Currency Codes},
+      title = {isocountry: ISO 3166-1 Country, ISO 4217 Currency, and ISO 10383 Market Identifier Codes},
       author = {Maximilian Mücke},
       year = {2026},
       note = {R package version 0.8.0.9000},

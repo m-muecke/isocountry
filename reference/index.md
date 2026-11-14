@@ -6,3 +6,5 @@
   : Country names with ISO country codes
 - [`isocurrency`](https://m-muecke.github.io/isocountry/reference/isocurrency.md)
   : ISO currency codes
+- [`isomic`](https://m-muecke.github.io/isocountry/reference/isomic.md)
+  : ISO market identifier codes

@@ -2,6 +2,9 @@
 
 ## isocountry (development version)
 
+- New `isomic` dataset with ISO 10383 market identifier codes (MICs) for
+  exchanges and other trading venues.
+
 ## isocountry 0.8.0
 
 CRAN release: 2026-09-17

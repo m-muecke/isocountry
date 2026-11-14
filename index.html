@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>ISO 3166-1 Country Codes and ISO 4217 Currency Codes • isocountry</title>
+<title>ISO 3166-1 Country, ISO 4217 Currency, and ISO 10383 Market Identifier Codes • isocountry</title>
 <script src="lightswitch.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="ISO 3166-1 Country Codes and ISO 4217 Currency Codes">
-<meta name="description" content="ISO 3166-1 country codes combined with United Nations M49 regional classifications and membership status in the OECD, the European Union (EU), the Economic and Monetary Union (EMU), and the European Economic Area (EEA), along with ISO 4217 currency codes for each country.">
-<meta property="og:description" content="ISO 3166-1 country codes combined with United Nations M49 regional classifications and membership status in the OECD, the European Union (EU), the Economic and Monetary Union (EMU), and the European Economic Area (EEA), along with ISO 4217 currency codes for each country.">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="ISO 3166-1 Country, ISO 4217 Currency, and ISO 10383 Market Identifier Codes">
+<meta name="description" content="ISO 3166-1 country codes combined with United Nations M49 regional classifications and membership status in the OECD, the European Union (EU), the Economic and Monetary Union (EMU), and the European Economic Area (EEA), along with ISO 4217 currency codes for each country, and ISO 10383 market identifier codes (MICs) for exchanges and other trading venues.">
+<meta property="og:description" content="ISO 3166-1 country codes combined with United Nations M49 regional classifications and membership status in the OECD, the European Union (EU), the Economic and Monetary Union (EMU), and the European Economic Area (EEA), along with ISO 4217 currency codes for each country, and ISO 10383 market identifier codes (MICs) for exchanges and other trading venues.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -64,6 +64,8 @@
 <code>isocountry</code>: dataset resulting from merging the <a href="https://en.wikipedia.org/wiki/ISO_3166-1" class="external-link">ISO-3166</a> and the <a href="https://unstats.un.org/unsd/methodology/m49/overview" class="external-link">UN Region Codes</a>.</li>
 <li>
 <code>isocurrency</code>: <a href="https://www.iban.com/currency-codes" class="external-link">ISO 4217</a> currency codes combined with <a href="https://www.iban.com/country-codes" class="external-link">ISO 3166</a> country codes for easy joining.</li>
+<li>
+<code>isomic</code>: <a href="https://www.iso20022.org/market-identifier-codes" class="external-link">ISO 10383</a> market identifier codes (MICs) for exchanges and other trading venues.</li>
 </ul>
 <p>Package is inspired by the <a href="https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes" class="external-link">ISO-3166-Countries-with-Regional-Codes</a> project.</p>
 <div class="section level2">
