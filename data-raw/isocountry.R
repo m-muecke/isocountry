@@ -72,5 +72,7 @@ isocountry <- isocountry |>
     eea_member = eu_member | alpha_2 %in% c("IS", "LI", "NO")
   )
 
+isocountry <- as.data.frame(isocountry)
+
 write.csv(isocountry, "data-raw/isocountry.csv", row.names = FALSE, na = "")
 usethis::use_data(isocountry, overwrite = TRUE)

@@ -5,7 +5,7 @@
 \alias{isomic}
 \title{ISO market identifier codes}
 \format{
-A tibble with 2893 rows and 17 variables:
+A data frame with 2893 rows and 17 variables:
 \describe{
 \item{mic}{market identifier code}
 \item{operating_mic}{MIC of the operating entity the market belongs to}
@@ -38,6 +38,6 @@ venues, as published by the ISO 20022 registration authority. Includes active, u
 expired codes.
 }
 \examples{
-isomic
+head(isomic)
 }
 \keyword{datasets}

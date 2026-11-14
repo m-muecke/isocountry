@@ -119,6 +119,9 @@ isocurrency_historic <- read_six("list-three.xml", "//HstrcCcyNtry") |>
   ) |>
   distinct()
 
+isocurrency <- as.data.frame(isocurrency)
+isocurrency_historic <- as.data.frame(isocurrency_historic)
+
 write.csv(isocurrency, "data-raw/isocurrency.csv", row.names = FALSE, na = "")
 write.csv(
   isocurrency_historic,

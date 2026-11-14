@@ -5,7 +5,7 @@
 \alias{isocurrency}
 \title{ISO currency codes}
 \format{
-A tibble with 262 rows and 7 variables:
+A data frame with 262 rows and 7 variables:
 \describe{
 \item{currency_name}{ISO currency name}
 \item{currency_code}{ISO currency code}
@@ -27,7 +27,7 @@ ISO 4217 currency codes (list one) with the number of minor units and the countr
 currency. Country names and codes are taken from \link{isocountry}.
 }
 \examples{
-isocurrency
+head(isocurrency)
 }
 \seealso{
 \link{isocurrency_historic} for withdrawn currencies.

@@ -5,7 +5,7 @@
 \alias{isocountry}
 \title{Country names with ISO country codes}
 \format{
-A tibble with 249 rows and 17 variables:
+A data frame with 249 rows and 17 variables:
 \describe{
 \item{name}{country name}
 \item{alpha_2}{ISO alpha-2 code}
@@ -48,6 +48,6 @@ OECD membership status, EU membership status, Economic and Monetary Union
 (EMU) membership status, and European Economic Area (EEA) membership status.
 }
 \examples{
-isocountry
+head(isocountry)
 }
 \keyword{datasets}

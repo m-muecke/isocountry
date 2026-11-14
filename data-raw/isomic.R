@@ -34,7 +34,7 @@ isomic <- read.csv(
     across(ends_with("_date"), \(x) as.Date(x, format = "%Y%m%d"))
   ) |>
   arrange(mic) |>
-  tibble::as_tibble()
+  as.data.frame()
 
 stopifnot(
   !anyDuplicated(isomic$mic),

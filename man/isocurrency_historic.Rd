@@ -5,7 +5,7 @@
 \alias{isocurrency_historic}
 \title{Historic ISO currency codes}
 \format{
-A tibble with 169 rows and 7 variables:
+A data frame with 169 rows and 7 variables:
 \describe{
 \item{currency_name}{ISO currency name}
 \item{currency_code}{ISO currency code}
@@ -29,7 +29,7 @@ replaced by the euro. Country names and codes are taken from \link{isocountry} w
 still exists, otherwise the name is kept as published and the codes are \code{NA}.
 }
 \examples{
-isocurrency_historic
+head(isocurrency_historic)
 }
 \seealso{
 \link{isocurrency} for current currencies.

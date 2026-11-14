@@ -1,3 +1,10 @@
+test_that("datasets are plain data frames", {
+  expect_s3_class(isocountry, "data.frame", exact = TRUE)
+  expect_s3_class(isocurrency, "data.frame", exact = TRUE)
+  expect_s3_class(isocurrency_historic, "data.frame", exact = TRUE)
+  expect_s3_class(isomic, "data.frame", exact = TRUE)
+})
+
 test_that("isocountry codes are well-formed and unique", {
   expect_match(isocountry$alpha_2, "^[A-Z]{2}$")
   expect_match(isocountry$alpha_3, "^[A-Z]{3}$")

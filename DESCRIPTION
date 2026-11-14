@@ -17,8 +17,6 @@ URL: https://m-muecke.github.io/isocountry/,
 BugReports: https://github.com/m-muecke/isocountry/issues
 Depends:
     R (>= 3.5)
-Imports:
-    tibble
 Suggests:
     dplyr,
     testthat (>= 3.3.0)

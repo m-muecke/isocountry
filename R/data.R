@@ -1,6 +1,3 @@
-#' @importFrom tibble tibble
-NULL
-
 #' Country names with ISO country codes
 #'
 #' ISO 3166-1 country codes with full country names, UN regional classifications,
@@ -17,7 +14,7 @@ NULL
 #' membership plus Iceland, Liechtenstein, and Norway. See
 #' <https://en.wikipedia.org/wiki/Economic_and_Monetary_Union_of_the_European_Union> and
 #' <https://en.wikipedia.org/wiki/European_Economic_Area> for the definitions.
-#' @format A tibble with 249 rows and 17 variables:
+#' @format A data frame with 249 rows and 17 variables:
 #' \describe{
 #'   \item{name}{country name}
 #'   \item{alpha_2}{ISO alpha-2 code}
@@ -38,7 +35,7 @@ NULL
 #'   \item{eea_member}{is the country an EEA member}
 #' }
 #' @examples
-#' isocountry
+#' head(isocountry)
 "isocountry"
 
 #' ISO currency codes
@@ -47,7 +44,7 @@ NULL
 #' currency. Country names and codes are taken from [isocountry].
 #'
 #' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
-#' @format A tibble with 262 rows and 7 variables:
+#' @format A data frame with 262 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
 #'   \item{currency_code}{ISO currency code}
@@ -59,7 +56,7 @@ NULL
 #' }
 #' @seealso [isocurrency_historic] for withdrawn currencies.
 #' @examples
-#' isocurrency
+#' head(isocurrency)
 "isocurrency"
 
 #' Historic ISO currency codes
@@ -69,7 +66,7 @@ NULL
 #' still exists, otherwise the name is kept as published and the codes are `NA`.
 #'
 #' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
-#' @format A tibble with 169 rows and 7 variables:
+#' @format A data frame with 169 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
 #'   \item{currency_code}{ISO currency code}
@@ -82,7 +79,7 @@ NULL
 #' }
 #' @seealso [isocurrency] for current currencies.
 #' @examples
-#' isocurrency_historic
+#' head(isocurrency_historic)
 "isocurrency_historic"
 
 #' ISO market identifier codes
@@ -92,7 +89,7 @@ NULL
 #' expired codes.
 #'
 #' @source <https://www.iso20022.org/market-identifier-codes>
-#' @format A tibble with 2893 rows and 17 variables:
+#' @format A data frame with 2893 rows and 17 variables:
 #' \describe{
 #'   \item{mic}{market identifier code}
 #'   \item{operating_mic}{MIC of the operating entity the market belongs to}
@@ -113,5 +110,5 @@ NULL
 #'   \item{comments}{comments}
 #' }
 #' @examples
-#' isomic
+#' head(isomic)
 "isomic"
