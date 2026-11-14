@@ -21,6 +21,9 @@ This package contains the following datasets:
   currency codes combined with [ISO
   3166](https://www.iban.com/country-codes) country codes for easy
   joining.
+- `isomic`: [ISO
+  10383](https://www.iso20022.org/market-identifier-codes) market
+  identifier codes (MICs) for exchanges and other trading venues.
 
 Package is inspired by the
 [ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes)

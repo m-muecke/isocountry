@@ -60,3 +60,34 @@ NULL
 #' @examples
 #' isocurrency
 "isocurrency"
+
+#' ISO market identifier codes
+#'
+#' ISO 10383 market identifier codes (MICs) for exchanges, trading platforms, and other trading
+#' venues, as published by the ISO 20022 registration authority. Includes active, updated, and
+#' expired codes.
+#'
+#' @source <https://www.iso20022.org/market-identifier-codes>
+#' @format A tibble with 2893 rows and 17 variables:
+#' \describe{
+#'   \item{mic}{market identifier code}
+#'   \item{operating_mic}{MIC of the operating entity the market belongs to}
+#'   \item{type}{`"OPRT"` for an operating MIC, `"SGMT"` for a market segment MIC}
+#'   \item{market_name}{market name or institution description}
+#'   \item{legal_entity_name}{legal name of the entity operating the market}
+#'   \item{lei}{legal entity identifier (ISO 17442)}
+#'   \item{market_category_code}{market category code, e.g. `"RMKT"` for regulated market}
+#'   \item{acronym}{market acronym}
+#'   \item{country_code}{ISO alpha-2 country code, `"ZZ"` for codes not tied to a country}
+#'   \item{city}{city}
+#'   \item{website}{website}
+#'   \item{status}{`"ACTIVE"`, `"UPDATED"`, or `"EXPIRED"`}
+#'   \item{creation_date}{date the MIC was created}
+#'   \item{last_update_date}{date of the last update}
+#'   \item{last_validation_date}{date of the last validation}
+#'   \item{expiry_date}{date the MIC expired}
+#'   \item{comments}{comments}
+#' }
+#' @examples
+#' isomic
+"isomic"

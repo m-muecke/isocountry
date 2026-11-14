@@ -34,3 +34,13 @@ test_that("isocurrency codes are well-formed and match isocountry", {
   idx <- match(isocurrency$country_code, isocountry$alpha_2)
   expect_identical(isocurrency$country_number, isocountry$country_code[idx])
 })
+
+test_that("isomic codes are well-formed and match isocountry", {
+  expect_match(isomic$mic, "^[A-Z0-9]{4}$")
+  expect_identical(anyDuplicated(isomic$mic), 0L)
+  expect_in(isomic$operating_mic, isomic$mic)
+  expect_in(isomic$type, c("OPRT", "SGMT"))
+  expect_in(isomic$status, c("ACTIVE", "UPDATED", "EXPIRED"))
+  expect_in(isomic$country_code, c(isocountry$alpha_2, "ZZ"))
+  expect_s3_class(isomic$creation_date, "Date")
+})
