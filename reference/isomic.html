@@ -56,7 +56,7 @@ expired codes.</p>
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A tibble with 2893 rows and 17 variables:</p><dl><dt>mic</dt>
+    <p>A data frame with 2893 rows and 17 variables:</p><dl><dt>mic</dt>
 <dd><p>market identifier code</p></dd>
 
 <dt>operating_mic</dt>
@@ -116,25 +116,42 @@ expired codes.</p>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">isomic</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2,893 × 17</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    mic   operating_mic type  market_name                 legal_entity_name lei  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>             <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> 21XX  21XX          OPRT  21X                         21X AG            5299…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> 24DX  24EQ          SGMT  24X NATIONAL EXCHANGE - DA… 24X NATIONAL EXC… 9845…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> 24EQ  24EQ          OPRT  24X NATIONAL EXCHANGE LLC   24X NATIONAL EXC… 9845…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> 24EX  24EX          OPRT  24 EXCHANGE                 24X BERMUDA LIMI… 2138…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> 3579  3579          OPRT  SSY FUTURES LTD - FREIGHT … <span style="color: #BB0000;">NA</span>                2138…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> 360D  360X          SGMT  360X DLT - MTF              360X AG           5299…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> 360M  360X          SGMT  360X MTF                    360X AG           5299…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> 360T  360T          OPRT  360T                        360 TREASURY SYS… 5299…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> 360X  360X          OPRT  360X                        360X AG           5299…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> 3DXE  360T          SGMT  3DX                         360 TREASURY SYS… 5299…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 2,883 more rows</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 11 more variables: market_category_code &lt;chr&gt;, acronym &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   country_code &lt;chr&gt;, city &lt;chr&gt;, website &lt;chr&gt;, status &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   creation_date &lt;date&gt;, last_update_date &lt;date&gt;, last_validation_date &lt;date&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   expiry_date &lt;date&gt;, comments &lt;chr&gt;</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">isomic</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    mic operating_mic type                      market_name</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 21XX          21XX OPRT                              21X</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 24DX          24EQ SGMT     24X NATIONAL EXCHANGE - DARK</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 24EQ          24EQ OPRT        24X NATIONAL EXCHANGE LLC</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 24EX          24EX OPRT                      24 EXCHANGE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 3579          3579 OPRT SSY FUTURES LTD - FREIGHT SCREEN</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 360D          360X SGMT                   360X DLT - MTF</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           legal_entity_name                  lei market_category_code acronym</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                    21X AG 529900WC0LESEODR7A83                 OTHR     21X</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 24X NATIONAL EXCHANGE LLC 9845009C7E1A2E69J029                 RMKT    24EX</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 24X NATIONAL EXCHANGE LLC 9845009C7E1A2E69J029                 RMKT    &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       24X BERMUDA LIMITED 213800YXBUZH7G3NDC51                 NSPD    24EX</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                      &lt;NA&gt; 213800RGYOAL3KL2XL02                 NSPD    &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                   360X AG 529900M42L36KXZ1JD69                 MLTF    &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   country_code      city                 website status creation_date</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1           DE FRANKFURT              WWW.21X.EU ACTIVE    2024-05-27</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2           US  STAMFORD      WWW.24EXCHANGE.NET ACTIVE    2025-10-27</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3           US  STAMFORD HTTPS://24EXCHANGE.COM/ ACTIVE    2025-04-28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4           BM   BERMUDA      WWW.24EXCHANGE.NET ACTIVE    2019-09-23</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5           GB    LONDON       WWW.SSYONLINE.COM ACTIVE    2017-07-24</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6           DE FRANKFURT            WWW.360X.COM ACTIVE    2025-04-28</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   last_update_date last_validation_date expiry_date</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       2024-05-27           2024-05-27        &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       2025-10-27           2025-10-27        &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       2025-04-28           2025-04-28        &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       2025-10-27                 &lt;NA&gt;        &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5       2017-07-24                 &lt;NA&gt;        &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6       2025-04-28           2025-04-28        &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                               comments</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                                 &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                                 &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                                                 &lt;NA&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                       FOREIGN EXCHANGE AND EQUITIES.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 TRADING SCREEN FOR FORWARD FREIGHT AGREEMENTS (FFA).</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                                                 &lt;NA&gt;</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

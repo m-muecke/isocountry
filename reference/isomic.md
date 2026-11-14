@@ -12,7 +12,7 @@ isomic
 
 ## Format
 
-A tibble with 2893 rows and 17 variables:
+A data frame with 2893 rows and 17 variables:
 
 - mic:
 
@@ -89,23 +89,40 @@ A tibble with 2893 rows and 17 variables:
 ## Examples
 
 ``` r
-isomic
-#> # A tibble: 2,893 × 17
-#>    mic   operating_mic type  market_name                 legal_entity_name lei  
-#>    <chr> <chr>         <chr> <chr>                       <chr>             <chr>
-#>  1 21XX  21XX          OPRT  21X                         21X AG            5299…
-#>  2 24DX  24EQ          SGMT  24X NATIONAL EXCHANGE - DA… 24X NATIONAL EXC… 9845…
-#>  3 24EQ  24EQ          OPRT  24X NATIONAL EXCHANGE LLC   24X NATIONAL EXC… 9845…
-#>  4 24EX  24EX          OPRT  24 EXCHANGE                 24X BERMUDA LIMI… 2138…
-#>  5 3579  3579          OPRT  SSY FUTURES LTD - FREIGHT … NA                2138…
-#>  6 360D  360X          SGMT  360X DLT - MTF              360X AG           5299…
-#>  7 360M  360X          SGMT  360X MTF                    360X AG           5299…
-#>  8 360T  360T          OPRT  360T                        360 TREASURY SYS… 5299…
-#>  9 360X  360X          OPRT  360X                        360X AG           5299…
-#> 10 3DXE  360T          SGMT  3DX                         360 TREASURY SYS… 5299…
-#> # ℹ 2,883 more rows
-#> # ℹ 11 more variables: market_category_code <chr>, acronym <chr>,
-#> #   country_code <chr>, city <chr>, website <chr>, status <chr>,
-#> #   creation_date <date>, last_update_date <date>, last_validation_date <date>,
-#> #   expiry_date <date>, comments <chr>
+head(isomic)
+#>    mic operating_mic type                      market_name
+#> 1 21XX          21XX OPRT                              21X
+#> 2 24DX          24EQ SGMT     24X NATIONAL EXCHANGE - DARK
+#> 3 24EQ          24EQ OPRT        24X NATIONAL EXCHANGE LLC
+#> 4 24EX          24EX OPRT                      24 EXCHANGE
+#> 5 3579          3579 OPRT SSY FUTURES LTD - FREIGHT SCREEN
+#> 6 360D          360X SGMT                   360X DLT - MTF
+#>           legal_entity_name                  lei market_category_code acronym
+#> 1                    21X AG 529900WC0LESEODR7A83                 OTHR     21X
+#> 2 24X NATIONAL EXCHANGE LLC 9845009C7E1A2E69J029                 RMKT    24EX
+#> 3 24X NATIONAL EXCHANGE LLC 9845009C7E1A2E69J029                 RMKT    <NA>
+#> 4       24X BERMUDA LIMITED 213800YXBUZH7G3NDC51                 NSPD    24EX
+#> 5                      <NA> 213800RGYOAL3KL2XL02                 NSPD    <NA>
+#> 6                   360X AG 529900M42L36KXZ1JD69                 MLTF    <NA>
+#>   country_code      city                 website status creation_date
+#> 1           DE FRANKFURT              WWW.21X.EU ACTIVE    2024-05-27
+#> 2           US  STAMFORD      WWW.24EXCHANGE.NET ACTIVE    2025-10-27
+#> 3           US  STAMFORD HTTPS://24EXCHANGE.COM/ ACTIVE    2025-04-28
+#> 4           BM   BERMUDA      WWW.24EXCHANGE.NET ACTIVE    2019-09-23
+#> 5           GB    LONDON       WWW.SSYONLINE.COM ACTIVE    2017-07-24
+#> 6           DE FRANKFURT            WWW.360X.COM ACTIVE    2025-04-28
+#>   last_update_date last_validation_date expiry_date
+#> 1       2024-05-27           2024-05-27        <NA>
+#> 2       2025-10-27           2025-10-27        <NA>
+#> 3       2025-04-28           2025-04-28        <NA>
+#> 4       2025-10-27                 <NA>        <NA>
+#> 5       2017-07-24                 <NA>        <NA>
+#> 6       2025-04-28           2025-04-28        <NA>
+#>                                               comments
+#> 1                                                 <NA>
+#> 2                                                 <NA>
+#> 3                                                 <NA>
+#> 4                       FOREIGN EXCHANGE AND EQUITIES.
+#> 5 TRADING SCREEN FOR FORWARD FREIGHT AGREEMENTS (FFA).
+#> 6                                                 <NA>
 ```

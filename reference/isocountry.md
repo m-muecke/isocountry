@@ -13,7 +13,7 @@ isocountry
 
 ## Format
 
-A tibble with 249 rows and 17 variables:
+A data frame with 249 rows and 17 variables:
 
 - name:
 
@@ -103,23 +103,33 @@ definitions.
 ## Examples
 
 ``` r
-isocountry
-#> # A tibble: 249 × 17
-#>    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code
-#>    <chr>      <chr>   <chr>   <chr>        <chr>      <lgl>                <int>
-#>  1 Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142
-#>  2 Åland Isl… AX      ALA     248          ISO 3166-… FALSE                  150
-#>  3 Albania    AL      ALB     008          ISO 3166-… TRUE                   150
-#>  4 Algeria    DZ      DZA     012          ISO 3166-… TRUE                     2
-#>  5 American … AS      ASM     016          ISO 3166-… FALSE                    9
-#>  6 Andorra    AD      AND     020          ISO 3166-… TRUE                   150
-#>  7 Angola     AO      AGO     024          ISO 3166-… TRUE                     2
-#>  8 Anguilla   AI      AIA     660          ISO 3166-… FALSE                   19
-#>  9 Antarctica AQ      ATA     010          ISO 3166-… FALSE                   NA
-#> 10 Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19
-#> # ℹ 239 more rows
-#> # ℹ 10 more variables: region_name <chr>, subregion_code <int>,
-#> #   subregion_name <chr>, intermediate_region_code <int>,
-#> #   intermediate_region_name <chr>, m49_code <int>, oecd_member <lgl>,
-#> #   eu_member <lgl>, emu_member <lgl>, eea_member <lgl>
+head(isocountry)
+#>             name alpha_2 alpha_3 country_code    iso_3166_2 is_independent
+#> 1    Afghanistan      AF     AFG          004 ISO 3166-2:AF           TRUE
+#> 2  Åland Islands      AX     ALA          248 ISO 3166-2:AX          FALSE
+#> 3        Albania      AL     ALB          008 ISO 3166-2:AL           TRUE
+#> 4        Algeria      DZ     DZA          012 ISO 3166-2:DZ           TRUE
+#> 5 American Samoa      AS     ASM          016 ISO 3166-2:AS          FALSE
+#> 6        Andorra      AD     AND          020 ISO 3166-2:AD           TRUE
+#>   region_code region_name subregion_code  subregion_name
+#> 1         142        Asia             34   Southern Asia
+#> 2         150      Europe            154 Northern Europe
+#> 3         150      Europe             39 Southern Europe
+#> 4           2      Africa             15 Northern Africa
+#> 5           9     Oceania             61       Polynesia
+#> 6         150      Europe             39 Southern Europe
+#>   intermediate_region_code intermediate_region_name m49_code oecd_member
+#> 1                       NA                     <NA>        4       FALSE
+#> 2                       NA                     <NA>      248       FALSE
+#> 3                       NA                     <NA>        8       FALSE
+#> 4                       NA                     <NA>       12       FALSE
+#> 5                       NA                     <NA>       16       FALSE
+#> 6                       NA                     <NA>       20       FALSE
+#>   eu_member emu_member eea_member
+#> 1     FALSE      FALSE      FALSE
+#> 2     FALSE      FALSE      FALSE
+#> 3     FALSE      FALSE      FALSE
+#> 4     FALSE      FALSE      FALSE
+#> 5     FALSE      FALSE      FALSE
+#> 6     FALSE      FALSE      FALSE
 ```

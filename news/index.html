@@ -40,7 +40,11 @@
 
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="development version" id="isocountry-development-version">isocountry (development version)<a class="anchor" aria-label="anchor" href="#isocountry-development-version"></a></h2>
-<ul><li>New <code>isomic</code> dataset with ISO 10383 market identifier codes (MICs) for exchanges and other trading venues.</li>
+<ul><li>All datasets are now plain data frames instead of tibbles, and the package no longer depends on tibble. Use <code><a href="https://tibble.tidyverse.org/reference/as_tibble.html" class="external-link">tibble::as_tibble()</a></code> if you prefer tibbles.</li>
+<li>
+<code>isocurrency</code> is now built from the official ISO 4217 lists published by SIX instead of iban.com. It gains a <code>currency_minor_unit</code> column with the number of decimal places, and <code>country_name</code> now matches the names in <code>isocountry</code> (e.g. “Bahamas” instead of “Bahamas (the)”).</li>
+<li>New <code>isocurrency_historic</code> dataset with withdrawn ISO 4217 currency codes, e.g. the national currencies replaced by the euro.</li>
+<li>New <code>isomic</code> dataset with ISO 10383 market identifier codes (MICs) for exchanges and other trading venues.</li>
 </ul></div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.8.0" id="isocountry-080">isocountry 0.8.0<a class="anchor" aria-label="anchor" href="#isocountry-080"></a></h2><p class="text-muted">CRAN release: 2026-09-17</p>

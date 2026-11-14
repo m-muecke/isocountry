@@ -56,7 +56,7 @@ OECD membership status, EU membership status, Economic and Monetary Union
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A tibble with 249 rows and 17 variables:</p><dl><dt>name</dt>
+    <p>A data frame with 249 rows and 17 variables:</p><dl><dt>name</dt>
 <dd><p>country name</p></dd>
 
 <dt>alpha_2</dt>
@@ -124,25 +124,35 @@ membership plus Iceland, Liechtenstein, and Norway. See
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">isocountry</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 249 × 17</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> Åland Isl… AX      ALA     248          ISO 3166-… FALSE                  150</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> Albania    AL      ALB     008          ISO 3166-… TRUE                   150</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> Algeria    DZ      DZA     012          ISO 3166-… TRUE                     2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> American … AS      ASM     016          ISO 3166-… FALSE                    9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> Andorra    AD      AND     020          ISO 3166-… TRUE                   150</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> Angola     AO      AGO     024          ISO 3166-… TRUE                     2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> Anguilla   AI      AIA     660          ISO 3166-… FALSE                   19</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> Antarctica AQ      ATA     010          ISO 3166-… FALSE                   <span style="color: #BB0000;">NA</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 239 more rows</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 10 more variables: region_name &lt;chr&gt;, subregion_code &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   subregion_name &lt;chr&gt;, intermediate_region_code &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   intermediate_region_name &lt;chr&gt;, m49_code &lt;int&gt;, oecd_member &lt;lgl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   eu_member &lt;lgl&gt;, emu_member &lt;lgl&gt;, eea_member &lt;lgl&gt;</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">isocountry</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             name alpha_2 alpha_3 country_code    iso_3166_2 is_independent</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    Afghanistan      AF     AFG          004 ISO 3166-2:AF           TRUE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2  Åland Islands      AX     ALA          248 ISO 3166-2:AX          FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3        Albania      AL     ALB          008 ISO 3166-2:AL           TRUE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        Algeria      DZ     DZA          012 ISO 3166-2:DZ           TRUE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 American Samoa      AS     ASM          016 ISO 3166-2:AS          FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6        Andorra      AD     AND          020 ISO 3166-2:AD           TRUE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   region_code region_name subregion_code  subregion_name</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1         142        Asia             34   Southern Asia</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2         150      Europe            154 Northern Europe</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3         150      Europe             39 Southern Europe</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4           2      Africa             15 Northern Africa</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5           9     Oceania             61       Polynesia</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6         150      Europe             39 Southern Europe</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   intermediate_region_code intermediate_region_name m49_code oecd_member</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                       NA                     &lt;NA&gt;        4       FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                       NA                     &lt;NA&gt;      248       FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                       NA                     &lt;NA&gt;        8       FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                       NA                     &lt;NA&gt;       12       FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                       NA                     &lt;NA&gt;       16       FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                       NA                     &lt;NA&gt;       20       FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   eu_member emu_member eea_member</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     FALSE      FALSE      FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2     FALSE      FALSE      FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3     FALSE      FALSE      FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     FALSE      FALSE      FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5     FALSE      FALSE      FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     FALSE      FALSE      FALSE</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
