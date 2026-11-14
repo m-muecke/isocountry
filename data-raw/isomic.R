@@ -31,8 +31,8 @@ isomic <- fread(
 clean_text <- function(x) {
   # fread() keeps the doubled quotes used to escape quotes inside quoted fields
   x <- gsub('""', '"', x, fixed = TRUE)
-  x <- trimws(x)
-  x <- gsub("\\s+", " ", x)
+  x <- trimws(x, whitespace = "[\\h\\v]")
+  x <- gsub("[\\h\\v]+", " ", x, perl = TRUE)
   replace(x, !nzchar(x), NA)
 }
 
