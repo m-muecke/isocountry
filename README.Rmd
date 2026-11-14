@@ -51,11 +51,14 @@ pak::pak("m-muecke/isocountry")
 ## Usage
 
 ```{r}
-#| message: FALSE
-library(dplyr)
 library(isocountry)
 
-isocountry |>
-  left_join(isocurrency, by = join_by(alpha_2 == country_code)) |>
-  head()
+countries <- merge(
+  isocountry,
+  isocurrency,
+  by.x = "alpha_2",
+  by.y = "country_code",
+  all.x = TRUE
+)
+head(countries)
 ```

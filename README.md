@@ -50,45 +50,56 @@ pak::pak("m-muecke/isocountry")
 ## Usage
 
 ``` r
-library(dplyr)
 library(isocountry)
 
-isocountry |>
-  left_join(isocurrency, by = join_by(alpha_2 == country_code)) |>
-  head()
-#>             name alpha_2 alpha_3 country_code    iso_3166_2 is_independent
-#> 1    Afghanistan      AF     AFG          004 ISO 3166-2:AF           TRUE
-#> 2  Åland Islands      AX     ALA          248 ISO 3166-2:AX          FALSE
-#> 3        Albania      AL     ALB          008 ISO 3166-2:AL           TRUE
-#> 4        Algeria      DZ     DZA          012 ISO 3166-2:DZ           TRUE
-#> 5 American Samoa      AS     ASM          016 ISO 3166-2:AS          FALSE
-#> 6        Andorra      AD     AND          020 ISO 3166-2:AD           TRUE
-#>   region_code region_name subregion_code  subregion_name
-#> 1         142        Asia             34   Southern Asia
-#> 2         150      Europe            154 Northern Europe
-#> 3         150      Europe             39 Southern Europe
-#> 4           2      Africa             15 Northern Africa
-#> 5           9     Oceania             61       Polynesia
-#> 6         150      Europe             39 Southern Europe
-#>   intermediate_region_code intermediate_region_name m49_code oecd_member
-#> 1                       NA                     <NA>        4       FALSE
-#> 2                       NA                     <NA>      248       FALSE
-#> 3                       NA                     <NA>        8       FALSE
-#> 4                       NA                     <NA>       12       FALSE
-#> 5                       NA                     <NA>       16       FALSE
-#> 6                       NA                     <NA>       20       FALSE
-#>   eu_member emu_member eea_member  currency_name currency_code currency_number
-#> 1     FALSE      FALSE      FALSE        Afghani           AFN             971
-#> 2     FALSE      FALSE      FALSE           Euro           EUR             978
-#> 3     FALSE      FALSE      FALSE            Lek           ALL             008
-#> 4     FALSE      FALSE      FALSE Algerian Dinar           DZD             012
-#> 5     FALSE      FALSE      FALSE      US Dollar           USD             840
-#> 6     FALSE      FALSE      FALSE           Euro           EUR             978
-#>   currency_minor_unit   country_name country_number
-#> 1                   2    Afghanistan            004
-#> 2                   2  Åland Islands            248
-#> 3                   2        Albania            008
-#> 4                   2        Algeria            012
-#> 5                   2 American Samoa            016
-#> 6                   2        Andorra            020
+countries <- merge(
+  isocountry,
+  isocurrency,
+  by.x = "alpha_2",
+  by.y = "country_code",
+  all.x = TRUE
+)
+head(countries)
+#>   alpha_2                 name alpha_3 country_code    iso_3166_2
+#> 1      AD              Andorra     AND          020 ISO 3166-2:AD
+#> 2      AE United Arab Emirates     ARE          784 ISO 3166-2:AE
+#> 3      AF          Afghanistan     AFG          004 ISO 3166-2:AF
+#> 4      AG  Antigua and Barbuda     ATG          028 ISO 3166-2:AG
+#> 5      AI             Anguilla     AIA          660 ISO 3166-2:AI
+#> 6      AL              Albania     ALB          008 ISO 3166-2:AL
+#>   is_independent region_code region_name subregion_code
+#> 1           TRUE         150      Europe             39
+#> 2           TRUE         142        Asia            145
+#> 3           TRUE         142        Asia             34
+#> 4           TRUE          19    Americas            419
+#> 5          FALSE          19    Americas            419
+#> 6           TRUE         150      Europe             39
+#>                    subregion_name intermediate_region_code
+#> 1                 Southern Europe                       NA
+#> 2                    Western Asia                       NA
+#> 3                   Southern Asia                       NA
+#> 4 Latin America and the Caribbean                       29
+#> 5 Latin America and the Caribbean                       29
+#> 6                 Southern Europe                       NA
+#>   intermediate_region_name m49_code oecd_member eu_member emu_member eea_member
+#> 1                     <NA>       20       FALSE     FALSE      FALSE      FALSE
+#> 2                     <NA>      784       FALSE     FALSE      FALSE      FALSE
+#> 3                     <NA>        4       FALSE     FALSE      FALSE      FALSE
+#> 4                Caribbean       28       FALSE     FALSE      FALSE      FALSE
+#> 5                Caribbean      660       FALSE     FALSE      FALSE      FALSE
+#> 6                     <NA>        8       FALSE     FALSE      FALSE      FALSE
+#>           currency_name currency_code currency_number currency_minor_unit
+#> 1                  Euro           EUR             978                   2
+#> 2            UAE Dirham           AED             784                   2
+#> 3               Afghani           AFN             971                   2
+#> 4 East Caribbean Dollar           XCD             951                   2
+#> 5 East Caribbean Dollar           XCD             951                   2
+#> 6                   Lek           ALL             008                   2
+#>           country_name country_number
+#> 1              Andorra            020
+#> 2 United Arab Emirates            784
+#> 3          Afghanistan            004
+#> 4  Antigua and Barbuda            028
+#> 5             Anguilla            660
+#> 6              Albania            008
 ```

@@ -18,7 +18,6 @@ BugReports: https://github.com/m-muecke/isocountry/issues
 Depends:
     R (>= 3.5)
 Suggests:
-    dplyr,
     testthat (>= 3.3.0)
 Config/roxygen2/markdown: TRUE
 Config/roxygen2/version: 8.1.1
