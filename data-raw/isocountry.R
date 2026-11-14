@@ -65,6 +65,13 @@ eu <- read_html("https://en.wikipedia.org/wiki/Member_state_of_the_European_Unio
   setnames(tolower) |>
   _[, .(iso, emu = currency %ilike% "euro")]
 
+stopifnot(
+  "OECD members must be unique" = !anyDuplicated(oecd_countries),
+  "EU members must be unique" = !anyDuplicated(eu$iso),
+  "Expected at least 38 OECD members" = length(oecd_countries) >= 38L,
+  "Expected at least 27 EU members" = nrow(eu) >= 27L
+)
+
 unmatched <- c(
   setdiff(oecd_countries, isocountry$name),
   setdiff(eu$iso, isocountry$alpha_2)
