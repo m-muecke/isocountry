@@ -43,7 +43,9 @@
 #' ISO 4217 currency codes (list one) with the number of minor units and the countries using each
 #' currency. Country names and codes are taken from [isocountry].
 #'
-#' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
+#' @source Published free of charge by SIX, the ISO 4217 maintenance agency, at
+#'   <https://www.six-group.com/en/products-services/financial-information/data-standards.html>.
+#'   ISO permits free use of the ISO 4217 currency codes.
 #' @format A data frame with 262 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
@@ -65,7 +67,9 @@
 #' replaced by the euro. Country names and codes are taken from [isocountry] where the country
 #' still exists, otherwise the name is kept as published and the codes are `NA`.
 #'
-#' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
+#' @source Published free of charge by SIX, the ISO 4217 maintenance agency, at
+#'   <https://www.six-group.com/en/products-services/financial-information/data-standards.html>.
+#'   ISO permits free use of the ISO 4217 currency codes.
 #' @format A data frame with 166 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}

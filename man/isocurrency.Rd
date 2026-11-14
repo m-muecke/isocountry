@@ -17,7 +17,9 @@ A data frame with 262 rows and 7 variables:
 }
 }
 \source{
-\url{https://www.six-group.com/en/products-services/financial-information/data-standards.html}
+Published free of charge by SIX, the ISO 4217 maintenance agency, at
+\url{https://www.six-group.com/en/products-services/financial-information/data-standards.html}.
+ISO permits free use of the ISO 4217 currency codes.
 }
 \usage{
 isocurrency
