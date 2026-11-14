@@ -1,5 +1,7 @@
 library(data.table, warn.conflicts = FALSE)
 
+source("data-raw/utils.R")
+
 url <- "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv"
 
 isomic <- fread(
@@ -31,9 +33,7 @@ isomic <- fread(
 clean_text <- function(x) {
   # fread() keeps the doubled quotes used to escape quotes inside quoted fields
   x <- gsub('""', '"', x, fixed = TRUE)
-  x <- trimws(x, whitespace = "[\\h\\v]")
-  x <- gsub("[\\h\\v]+", " ", x, perl = TRUE)
-  replace(x, !nzchar(x), NA)
+  squish(x)
 }
 
 isomic[, names(.SD) := lapply(.SD, clean_text)]

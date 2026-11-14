@@ -1,16 +1,14 @@
 library(data.table, warn.conflicts = FALSE)
 library(xml2)
 
+source("data-raw/utils.R")
+
 base_url <- "https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists"
 
 read_six <- function(file, entry) {
   entries <- read_xml(file.path(base_url, file)) |> xml_find_all(entry)
   fields <- c("CtryNm", "CcyNm", "Ccy", "CcyNbr", "CcyMnrUnts", "WthdrwlDt")
-  setDT(lapply(setNames(nm = fields), function(field) {
-    x <- xml_text(xml_find_first(entries, field))
-    x <- gsub("[\\h\\v]+", " ", trimws(x, whitespace = "[\\h\\v]"), perl = TRUE)
-    replace(x, !nzchar(x), NA)
-  }))
+  setDT(lapply(setNames(nm = fields), \(field) squish(xml_text(xml_find_first(entries, field)))))
 }
 
 # SIX uses the ISO 3166 names in upper case, e.g. "KOREA (THE REPUBLIC OF)", while isocountry uses
