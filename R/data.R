@@ -43,23 +43,47 @@ NULL
 
 #' ISO currency codes
 #'
-#' ISO 4217 currency codes with full country names.
+#' ISO 4217 currency codes (list one) with the number of minor units and the countries using each
+#' currency. Country names and codes are taken from [isocountry].
 #'
-#' @source
-#' * <https://www.iban.com/currency-codes>
-#' * <https://www.iban.com/country-codes>
-#' @format A tibble with 262 rows and 6 variables:
+#' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
+#' @format A tibble with 262 rows and 7 variables:
 #' \describe{
 #'   \item{currency_name}{ISO currency name}
 #'   \item{currency_code}{ISO currency code}
 #'   \item{currency_number}{ISO currency number}
+#'   \item{currency_minor_unit}{number of digits after the decimal separator}
 #'   \item{country_name}{ISO country name}
 #'   \item{country_code}{ISO alpha-2 country code}
 #'   \item{country_number}{ISO country number}
 #' }
+#' @seealso [isocurrency_historic] for withdrawn currencies.
 #' @examples
 #' isocurrency
 "isocurrency"
+
+#' Historic ISO currency codes
+#'
+#' ISO 4217 currency codes that have been withdrawn (list three), e.g. the national currencies
+#' replaced by the euro. Country names and codes are taken from [isocountry] where the country
+#' still exists, otherwise the name is kept as published and the codes are `NA`.
+#'
+#' @source <https://www.six-group.com/en/products-services/financial-information/data-standards.html>
+#' @format A tibble with 169 rows and 7 variables:
+#' \describe{
+#'   \item{currency_name}{ISO currency name}
+#'   \item{currency_code}{ISO currency code}
+#'   \item{currency_number}{ISO currency number}
+#'   \item{withdrawal_date}{withdrawal date as published, usually `"YYYY-MM"` but sometimes a range
+#'     such as `"1989 to 1990"`}
+#'   \item{country_name}{country name}
+#'   \item{country_code}{ISO alpha-2 country code}
+#'   \item{country_number}{ISO country number}
+#' }
+#' @seealso [isocurrency] for current currencies.
+#' @examples
+#' isocurrency_historic
+"isocurrency_historic"
 
 #' ISO market identifier codes
 #'

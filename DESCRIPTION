@@ -8,9 +8,9 @@ Authors@R:
 Description: ISO 3166-1 country codes combined with United Nations M49
     regional classifications and membership status in the OECD, the
     European Union (EU), the Economic and Monetary Union (EMU), and the
-    European Economic Area (EEA), along with ISO 4217 currency codes for
-    each country, and ISO 10383 market identifier codes (MICs) for
-    exchanges and other trading venues.
+    European Economic Area (EEA), along with current and historic ISO
+    4217 currency codes for each country, and ISO 10383 market
+    identifier codes (MICs) for exchanges and other trading venues.
 License: MIT + file LICENSE
 URL: https://m-muecke.github.io/isocountry/,
     https://github.com/m-muecke/isocountry

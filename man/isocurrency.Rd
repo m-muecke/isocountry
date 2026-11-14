@@ -5,29 +5,31 @@
 \alias{isocurrency}
 \title{ISO currency codes}
 \format{
-A tibble with 262 rows and 6 variables:
+A tibble with 262 rows and 7 variables:
 \describe{
 \item{currency_name}{ISO currency name}
 \item{currency_code}{ISO currency code}
 \item{currency_number}{ISO currency number}
+\item{currency_minor_unit}{number of digits after the decimal separator}
 \item{country_name}{ISO country name}
 \item{country_code}{ISO alpha-2 country code}
 \item{country_number}{ISO country number}
 }
 }
 \source{
-\itemize{
-\item \url{https://www.iban.com/currency-codes}
-\item \url{https://www.iban.com/country-codes}
-}
+\url{https://www.six-group.com/en/products-services/financial-information/data-standards.html}
 }
 \usage{
 isocurrency
 }
 \description{
-ISO 4217 currency codes with full country names.
+ISO 4217 currency codes (list one) with the number of minor units and the countries using each
+currency. Country names and codes are taken from \link{isocountry}.
 }
 \examples{
 isocurrency
+}
+\seealso{
+\link{isocurrency_historic} for withdrawn currencies.
 }
 \keyword{datasets}

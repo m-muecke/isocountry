@@ -35,6 +35,19 @@ test_that("isocurrency codes are well-formed and match isocountry", {
   expect_identical(isocurrency$country_number, isocountry$country_code[idx])
 })
 
+test_that("isocurrency minor units are valid", {
+  expect_type(isocurrency$currency_minor_unit, "integer")
+  expect_in(isocurrency$currency_minor_unit, 0:4)
+  expect_identical(unique(isocurrency$currency_minor_unit[isocurrency$currency_code == "JPY"]), 0L)
+})
+
+test_that("isocurrency_historic codes are well-formed and match isocountry", {
+  expect_match(isocurrency_historic$currency_code, "^[A-Z]{3}$")
+  expect_in(na.omit(isocurrency_historic$country_code), isocountry$alpha_2)
+  expect_contains(isocurrency_historic$currency_code, c("DEM", "FRF", "ITL"))
+  expect_all_true(!is.na(isocurrency_historic$withdrawal_date))
+})
+
 test_that("isomic codes are well-formed and match isocountry", {
   expect_match(isomic$mic, "^[A-Z0-9]{4}$")
   expect_identical(anyDuplicated(isomic$mic), 0L)

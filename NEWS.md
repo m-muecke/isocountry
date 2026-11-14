@@ -1,5 +1,7 @@
 # isocountry (development version)
 
+* `isocurrency` is now built from the official ISO 4217 lists published by SIX instead of iban.com. It gains a `currency_minor_unit` column with the number of decimal places, and `country_name` now matches the names in `isocountry` (e.g. "Bahamas" instead of "Bahamas (the)").
+* New `isocurrency_historic` dataset with withdrawn ISO 4217 currency codes, e.g. the national currencies replaced by the euro.
 * New `isomic` dataset with ISO 10383 market identifier codes (MICs) for exchanges and other trading venues.
 
 # isocountry 0.8.0

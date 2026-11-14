@@ -17,10 +17,12 @@ This package contains the following datasets:
 - `isocountry`: dataset resulting from merging the
   [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1) and the [UN
   Region Codes](https://unstats.un.org/unsd/methodology/m49/overview).
-- `isocurrency`: [ISO 4217](https://www.iban.com/currency-codes)
-  currency codes combined with [ISO
-  3166](https://www.iban.com/country-codes) country codes for easy
-  joining.
+- `isocurrency`: [ISO
+  4217](https://www.six-group.com/en/products-services/financial-information/data-standards.html)
+  currency codes with minor units, combined with ISO 3166 country codes
+  for easy joining.
+- `isocurrency_historic`: withdrawn ISO 4217 currency codes, e.g. the
+  national currencies replaced by the euro.
 - `isomic`: [ISO
   10383](https://www.iso20022.org/market-identifier-codes) market
   identifier codes (MICs) for exchanges and other trading venues.
@@ -53,7 +55,7 @@ library(isocountry)
 
 isocountry |>
   left_join(isocurrency, by = join_by(alpha_2 == country_code))
-#> # A tibble: 265 × 22
+#> # A tibble: 265 × 23
 #>    name       alpha_2 alpha_3 country_code iso_3166_2 is_independent region_code
 #>    <chr>      <chr>   <chr>   <chr>        <chr>      <lgl>                <int>
 #>  1 Afghanist… AF      AFG     004          ISO 3166-… TRUE                   142
@@ -67,10 +69,10 @@ isocountry |>
 #>  9 Antarctica AQ      ATA     010          ISO 3166-… FALSE                   NA
 #> 10 Antigua a… AG      ATG     028          ISO 3166-… TRUE                    19
 #> # ℹ 255 more rows
-#> # ℹ 15 more variables: region_name <chr>, subregion_code <int>,
+#> # ℹ 16 more variables: region_name <chr>, subregion_code <int>,
 #> #   subregion_name <chr>, intermediate_region_code <int>,
 #> #   intermediate_region_name <chr>, m49_code <int>, oecd_member <lgl>,
 #> #   eu_member <lgl>, emu_member <lgl>, eea_member <lgl>, currency_name <chr>,
-#> #   currency_code <chr>, currency_number <chr>, country_name <chr>,
-#> #   country_number <chr>
+#> #   currency_code <chr>, currency_number <chr>, currency_minor_unit <int>,
+#> #   country_name <chr>, country_number <chr>
 ```

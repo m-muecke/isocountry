@@ -25,7 +25,8 @@ knitr::opts_chunk$set(
 This package contains the following datasets:
 
 - `isocountry`: dataset resulting from merging the [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1) and the [UN Region Codes](https://unstats.un.org/unsd/methodology/m49/overview).
-- `isocurrency`: [ISO 4217](https://www.iban.com/currency-codes) currency codes combined with [ISO 3166](https://www.iban.com/country-codes) country codes for easy joining.
+- `isocurrency`: [ISO 4217](https://www.six-group.com/en/products-services/financial-information/data-standards.html) currency codes with minor units, combined with ISO 3166 country codes for easy joining.
+- `isocurrency_historic`: withdrawn ISO 4217 currency codes, e.g. the national currencies replaced by the euro.
 - `isomic`: [ISO 10383](https://www.iso20022.org/market-identifier-codes) market identifier codes (MICs) for exchanges and other trading venues.
 
 Package is inspired by the [ISO-3166-Countries-with-Regional-Codes](https://github.com/lukes/ISO-3166-Countries-with-Regional-Codes) project.
