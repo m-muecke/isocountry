@@ -72,6 +72,11 @@ country_lookup <- tibble(
 )
 
 add_country <- function(data, unmatched = "default") {
+  missing <- unique(data$CtryNm[!normalize_name(data$CtryNm) %in% country_lookup$from])
+  if (unmatched == "error" && length(missing) > 0L) {
+    stop("Unmatched country names: ", toString(missing), call. = FALSE)
+  }
+
   data |>
     mutate(
       country_code = recode_values(
