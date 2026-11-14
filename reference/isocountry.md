@@ -21,15 +21,15 @@ A data frame with 249 rows and 17 variables:
 
 - alpha_2:
 
-  ISO alpha-2 code
+  ISO 3166-1 alpha-2 code, e.g. `"AF"`
 
 - alpha_3:
 
-  ISO alpha-3 code
+  ISO 3166-1 alpha-3 code, e.g. `"AFG"`
 
 - country_number:
 
-  ISO numeric code
+  ISO 3166-1 numeric code, e.g. `"004"`
 
 - iso_3166_2:
 

@@ -21,11 +21,11 @@ A data frame with 262 rows and 7 variables:
 
 - currency_code:
 
-  ISO currency code
+  ISO 4217 alphabetic code, e.g. `"AFN"`
 
 - currency_number:
 
-  ISO currency number
+  ISO 4217 numeric code, e.g. `"971"`
 
 - currency_minor_unit:
 
@@ -37,11 +37,11 @@ A data frame with 262 rows and 7 variables:
 
 - country_code:
 
-  ISO alpha-2 country code
+  ISO 3166-1 alpha-2 code, e.g. `"AF"`
 
 - country_number:
 
-  ISO country number
+  ISO 3166-1 numeric code, e.g. `"004"`
 
 ## Source
 

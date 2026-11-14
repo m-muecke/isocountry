@@ -48,7 +48,8 @@ A data frame with 2893 rows and 17 variables:
 
 - country_code:
 
-  ISO alpha-2 country code, `"ZZ"` for codes not tied to a country
+  ISO 3166-1 alpha-2 code, e.g. `"AF"`, or `"ZZ"` for codes not tied to
+  a country
 
 - city:
 

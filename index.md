@@ -68,7 +68,7 @@ List the euro area members:
 
 ``` r
 
-isocountry$name[isocountry$emu_member]
+isocountry[isocountry$emu_member, "name"]
 #>  [1] "Austria"                     "Belgium"                    
 #>  [3] "Bulgaria"                    "Croatia"                    
 #>  [5] "Cyprus"                      "Estonia"                    
