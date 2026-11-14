@@ -8,10 +8,10 @@ test_that("datasets are plain data frames", {
 test_that("isocountry codes are well-formed and unique", {
   expect_match(isocountry$alpha_2, "^[A-Z]{2}$")
   expect_match(isocountry$alpha_3, "^[A-Z]{3}$")
-  expect_match(isocountry$country_code, "^[0-9]{3}$")
+  expect_match(isocountry$country_number, "^[0-9]{3}$")
   expect_identical(anyDuplicated(isocountry$alpha_2), 0L)
   expect_identical(anyDuplicated(isocountry$alpha_3), 0L)
-  expect_identical(anyDuplicated(isocountry$country_code), 0L)
+  expect_identical(anyDuplicated(isocountry$country_number), 0L)
   expect_all_true(!is.na(isocountry$name))
 })
 
@@ -40,7 +40,7 @@ test_that("isocurrency codes are well-formed and match isocountry", {
 
   idx <- match(isocurrency$country_code, isocountry$alpha_2)
   expect_identical(isocurrency$country_name, isocountry$name[idx])
-  expect_identical(isocurrency$country_number, isocountry$country_code[idx])
+  expect_identical(isocurrency$country_number, isocountry$country_number[idx])
 })
 
 test_that("isocurrency minor units are valid", {
@@ -59,7 +59,7 @@ test_that("isocurrency_historic codes are well-formed and match isocountry", {
   matched <- isocurrency_historic[!is.na(isocurrency_historic$country_code), ]
   idx <- match(matched$country_code, isocountry$alpha_2)
   expect_identical(matched$country_name, isocountry$name[idx])
-  expect_identical(matched$country_number, isocountry$country_code[idx])
+  expect_identical(matched$country_number, isocountry$country_number[idx])
 })
 
 test_that("isocurrency_historic has no SIX pseudo-country entries", {

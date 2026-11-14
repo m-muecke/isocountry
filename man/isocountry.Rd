@@ -10,7 +10,7 @@ A data frame with 249 rows and 17 variables:
 \item{name}{country name}
 \item{alpha_2}{ISO alpha-2 code}
 \item{alpha_3}{ISO alpha-3 code}
-\item{country_code}{numeric code}
+\item{country_number}{ISO numeric code}
 \item{iso_3166_2}{ISO 3166-2 subdivision code}
 \item{is_independent}{is the country independent}
 \item{region_code}{UN region code}

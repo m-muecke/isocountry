@@ -66,7 +66,7 @@ no_country <- c(non_countries, former_countries)
 
 isocountry <- fread(
   "data-raw/isocountry.csv",
-  select = c("alpha_2", "name", "country_code"),
+  select = c("alpha_2", "name", "country_number"),
   col.names = c("country_code", "country_name", "country_number"),
   colClasses = "character",
   na.strings = ""

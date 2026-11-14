@@ -6,7 +6,7 @@ isocountry <- read_html("https://en.wikipedia.org/wiki/ISO_3166-1") |>
   _[[3L]] |>
   html_table(convert = FALSE) |>
   setDT() |>
-  setnames(c("name", "alpha_2", "alpha_3", "country_code", "iso_3166_2", "is_independent"))
+  setnames(c("name", "alpha_2", "alpha_3", "country_number", "iso_3166_2", "is_independent"))
 
 stopifnot(
   "`alpha_2` must be unique" = !anyDuplicated(isocountry$alpha_2),

@@ -1,4 +1,4 @@
-"name","alpha_2","alpha_3","country_code","iso_3166_2","is_independent","region_code","region_name","subregion_code","subregion_name","intermediate_region_code","intermediate_region_name","m49_code","oecd_member","eu_member","emu_member","eea_member"
+"name","alpha_2","alpha_3","country_number","iso_3166_2","is_independent","region_code","region_name","subregion_code","subregion_name","intermediate_region_code","intermediate_region_name","m49_code","oecd_member","eu_member","emu_member","eea_member"
 "Afghanistan","AF","AFG","004","ISO 3166-2:AF",TRUE,142,"Asia",34,"Southern Asia",,,4,FALSE,FALSE,FALSE,FALSE
 "Åland Islands","AX","ALA","248","ISO 3166-2:AX",FALSE,150,"Europe",154,"Northern Europe",,,248,FALSE,FALSE,FALSE,FALSE
 "Albania","AL","ALB","008","ISO 3166-2:AL",TRUE,150,"Europe",39,"Southern Europe",,,8,FALSE,FALSE,FALSE,FALSE
