@@ -78,7 +78,7 @@ subset(
 List the euro area members:
 
 ```{r}
-isocountry$name[isocountry$emu_member]
+isocountry[isocountry$emu_member, "name"]
 ```
 
 Find the countries using a currency:
