@@ -1,15 +1,10 @@
-library(dplyr, warn.conflicts = FALSE)
+library(data.table, warn.conflicts = FALSE)
 
 url <- "https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv"
 
-isomic <- read.csv(
+isomic <- fread(
   url,
-  colClasses = "character",
-  na.strings = "",
-  encoding = "UTF-8",
-  check.names = FALSE
-) |>
-  setNames(c(
+  col.names = c(
     "mic",
     "operating_mic",
     "type",
@@ -27,21 +22,34 @@ isomic <- read.csv(
     "last_validation_date",
     "expiry_date",
     "comments"
-  )) |>
-  mutate(
-    across(where(is.character), \(x) na_if(gsub("\\s+", " ", trimws(x)), "")),
-    across(c(city, website), \(x) na_if(x, "N/A")),
-    across(ends_with("_date"), \(x) as.Date(x, format = "%Y%m%d"))
-  ) |>
-  arrange(mic) |>
-  as.data.frame()
-
-stopifnot(
-  !anyDuplicated(isomic$mic),
-  all(isomic$operating_mic %in% isomic$mic),
-  all(isomic$type %in% c("OPRT", "SGMT")),
-  all(isomic$status %in% c("ACTIVE", "EXPIRED", "UPDATED"))
+  ),
+  colClasses = "character",
+  na.strings = '"N/A"',
+  encoding = "UTF-8"
 )
 
-write.csv(isomic, "data-raw/isomic.csv", row.names = FALSE, na = "")
+clean_text <- function(x) {
+  # fread() keeps the doubled quotes used to escape quotes inside quoted fields
+  x <- gsub('""', '"', x, fixed = TRUE)
+  x <- trimws(x)
+  x <- gsub("\\s+", " ", x)
+  replace(x, !nzchar(x), NA)
+}
+
+isomic[, names(.SD) := lapply(.SD, clean_text)]
+isomic[, names(.SD) := lapply(.SD, as.Date, format = "%Y%m%d"), .SDcols = patterns("_date$")]
+setorder(isomic, mic)
+
+stopifnot(
+  "`mic` must be unique" = !anyDuplicated(isomic$mic),
+  "Every `operating_mic` must be a known `mic`" = all(isomic$operating_mic %in% isomic$mic),
+  "`type` must be \"OPRT\" or \"SGMT\"" = all(isomic$type %in% c("OPRT", "SGMT")),
+  "`status` must be \"ACTIVE\", \"EXPIRED\", or \"UPDATED\"" = all(
+    isomic$status %in% c("ACTIVE", "EXPIRED", "UPDATED")
+  )
+)
+
+setDF(isomic)
+
+fwrite(isomic, "data-raw/isomic.csv", quote = TRUE, na = "")
 usethis::use_data(isomic, overwrite = TRUE)
