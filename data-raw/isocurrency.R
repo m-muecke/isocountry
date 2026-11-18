@@ -69,7 +69,8 @@ isocountry <- fread(
   select = c("alpha_2", "name", "country_number"),
   col.names = c("country_code", "country_name", "country_number"),
   colClasses = "character",
-  na.strings = ""
+  na.strings = "",
+  encoding = "UTF-8"
 )
 
 country_lookup <- data.table(
