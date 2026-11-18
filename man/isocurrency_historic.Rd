@@ -19,7 +19,7 @@ such as \code{"1989 to 1990"}}
 }
 \source{
 Published free of charge by SIX, the ISO 4217 maintenance agency, at
-\url{https://www.six-group.com/en/products-services/financial-information/data-standards.html}.
+\url{https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html}.
 ISO permits free use of the ISO 4217 currency codes.
 }
 \usage{

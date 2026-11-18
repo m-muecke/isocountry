@@ -44,7 +44,7 @@
 #' currency. Country names and codes are taken from [isocountry].
 #'
 #' @source Published free of charge by SIX, the ISO 4217 maintenance agency, at
-#'   <https://www.six-group.com/en/products-services/financial-information/data-standards.html>.
+#'   <https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html>.
 #'   ISO permits free use of the ISO 4217 currency codes.
 #' @format A data frame with 262 rows and 7 variables:
 #' \describe{
@@ -68,7 +68,7 @@
 #' still exists, otherwise the name is kept as published and the codes are `NA`.
 #'
 #' @source Published free of charge by SIX, the ISO 4217 maintenance agency, at
-#'   <https://www.six-group.com/en/products-services/financial-information/data-standards.html>.
+#'   <https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html>.
 #'   ISO permits free use of the ISO 4217 currency codes.
 #' @format A data frame with 166 rows and 7 variables:
 #' \describe{

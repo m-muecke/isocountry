@@ -23,7 +23,7 @@ as plain data frames, with no dependencies.
   membership in the OECD, the European Union (EU), the euro area (EMU),
   and the European Economic Area (EEA).
 - `isocurrency`: [ISO
-  4217](https://www.six-group.com/en/products-services/financial-information/data-standards.html)
+  4217](https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html)
   currency codes with minor units and the countries using each currency.
 - `isocurrency_historic`: withdrawn ISO 4217 currency codes, e.g. the
   national currencies replaced by the euro.
