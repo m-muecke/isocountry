@@ -11,7 +11,7 @@ as plain data frames, with no dependencies.
   membership in the OECD, the European Union (EU), the euro area (EMU),
   and the European Economic Area (EEA).
 - `isocurrency`: [ISO
-  4217](https://www.six-group.com/en/products-services/financial-information/data-standards.html)
+  4217](https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html)
   currency codes with minor units and the countries using each currency.
 - `isocurrency_historic`: withdrawn ISO 4217 currency codes, e.g. the
   national currencies replaced by the euro.
@@ -23,7 +23,9 @@ Across the datasets, `country_code` is the ISO 3166-1 alpha-2 code
 (`alpha_2` in `isocountry`) and `country_number` is the numeric code, so
 the datasets join easily. Use
 [`tibble::as_tibble()`](https://tibble.tidyverse.org/reference/as_tibble.html)
-or `data.table::as.data.table()` if you prefer tibbles or data.tables.
+or
+[`data.table::as.data.table()`](https://rdrr.io/pkg/data.table/man/as.data.table.html)
+if you prefer tibbles or data.tables.
 
 ## Installation
 

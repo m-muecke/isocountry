@@ -46,7 +46,7 @@ A data frame with 262 rows and 7 variables:
 ## Source
 
 Published free of charge by SIX, the ISO 4217 maintenance agency, at
-<https://www.six-group.com/en/products-services/financial-information/data-standards.html>.
+<https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html>.
 ISO permits free use of the ISO 4217 currency codes.
 
 ## See also

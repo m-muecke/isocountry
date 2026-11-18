@@ -4,8 +4,8 @@ ISO 4217 currency codes that have been withdrawn (list three), e.g. the
 national currencies replaced by the euro. Country names and codes are
 taken from
 [isocountry](https://m-muecke.github.io/isocountry/reference/isocountry.md)
-where the country still exists, otherwise the name is kept as published
-and the codes are `NA`.
+where the country still exists, otherwise the former name is kept and
+the codes are `NA`.
 
 ## Usage
 
@@ -49,7 +49,7 @@ A data frame with 166 rows and 7 variables:
 ## Source
 
 Published free of charge by SIX, the ISO 4217 maintenance agency, at
-<https://www.six-group.com/en/products-services/financial-information/data-standards.html>.
+<https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html>.
 ISO permits free use of the ISO 4217 currency codes.
 
 ## See also
