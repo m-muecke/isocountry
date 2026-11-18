@@ -43,24 +43,24 @@ country_overrides <- c(
 
 # entries that aren't countries
 non_countries <- c(
-  "arab monetary fund",
-  "european monetary co-operation fund (emcf)",
-  "european union",
-  "international monetary fund (imf)",
-  "member countries of the african development bank group",
-  "sistema unitario de compensacion regional de pagos \"sucre\""
+  "Arab Monetary Fund",
+  "European Monetary Co-operation Fund (EMCF)",
+  "European Union",
+  "International Monetary Fund (IMF)",
+  "Member Countries of the African Development Bank Group",
+  "Sistema Unitario de Compensacion Regional de Pagos \"Sucre\""
 )
 
 # countries in the historic list that no longer exist
 former_countries <- c(
-  "czechoslovakia",
-  "german democratic republic",
-  "netherlands antilles",
-  "serbia and montenegro",
-  "southern rhodesia",
-  "union of soviet socialist republics",
-  "yemen, democratic",
-  "yugoslavia"
+  "Czechoslovakia",
+  "German Democratic Republic",
+  "Netherlands Antilles",
+  "Serbia and Montenegro",
+  "Southern Rhodesia",
+  "Union of Soviet Socialist Republics",
+  "Yemen, Democratic",
+  "Yugoslavia"
 )
 no_country <- c(non_countries, former_countries)
 
@@ -79,7 +79,9 @@ country_lookup <- data.table(
     names(country_overrides),
     normalize_name(no_country)
   ),
-  to = c(isocountry$country_code, unname(country_overrides), rep(NA, length(no_country)))
+  to = c(isocountry$country_code, unname(country_overrides), rep(NA, length(no_country))),
+  # SIX publishes the names in upper case, so keep our spelling for the ones without a country
+  label = c(rep(NA, nrow(isocountry) + length(country_overrides)), no_country)
 )
 
 stopifnot("Country lookup names must be unique" = !anyDuplicated(country_lookup$from))
@@ -91,9 +93,9 @@ add_country <- function(data) {
     stop("Unmatched country names: ", toString(unmatched), call. = FALSE)
   }
 
-  data[country_lookup, on = .(name_key = from), country_code := i.to]
+  data[country_lookup, on = .(name_key = from), let(country_code = i.to, label = i.label)]
   data <- mergelist(list(data, isocountry), on = "country_code", how = "left", mult = "error")
-  data[, country_name := fcoalesce(country_name, CtryNm)]
+  data[, country_name := fcoalesce(country_name, label)]
   data
 }
 

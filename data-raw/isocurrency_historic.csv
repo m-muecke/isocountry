@@ -40,20 +40,20 @@
 "Peso Convertible","CUC","931","2021-06","Cuba","CU","192"
 "Netherlands Antillean Guilder","ANG","532","2025-03","Curaçao","CW","531"
 "Cyprus Pound","CYP","196","2008-01","Cyprus","CY","196"
-"Krona A/53","CSJ","203","1989 to 1990","CZECHOSLOVAKIA",,
-"Koruna","CSK","200","1993-03","CZECHOSLOVAKIA",,
+"Krona A/53","CSJ","203","1989 to 1990","Czechoslovakia",,
+"Koruna","CSK","200","1993-03","Czechoslovakia",,
 "Sucre","ECS","218","2000-09","Ecuador","EC","218"
 "Unidad de Valor Constante (UVC)","ECV","983","2000-09","Ecuador","EC","218"
 "Ekwele","GQE","226","1986-06","Equatorial Guinea","GQ","226"
 "Kroon","EEK","233","2011-01","Estonia","EE","233"
-"European Currency Unit (E.C.U)","XEU","954","1999-01","EUROPEAN MONETARY CO-OPERATION FUND (EMCF)",,
+"European Currency Unit (E.C.U)","XEU","954","1999-01","European Monetary Co-operation Fund (EMCF)",,
 "Markka","FIM","246","2002-03","Finland","FI","246"
 "French Franc","FRF","250","2002-03","France","FR","250"
 "French Franc","FRF","250","2002-03","French Guiana","GF","254"
 "French Franc","FRF","250","2002-03","French Southern Territories","TF","260"
 "Georgian Coupon","GEK","268","1995-10","Georgia","GE","268"
 "Russian Ruble","RUR","810","1994-04","Georgia","GE","268"
-"Mark der DDR","DDM","278","1990-07 to 1990-09","GERMAN DEMOCRATIC REPUBLIC",,
+"Mark der DDR","DDM","278","1990-07 to 1990-09","German Democratic Republic",,
 "Deutsche Mark","DEM","276","2002-03","Germany","DE","276"
 "Cedi","GHC","288","2008-01","Ghana","GH","288"
 "Ghana Cedi","GHP","939","2007-06","Ghana","GH","288"
@@ -96,7 +96,7 @@
 "Mozambique Escudo","MZE","508","1978 to 1981","Mozambique","MZ","508"
 "Mozambique Metical","MZM","508","2006-06","Mozambique","MZ","508"
 "Netherlands Guilder","NLG","528","2002-03","Netherlands, Kingdom of the","NL","528"
-"Netherlands Antillean Guilder","ANG","532","2010-10","NETHERLANDS ANTILLES",,
+"Netherlands Antillean Guilder","ANG","532","2010-10","Netherlands Antilles",,
 "Cordoba","NIC","558","1990-10","Nicaragua","NI","558"
 "Sol","PEH","604","1989 to 1990","Peru","PE","604"
 "Inti","PEI","604","1991-07","Peru","PE","604"
@@ -114,15 +114,15 @@
 "French Franc","FRF","250","1999-01","Saint Barthélemy","BL","652"
 "Italian Lira","ITL","380","2002-03","San Marino","SM","674"
 "Dobra","STD","678","2017-12","Sao Tome and Principe","ST","678"
-"Serbian Dinar","CSD","891","2006-10","SERBIA AND MONTENEGRO",,
-"Euro","EUR","978","2006-10","SERBIA AND MONTENEGRO",,
+"Serbian Dinar","CSD","891","2006-10","Serbia and Montenegro",,
+"Euro","EUR","978","2006-10","Serbia and Montenegro",,
 "Leone","SLL","694","2023-12","Sierra Leone","SL","694"
 "Netherlands Antillean Guilder","ANG","532","2025-03","Sint Maarten (Dutch part)","SX","534"
 "Slovak Koruna","SKK","703","2009-01","Slovakia","SK","703"
 "Tolar","SIT","705","2007-01","Slovenia","SI","705"
 "Financial Rand","ZAL","991","1995-03","South Africa","ZA","710"
 "Sudanese Pound","SDG","938","2012-09","South Sudan","SS","728"
-"Rhodesian Dollar","RHD","716","1978 to 1981","SOUTHERN RHODESIA",,
+"Rhodesian Dollar","RHD","716","1978 to 1981","Southern Rhodesia",,
 "Spanish Peseta","ESA","996","1978 to 1981","Spain","ES","724"
 """A"" Account (convertible Peseta Account)","ESB","995","1994-12","Spain","ES","724"
 "Spanish Peseta","ESP","724","2002-03","Spain","ES","724"
@@ -142,7 +142,7 @@
 "Uganda Shilling","UGS","800","1987-05","Uganda","UG","800"
 "Old Shilling","UGW","800","1989 to 1990","Uganda","UG","800"
 "Karbovanet","UAK","804","1996-09","Ukraine","UA","804"
-"Rouble","SUR","810","1990-12","UNION OF SOVIET SOCIALIST REPUBLICS",,
+"Rouble","SUR","810","1990-12","Union of Soviet Socialist Republics",,
 "US Dollar (Same day)","USS","998","2014-03","United States of America","US","840"
 "Old Uruguay Peso","UYN","858","1989-12","Uruguay","UY","858"
 "Uruguayan Peso","UYP","858","1993-03","Uruguay","UY","858"
@@ -152,10 +152,10 @@
 "Bolivar","VEF","937","2016-02","Venezuela, Bolivarian Republic of","VE","862"
 "Bolívar","VEF","937","2018-08","Venezuela, Bolivarian Republic of","VE","862"
 "Old Dong","VNC","704","1989-1990","Viet Nam","VN","704"
-"Yemeni Dinar","YDD","720","1991-09","YEMEN, DEMOCRATIC",,
-"New Yugoslavian Dinar","YUD","890","1990-01","YUGOSLAVIA",,
-"New Dinar","YUM","891","2003-07","YUGOSLAVIA",,
-"Yugoslavian Dinar","YUN","890","1995-11","YUGOSLAVIA",,
+"Yemeni Dinar","YDD","720","1991-09","Yemen, Democratic",,
+"New Yugoslavian Dinar","YUD","890","1990-01","Yugoslavia",,
+"New Dinar","YUM","891","2003-07","Yugoslavia",,
+"Yugoslavian Dinar","YUN","890","1995-11","Yugoslavia",,
 "New Zaire","ZRN","180","1999-06","Congo, Democratic Republic of the","CD","180"
 "Zaire","ZRZ","180","1994-02","Congo, Democratic Republic of the","CD","180"
 "Zambian Kwacha","ZMK","894","2012-12","Zambia","ZM","894"

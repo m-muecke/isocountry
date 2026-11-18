@@ -28,7 +28,7 @@ isocurrency_historic
 \description{
 ISO 4217 currency codes that have been withdrawn (list three), e.g. the national currencies
 replaced by the euro. Country names and codes are taken from \link{isocountry} where the country
-still exists, otherwise the name is kept as published and the codes are \code{NA}.
+still exists, otherwise the former name is kept and the codes are \code{NA}.
 }
 \examples{
 head(isocurrency_historic)

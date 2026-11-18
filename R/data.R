@@ -65,7 +65,7 @@
 #'
 #' ISO 4217 currency codes that have been withdrawn (list three), e.g. the national currencies
 #' replaced by the euro. Country names and codes are taken from [isocountry] where the country
-#' still exists, otherwise the name is kept as published and the codes are `NA`.
+#' still exists, otherwise the former name is kept and the codes are `NA`.
 #'
 #' @source Published free of charge by SIX, the ISO 4217 maintenance agency, at
 #'   <https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html>.
